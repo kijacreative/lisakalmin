@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Money Wealth and Miracles | Lisa Kalmin</title>
+<meta name="description" content="Money Wealth and Miracles: a six-session live group course with Lisa Kalmin. Rewrite the money story you grew up with, live on Zoom in a small group.">
+<meta name="theme-color" content="#141B16">
+<meta property="og:title" content="Money Wealth and Miracles with Lisa Kalmin">
+<meta property="og:description" content="Six live 90-minute sessions on Zoom, in a small group. Transform your worth into wealth.">
+<meta property="og:image" content="../img/og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="../img/lotus.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&family=Plus+Jakarta+Sans:wght@800&display=swap" rel="stylesheet">
+<style>
+/* The course page: one offer, one action. Dark forest above the fold like the hall on the homepage,
+   oat below for reading, and the price and the button are never more than a glance away. */
+:root{
+  --deep:#141B16;
+  --forest:#2F3B33;
+  --forest-d:#232C26;
+  --forest-l:#3A473E;
+  --oat:#F8F4EC;
+  --paper:#FDFBF7;
+  --linen:#E9E3D6;
+  --sage-l:#DDE3D3;
+  --mid:#56635B;
+  --rule:#C9D1C1;
+  --rose:#A04E5C;
+  --rose-h:#873F4C;
+  --rose-m:#C27A88;
+  --rose-l:#E3B5BC;
+  --soft:rgba(248,244,236,.78);
+  --line:rgba(227,181,188,.22);
+  --display:'Plus Jakarta Sans','Jost',system-ui,sans-serif;
+  --body:'Jost',system-ui,sans-serif;
+  --gutter:clamp(20px,5vw,72px);
+  --max:1200px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--oat);color:var(--forest-d);font:400 18px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+[hidden]{display:none!important}
+:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
+.dark :focus-visible{outline-color:var(--rose-l)}
+.skip{position:fixed;left:12px;top:-60px;z-index:50;background:var(--oat);color:var(--forest);padding:10px 16px;border-radius:4px;text-decoration:none}
+.skip:focus{top:12px}
+
+.w{max-width:var(--max);margin:0 auto;padding-left:var(--gutter);padding-right:var(--gutter)}
+h1,h2,h3{margin:0;text-wrap:balance}
+p{margin:0}
+.display{font-family:var(--display);font-weight:800;letter-spacing:-.02em;line-height:1.02}
+.h2{font-family:var(--display);font-weight:800;letter-spacing:-.02em;font-size:clamp(32px,4.2vw,52px);line-height:1.06}
+.lead{font-size:clamp(19px,1.6vw,22px);line-height:1.5}
+.kicker{font-size:13px;letter-spacing:.3em;text-transform:uppercase;line-height:1.4;color:var(--mid)}
+.dark .kicker{color:var(--rose-l)}
+.rule{width:56px;height:2px;background:var(--rose);border:0;margin:0}
+.dark .rule{background:var(--rose-m)}
+.dark{background:var(--forest);color:var(--oat)}
+.deep{background:var(--deep)}
+.sage{background:var(--sage-l)}
+.sec{padding-top:clamp(72px,10vw,120px);padding-bottom:clamp(72px,10vw,120px)}
+.head{display:flex;flex-direction:column;gap:18px;max-width:720px;margin-bottom:clamp(36px,5vw,56px)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:14px 26px;border-radius:4px;border:1.5px solid var(--rose);background:var(--rose);color:var(--oat);font:700 18px/1.2 var(--body);text-decoration:none;cursor:pointer;transition:background .2s,border-color .2s}
+.btn:hover{background:var(--rose-h);border-color:var(--rose-h)}
+.btn .ar{transition:transform .2s}
+.btn:hover .ar{transform:translateX(4px)}
+.btn.ghost{background:transparent;border-color:var(--rose-l);color:var(--oat)}
+.btn.ghost:hover{background:rgba(227,181,188,.14)}
+.btn.line{background:transparent;border-color:var(--forest);color:var(--forest)}
+.btn.line:hover{background:var(--sage-l)}
+.btn.sm{min-height:42px;padding:9px 18px;font-size:16px}
+.btn.wide{width:100%}
+
+/* header */
+.top{position:sticky;top:0;z-index:20;background:rgba(20,27,22,.92);backdrop-filter:saturate(1.2) blur(8px);-webkit-backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid rgba(227,181,188,.16);color:var(--oat)}
+.top .w{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:68px}
+.logo{display:block;width:clamp(150px,18vw,200px);aspect-ratio:2017/339;background:var(--oat);-webkit-mask:url(../img/logo.png) left center/contain no-repeat;mask:url(../img/logo.png) left center/contain no-repeat}
+.top-r{display:flex;align-items:center;gap:20px}
+.top-note{font-size:15px;color:var(--soft);white-space:nowrap}
+.top-note b{color:var(--oat);font-weight:700}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:radial-gradient(90% 80% at 78% 40%,#2B362F 0%,var(--deep) 70%)}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.06;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .9 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.hero .w{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(40px,6vw,88px);align-items:center;padding-top:clamp(36px,5vw,64px);padding-bottom:clamp(40px,5vw,64px)}
+.hero-copy{display:flex;flex-direction:column;gap:20px}
+.hero h1{font-size:clamp(40px,5vw,68px)}
+.hero h1 span{display:block;margin-top:10px;font-size:.5em;line-height:1.15;letter-spacing:-.01em;color:var(--rose-l)}
+.hero .lead{color:var(--soft);max-width:32em}
+.facts{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:10px}
+.facts li{font-size:15px;padding:7px 14px;border-radius:999px;border:1px solid rgba(227,181,188,.35);color:var(--oat);background:rgba(248,244,236,.04)}
+
+.offer{display:flex;flex-direction:column;gap:16px;padding:22px;border-radius:14px;background:rgba(248,244,236,.05);border:1px solid var(--line);max-width:560px}
+.price{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 14px}
+.price .now{font-family:var(--display);font-weight:800;font-size:clamp(40px,4.6vw,56px);line-height:1;letter-spacing:-.02em}
+.price .was{font-size:20px;color:var(--soft);text-decoration:line-through;text-decoration-color:var(--rose-m);text-decoration-thickness:2px}
+.price .tag{font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--deep);background:var(--rose-l);padding:4px 10px;border-radius:999px}
+.offer-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.offer .small{font-size:15px;color:var(--soft)}
+
+.count{display:flex;gap:10px}
+.count div{min-width:66px;padding:10px 8px 8px;text-align:center;border-radius:8px;background:rgba(20,27,22,.7);border:1px solid var(--line)}
+.count b{display:block;font-family:var(--display);font-weight:800;font-size:28px;line-height:1;font-variant-numeric:tabular-nums}
+.count span{display:block;margin-top:6px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--rose-l)}
+
+.door{position:relative;justify-self:center;width:min(360px,100%)}
+.door .frame{position:relative;padding:12px;border-radius:200px 200px 10px 10px;background:linear-gradient(#EFE9DD,#D9D1C1);box-shadow:0 40px 80px -30px rgba(0,0,0,.7),0 0 120px -10px rgba(255,226,196,.28)}
+.door img{width:100%;aspect-ratio:2/3;object-fit:cover;object-position:50% 20%;border-radius:190px 190px 4px 4px}
+.door figcaption{margin-top:16px;text-align:center;font-size:15px;color:var(--soft)}
+.door figcaption b{color:var(--oat);font-weight:700}
+
+.proofbar{position:relative;z-index:1;border-top:1px solid rgba(227,181,188,.16)}
+.proofbar ul{list-style:none;margin:0;padding:22px 0;display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px 32px}
+.proofbar li{display:flex;align-items:baseline;gap:10px;color:var(--soft);font-size:15px}
+.proofbar strong{font-family:var(--display);font-weight:800;font-size:26px;letter-spacing:-.02em;color:var(--oat)}
+
+/* testimonial */
+.quote{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:clamp(32px,6vw,80px);align-items:start}
+.quote .big{font-family:var(--display);font-weight:800;font-size:clamp(56px,8vw,104px);line-height:.95;letter-spacing:-.03em;color:var(--forest)}
+.quote .big small{display:block;margin-top:16px;font-family:var(--body);font-weight:500;font-size:20px;line-height:1.35;letter-spacing:0;color:var(--mid)}
+.quote blockquote{margin:0;display:flex;flex-direction:column;gap:20px}
+.quote blockquote p{font-size:clamp(19px,1.7vw,22px);line-height:1.55;color:var(--forest-d)}
+.quote blockquote p.pull{font-family:var(--body);font-weight:500;font-size:clamp(24px,2.4vw,32px);line-height:1.3;color:var(--forest)}
+.quote cite{font-style:normal;display:flex;flex-direction:column}
+.quote cite b{font-size:20px;color:var(--forest)}
+.quote cite span{font-size:15px;color:var(--mid)}
+
+/* fit checklist */
+.fit{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(36px,6vw,88px);align-items:start}
+.fit .sticky{position:sticky;top:110px;display:flex;flex-direction:column;gap:22px}
+.checks{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.check{width:100%;display:flex;align-items:flex-start;gap:16px;padding:18px 20px;text-align:left;border-radius:12px;border:1.5px solid var(--rule);background:var(--paper);color:var(--forest-d);font:400 18px/1.45 var(--body);cursor:pointer;transition:border-color .2s,background .2s}
+.check:hover{border-color:var(--forest)}
+.check .box{flex:none;width:26px;height:26px;margin-top:1px;border-radius:6px;border:1.5px solid var(--mid);display:grid;place-items:center;transition:background .2s,border-color .2s}
+.check .box svg{opacity:0;transition:opacity .15s}
+.check[aria-pressed="true"]{border-color:var(--rose);background:#FBF1F2}
+.check[aria-pressed="true"] .box{background:var(--rose);border-color:var(--rose)}
+.check[aria-pressed="true"] .box svg{opacity:1}
+.check b{font-weight:700}
+.verdict{padding:22px;border-radius:14px;background:var(--forest);color:var(--oat);display:flex;flex-direction:column;gap:14px}
+.verdict .n{font-family:var(--display);font-weight:800;font-size:44px;line-height:1;letter-spacing:-.02em}
+.verdict .n small{font-family:var(--body);font-weight:400;font-size:18px;letter-spacing:0;color:var(--soft)}
+.verdict p{color:var(--soft)}
+.verdict p strong{color:var(--oat)}
+
+/* what it is + learn */
+.intro{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,6fr);gap:clamp(36px,6vw,88px);align-items:center}
+.intro img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:40% 60%;border-radius:20px}
+.intro .copy{display:flex;flex-direction:column;gap:24px}
+.intro .lead{color:var(--forest)}
+.intro .lead strong{font-weight:700}
+.learn{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 48px}
+.learn li{display:grid;grid-template-columns:56px minmax(0,1fr);gap:16px;padding:24px 0;border-top:1px solid var(--rule)}
+.learn .num{font-family:var(--display);font-weight:800;font-size:28px;line-height:1.1;color:var(--rose)}
+.learn p{font-size:19px;line-height:1.45;color:var(--forest-d)}
+.learn b{font-weight:700;color:var(--forest)}
+
+/* included + pricing */
+.stack{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(32px,5vw,64px);align-items:start}
+.incl{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.incl li{display:grid;grid-template-columns:48px minmax(0,1fr);gap:18px;padding:24px 0;border-top:1px solid rgba(227,181,188,.24)}
+.incl li:last-child{border-bottom:1px solid rgba(227,181,188,.24)}
+.incl .ic{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:rgba(227,181,188,.12);border:1px solid rgba(227,181,188,.35)}
+.incl h3{font-family:var(--body);font-weight:700;font-size:20px;line-height:1.3;margin-bottom:4px}
+.incl p{color:var(--soft);font-size:17px}
+.card{position:sticky;top:100px;display:flex;flex-direction:column;gap:20px;padding:clamp(24px,3vw,36px);border-radius:16px;background:var(--oat);color:var(--forest-d);box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
+.card .kicker{color:var(--mid)}
+.card .price .was{color:var(--mid)}
+.card .price .now{color:var(--forest)}
+.card .price .tag{background:var(--forest);color:var(--oat)}
+.card ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px;font-size:17px}
+.card li{display:flex;gap:10px;align-items:flex-start}
+.card li svg{flex:none;margin-top:5px}
+.card .small{font-size:15px;color:var(--mid)}
+.card .save{font-weight:700;color:var(--rose)}
+form .row{display:flex;flex-direction:column;gap:8px}
+form label{font-size:14px;color:var(--mid)}
+.fld{width:100%;padding:14px 16px;border-radius:4px;border:1.5px solid var(--rule);background:var(--paper);font:400 18px var(--body);color:var(--forest-d)}
+.fld:focus{outline:2px solid var(--rose);outline-offset:2px;border-color:var(--forest)}
+.form{display:flex;flex-direction:column;gap:14px}
+.thanks{padding:16px;border-radius:10px;background:var(--sage-l);color:var(--forest);font-size:17px}
+
+/* schedule */
+.sched{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;counter-reset:s}
+.sched li{position:relative;display:flex;flex-direction:column;gap:6px;padding:20px 18px 18px;border-radius:12px;background:var(--paper);border:1px solid var(--rule)}
+.sched li::before{counter-increment:s;content:"Session " counter(s);font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--rose)}
+.sched .d{font-family:var(--display);font-weight:800;font-size:24px;line-height:1.1;letter-spacing:-.01em;color:var(--forest)}
+.sched .wd{font-size:15px;color:var(--mid)}
+.sched .t{font-size:15px;color:var(--forest-d);margin-top:auto;padding-top:10px;border-top:1px solid var(--rule)}
+.sched .t span{display:block;color:var(--mid)}
+.sched li.past{opacity:.6}
+.sched-note{margin-top:24px;display:flex;flex-wrap:wrap;gap:12px 28px;font-size:16px;color:var(--mid)}
+.sched-note b{color:var(--forest)}
+
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(36px,6vw,88px);align-items:start}
+.about .ph{position:relative}
+.about .ph img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:20px}
+.about .ph .book{position:absolute;aspect-ratio:auto;right:-18px;bottom:-28px;width:34%;border-radius:2px 6px 6px 2px;box-shadow:0 24px 40px -18px rgba(0,0,0,.55)}
+.about .copy{display:flex;flex-direction:column;gap:20px}
+.about .copy p{color:var(--forest-d)}
+.about .copy b{font-weight:700;color:var(--forest)}
+.creds{list-style:none;margin:8px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.creds li{border-top:2px solid var(--forest);padding-top:14px}
+.creds strong{display:block;font-family:var(--display);font-weight:800;font-size:32px;line-height:1.05;letter-spacing:-.02em;color:var(--forest)}
+.creds span{font-size:15px;color:var(--mid)}
+
+/* faq */
+.faq{max-width:860px;display:flex;flex-direction:column}
+.faq details{border-top:1px solid var(--rule)}
+.faq details:last-child{border-bottom:1px solid var(--rule)}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;align-items:center;padding:22px 0;font-weight:500;font-size:20px;color:var(--forest)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";flex:none;width:14px;height:14px;border-right:2px solid var(--rose);border-bottom:2px solid var(--rose);transform:rotate(45deg) translate(-3px,-3px);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(225deg) translate(-3px,-3px)}
+.faq details p{padding:0 0 24px;max-width:44em;color:var(--mid)}
+
+/* close */
+.close{position:relative;overflow:hidden;text-align:center;background:radial-gradient(70% 90% at 50% 100%,#3A2F2B 0%,var(--deep) 70%)}
+.close .w{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;gap:26px}
+.close h2{font-size:clamp(40px,6vw,80px)}
+.close h2 span{color:var(--rose-l)}
+.close .lead{max-width:36em;color:var(--soft)}
+.close .price{justify-content:center}
+.foot{background:var(--deep);color:rgba(248,244,236,.6);font-size:14px;border-top:1px solid rgba(248,244,236,.12)}
+.foot .w{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;padding-top:28px;padding-bottom:28px}
+.foot a{color:var(--rose-l);text-underline-offset:4px}
+
+/* mobile action bar */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:none;align-items:center;justify-content:space-between;gap:14px;padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px));background:rgba(20,27,22,.96);border-top:1px solid rgba(227,181,188,.22);color:var(--oat);transform:translateY(110%);transition:transform .3s}
+.mbar.on{transform:none}
+.mbar .p{display:flex;flex-direction:column;line-height:1.2}
+.mbar .p b{font-family:var(--display);font-weight:800;font-size:22px}
+.mbar .p span{font-size:13px;color:var(--soft)}
+
+@media (max-width:1060px){
+  .sched{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (max-width:900px){
+  .hero .w,.quote,.fit,.intro,.stack,.about{grid-template-columns:minmax(0,1fr)}
+  .door{order:-1;justify-self:start;width:min(190px,52%)}
+  .door .frame{padding:7px}
+  .door figcaption{display:none}
+  .fit .sticky,.card{position:static}
+  .learn{grid-template-columns:minmax(0,1fr)}
+  .about .ph .book{right:12px}
+  .top-note{display:none}
+  .mbar{display:flex}
+  body{padding-bottom:84px}
+}
+@media (max-width:600px){
+  .sched{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .creds{grid-template-columns:minmax(0,1fr)}
+  .count div{min-width:0;flex:1}
+  .proofbar ul{justify-content:flex-start}
+  .top .btn{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top dark">
+<div class="w">
+<a href="../" aria-label="Lisa Kalmin, Breakthrough Coach, home"><span class="logo" role="img" aria-label="Lisa Kalmin, Breakthrough Coach"></span></a>
+<div class="top-r">
+<p class="top-note" data-open><span data-start-short>Starts Aug 3</span> · <b data-price>$597</b></p>
+<a class="btn sm" href="#enroll" data-cta>Reserve my spot</a>
+</div>
+</div>
+</header>
+
+<main id="main">
+
+<!-- HERO: promise, facts, price, action, all above the fold -->
+<section class="hero dark" aria-labelledby="h-hero">
+<div class="w">
+<div class="hero-copy">
+<p class="kicker">Live group course with Lisa Kalmin</p>
+<h1 class="display" id="h-hero">Money Wealth and Miracles<span>Transform your worth into wealth.</span></h1>
+<p class="lead">Rewrite the money story you grew up with, live with Lisa and a small group. Six sessions that change how you see money, so you can finally act differently with it.</p>
+<ul class="facts" aria-label="Course at a glance">
+<li>6 live sessions</li><li>90 minutes each</li><li>On Zoom</li><li>Groups of 15 to 30</li>
+</ul>
+
+<div class="offer" data-open>
+<div class="price"><span class="now" data-price>$597</span><span class="was" data-was>$797</span><span class="tag">Special offer</span></div>
+<div class="offer-row">
+<a class="btn" href="#enroll" data-cta>Reserve my spot <span class="ar" aria-hidden="true">→</span></a>
+<a class="btn ghost" href="#schedule">See the dates</a>
+</div>
+<div class="count" role="timer" aria-live="off" aria-label="Time until the first session">
+<div><b data-c="d">00</b><span>Days</span></div>
+<div><b data-c="h">00</b><span>Hours</span></div>
+<div><b data-c="m">00</b><span>Min</span></div>
+<div><b data-c="s">00</b><span>Sec</span></div>
+</div>
+<p class="small">First session <span data-start-long>Monday, August 3</span>, <span data-time>5:30 to 7:00 pm PT</span>.</p>
+</div>
+
+<div class="offer" data-closed hidden>
+<p class="lead" style="color:var(--oat)"><strong>Enrollment for the last cohort has closed.</strong> Join the list and you will hear first when the next one opens, before it is announced anywhere else.</p>
+<div class="offer-row">
+<a class="btn" href="#enroll">Join the waitlist <span class="ar" aria-hidden="true">→</span></a>
+<a class="btn ghost" href="#fit">Is this for me?</a>
+</div>
+</div>
+</div>
+
+<figure class="door">
+<div class="frame"><img src="../img/portrait.jpg" alt="Lisa Kalmin smiling, arms folded" width="800" height="1200"></div>
+<figcaption><b>Lisa Kalmin</b>, breakthrough coach and author</figcaption>
+</figure>
+</div>
+
+<div class="proofbar w">
+<ul aria-label="Lisa Kalmin in numbers">
+<li><strong>26</strong> years of practice</li>
+<li><strong>30,000+</strong> people trained</li>
+<li><strong>$2.4M</strong> raised for charity</li>
+<li><strong>2</strong> books, one a bestseller</li>
+</ul>
+</div>
+</section>
+
+<!-- PROOF, EARLY -->
+<section class="sec" aria-label="What a past participant said">
+<div class="w quote">
+<p class="big">$25,000<small>generated on top of her normal income, before the program had even ended.</small></p>
+<blockquote>
+<p class="pull">“Having direct access to Lisa is immeasurable. I noticed myself a few times asking, why didn’t anyone tell me this before?”</p>
+<p>“Money Wealth and Miracles with the great Lisa Kalmin has been incredibly valuable. I really appreciate the virtual group environment. I look forward to my 1.5 hours every few weeks as a place to empower myself and give myself the gift of abundance. She drops personal coaching knowledge as well as practical knowledge that I felt like I missed in high school and college. Since starting the program I have generated over $25,000.00 on top of my normal income, and the program isn’t even over! Thank you Lisa Kalmin for providing this program and space for people to thrive. Here is to making much more happy money.”</p>
+<cite><b>Megan</b><span>Head of Design</span></cite>
+</blockquote>
+</div>
+</section>
+
+<!-- SELF-QUALIFY -->
+<section class="sec sage" id="fit" aria-labelledby="h-fit">
+<div class="w fit">
+<div class="sticky">
+<p class="kicker">Is this for you?</p>
+<h2 class="h2" id="h-fit">Tap every one that sounds like you.</h2>
+<hr class="rule">
+<div class="verdict" aria-live="polite">
+<p class="n"><span id="fitN">0</span> <small>of 7</small></p>
+<p id="fitMsg">If even two or three of these are true, this course was made for you.</p>
+<a class="btn" href="#enroll" id="fitCta" data-cta hidden>Reserve my spot <span class="ar" aria-hidden="true">→</span></a>
+</div>
+</div>
+<ul class="checks">
+<li><button class="check" type="button" aria-pressed="false"><span class="box" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#F8F4EC" stroke-width="2.4"><path d="M2.5 7.5l3 3 6-7"/></svg></span><span>You can’t figure out how to <b>crack the money code</b>, and why some people can.</span></button></li>
+<li><button class="check" type="button" aria-pressed="false"><span class="box" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#F8F4EC" stroke-width="2.4"><path d="M2.5 7.5l3 3 6-7"/></svg></span><span>You are <b>tired of the ups and downs</b> of inconsistent money flow.</span></button></li>
+<li><button class="check" type="button" aria-pressed="false"><span class="box" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#F8F4EC" stroke-width="2.4"><path d="M2.5 7.5l3 3 6-7"/></svg></span><span>You know in your heart you are <b>worth more than you are paid</b>.</span></button></li>
+<li><button class="check" type="button" aria-pressed="false"><span class="box" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#F8F4EC" stroke-width="2.4"><path d="M2.5 7.5l3 3 6-7"/></svg></span><span>You have tried <b>techniques to build wealth</b> and they don’t seem to work.</span></button></li>
+<li><button class="check" type="button" aria-pressed="false"><span class="box" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#F8F4EC" stroke-width="2.4"><path d="M2.5 7.5l3 3 6-7"/></svg></span><span>You have to <b>say no to things you really want</b> because of money.</span></button></li>
+<li><button class="check" type="button" aria-pressed="false"><span class="box" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#F8F4EC" stroke-width="2.4"><path d="M2.5 7.5l3 3 6-7"/></svg></span><span>You have a <b>confusing and frustrating relationship</b> with money.</span></button></li>
+<li><button class="check" type="button" aria-pressed="false"><span class="box" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="#F8F4EC" stroke-width="2.4"><path d="M2.5 7.5l3 3 6-7"/></svg></span><span>Your current <b>money mindset is sabotaging</b> your success.</span></button></li>
+</ul>
+</div>
+</section>
+
+<!-- WHAT IT IS -->
+<section class="sec" aria-labelledby="h-what">
+<div class="w intro">
+<div class="copy">
+<p class="kicker">What Money Wealth and Miracles is</p>
+<h2 class="h2" id="h-what">More than a course. A shift in how you see money.</h2>
+<hr class="rule">
+<p class="lead">Your financial freedom isn’t just a possibility. It is an <strong>inevitable reality</strong>. What it takes is a <strong>tangible shift in your perspective</strong>, and that is what a miracle is.</p>
+<p>Money Wealth and Miracles is a live online coaching program built on Lisa’s book, <em>The Problem Is How You See The Problem</em>. Over six sessions you get the knowledge, the tools and the room to reshape your financial reality, with Lisa coaching you through it in real time.</p>
+</div>
+<img src="../img/room.jpg" alt="A sunlit room with armchairs around a round oak table, set for a small group" width="509" height="695" loading="lazy">
+</div>
+</section>
+
+<!-- WHAT YOU WILL LEARN -->
+<section class="sec" style="padding-top:0" aria-labelledby="h-learn">
+<div class="w">
+<div class="head">
+<p class="kicker">What you will learn</p>
+<h2 class="h2" id="h-learn">Five shifts you will make.</h2>
+</div>
+<ol class="learn">
+<li><span class="num">01</span><p><b>Discover and break free</b> of the beliefs sabotaging your financial wealth.</p></li>
+<li><span class="num">02</span><p><b>Overcome your past programming</b> about money, so your financial security stops depending on luck.</p></li>
+<li><span class="num">03</span><p><b>Understand money as an exchange of energy</b>, and harness the power of attraction.</p></li>
+<li><span class="num">04</span><p><b>Develop a mindset</b> capable of attracting and sustaining increased wealth.</p></li>
+<li><span class="num">05</span><p><b>Tap into the flow of money and abundance</b>, even in uncertain times.</p></li>
+</ol>
+</div>
+</section>
+
+<!-- WHAT'S INCLUDED + ENROLL -->
+<section class="sec dark" id="enroll" aria-labelledby="h-incl">
+<div class="w">
+<div class="head">
+<p class="kicker">What’s included</p>
+<h2 class="h2" id="h-incl">Everything you get when you join.</h2>
+</div>
+<div class="stack">
+<ul class="incl">
+<li><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E3B5BC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="13" height="14" rx="2"/><path d="M15.5 10l6-3.5v11l-6-3.5"/></svg></span><div><h3>Six live 90-minute Zoom workshops</h3><p>Insightful sessions, carefully built to drive real change in your money mindset.</p></div></li>
+<li><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E3B5BC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h11a2 2 0 012 2v6a2 2 0 01-2 2H9l-4 3v-3H4a2 2 0 01-2-2V7a2 2 0 012-2z"/><path d="M17 9h3a2 2 0 012 2v6a2 2 0 01-2 2h-1v3l-4-3h-3"/></svg></span><div><h3>Live coaching and Q&amp;A</h3><p>Personal guidance from Lisa and answers to your burning questions, in every session.</p></div></li>
+<li><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E3B5BC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8l1.5 1.5L12 7M8 14l1.5 1.5L12 13M14.5 8.5H17M14.5 14.5H17"/></svg></span><div><h3>Weekly breakthrough assignments</h3><p>Practical tasks that put what you learn to work in your real life, between sessions.</p></div></li>
+<li><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E3B5BC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="6" r="3"/><circle cx="5" cy="17" r="3"/><circle cx="19" cy="17" r="3"/><path d="M10.2 8.5L6.8 14.5M13.8 8.5l3.4 6M8 17h8"/></svg></span><div><h3>A team of Co-Miracle Makers</h3><p>A like-minded group, dedicated to making miracles together, for the length of the course.</p></div></li>
+<li><span class="ic" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#E3B5BC" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.5"/><path d="M13.5 8.5H15V6h-1.8C11.4 6 10.5 7.2 10.5 9v1.5H9V13h1.5v5h3v-5H15l.4-2.5h-1.9V9.2c0-.4.2-.7.6-.7z"/></svg></span><div><h3>Private Facebook group</h3><p>A supportive community to share progress, challenges and victories.</p></div></li>
+</ul>
+
+<aside class="card" aria-labelledby="h-card">
+<div data-open>
+<div style="display:flex;flex-direction:column;gap:20px">
+<p class="kicker" id="h-card">Next cohort · <span data-start-short>Starts Aug 3</span></p>
+<div class="price"><span class="now" data-price>$597</span><span class="was" data-was>$797</span><span class="tag">Special offer</span></div>
+<p class="small">Tuition <span data-was>$797</span>. <span class="save">You save <span data-save>$200</span></span> with the current offer.</p>
+<ul>
+<li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#A04E5C" stroke-width="2.2"><path d="M3 8.5l3 3 7-8"/></svg>6 live sessions with Lisa, 90 minutes each</li>
+<li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#A04E5C" stroke-width="2.2"><path d="M3 8.5l3 3 7-8"/></svg>Coaching and Q&amp;A in every session</li>
+<li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#A04E5C" stroke-width="2.2"><path d="M3 8.5l3 3 7-8"/></svg>Weekly breakthrough assignments</li>
+<li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#A04E5C" stroke-width="2.2"><path d="M3 8.5l3 3 7-8"/></svg>Small group of 15 to 30, plus the private group</li>
+</ul>
+<a class="btn wide" href="#" data-checkout hidden>Enroll now <span class="ar" aria-hidden="true">→</span></a>
+<form class="form" data-form="reserve" data-no-checkout>
+<div class="row"><label for="rn">First name</label><input class="fld" id="rn" name="name" autocomplete="given-name" required></div>
+<div class="row"><label for="re">Email address</label><input class="fld" id="re" name="email" type="email" autocomplete="email" placeholder="you@example.com" required></div>
+<button class="btn wide" type="submit">Reserve my spot <span class="ar" aria-hidden="true">→</span></button>
+<p class="small">Seats are limited to 30 so everyone gets time with Lisa.</p>
+</form>
+</div>
+</div>
+<div data-closed hidden>
+<div style="display:flex;flex-direction:column;gap:18px">
+<p class="kicker">The next cohort</p>
+<p class="h2" style="font-size:34px;color:var(--forest)">Be first in line.</p>
+<p class="small">Enrollment for the last cohort has closed. Leave your email and you will hear about the next dates and the early offer before anyone else.</p>
+<form class="form" data-form="waitlist">
+<div class="row"><label for="wn">First name</label><input class="fld" id="wn" name="name" autocomplete="given-name" required></div>
+<div class="row"><label for="we">Email address</label><input class="fld" id="we" name="email" type="email" autocomplete="email" placeholder="you@example.com" required></div>
+<button class="btn wide" type="submit">Join the waitlist <span class="ar" aria-hidden="true">→</span></button>
+</form>
+</div>
+</div>
+</aside>
+</div>
+</div>
+</section>
+
+<!-- SCHEDULE -->
+<section class="sec" id="schedule" aria-labelledby="h-sched">
+<div class="w">
+<div class="head">
+<p class="kicker" data-sched-kicker>Workshop schedule</p>
+<h2 class="h2" id="h-sched">Six evenings, seven weeks.</h2>
+<p class="lead" style="color:var(--mid)">Every session is live on Zoom, <span data-time>5:30 to 7:00 pm PT</span>.</p>
+</div>
+<ol class="sched" id="sched"></ol>
+<p class="sched-note" id="schedNote"></p>
+</div>
+</section>
+
+<!-- ABOUT LISA -->
+<section class="sec sage" aria-labelledby="h-about">
+<div class="w about">
+<div class="ph">
+<img src="../img/portrait-light.jpg" alt="Lisa Kalmin smiling, a saffron scarf around her shoulders" width="960" height="1200" loading="lazy">
+<img class="book" src="../img/book-cover.jpg" alt="Cover of The Problem Is How You See The Problem, by Lisa Kalmin" width="338" height="522" loading="lazy">
+</div>
+<div class="copy">
+<p class="kicker">Your coach</p>
+<h2 class="h2" id="h-about">Meet Lisa Kalmin.</h2>
+<hr class="rule">
+<p>Lisa Kalmin is a globally recognized transformational trainer and mindset coach. She founded <b>WorldWorks Trainings</b>, a coaching and training company dedicated to personal growth and charitable work, which raised over <b>$2.4 million for Southern California charities</b> under her leadership. She has trained for transformational companies worldwide, reaching more than <b>30,000 people</b>.</p>
+<p>Lisa is also the co-founder of <b>Inspire Coaching</b> and <b>Inspire Business Success</b>, which offer corporate leadership training. She holds a Bachelor of Science in Radio-TV-Film and an MBA from the University of Texas at Austin, is a founding member of the <b>Association of Transformational Leaders</b>, and is a member of the <b>Transformational Leadership Council</b>.</p>
+<p>She is the author of <b><em>The Problem Is How You See The Problem: The Secret to Transforming Your Life</em></b>, the book this course is built on, and lives in Costa Mesa, California, with her family and two dogs.</p>
+<ul class="creds">
+<li><strong>26</strong><span>years coaching</span></li>
+<li><strong>30,000+</strong><span>people trained</span></li>
+<li><strong>2</strong><span>books, one a bestseller</span></li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" aria-labelledby="h-faq">
+<div class="w">
+<div class="head">
+<p class="kicker">Questions</p>
+<h2 class="h2" id="h-faq">Before you join.</h2>
+</div>
+<div class="faq">
+<details><summary>Where does the course happen?</summary><p>Online, live on Zoom. You join from wherever you are; all you need is a computer or phone with a camera and a quiet spot for 90 minutes.</p></details>
+<details><summary>How much time does it take?</summary><p>Six live sessions of 90 minutes over about seven weeks, plus a weekly breakthrough assignment to put what you learn into practice.</p></details>
+<details><summary>How big are the groups?</summary><p>Between 15 and 30 people. Small enough that Lisa coaches you directly in the live Q&amp;A, large enough that you learn from other people’s breakthroughs too.</p></details>
+<details><summary>Do I need to have read Lisa’s book?</summary><p>No. The course is built on <em>The Problem Is How You See The Problem</em>, and the book is a good companion, but you do not need it to start.</p></details>
+<details><summary>What does it cost?</summary><p data-faq-price>Tuition is $797. The current special offer is $597.</p></details>
+</div>
+</div>
+</section>
+
+<!-- CLOSE -->
+<section class="sec close dark" aria-labelledby="h-close">
+<div class="w">
+<h2 class="display" id="h-close">Transform your <span>money story</span> today.</h2>
+<p class="lead">Don’t let your past decide your financial future. Join Money Wealth and Miracles and open the door to abundance, prosperity and the miracles waiting for you.</p>
+<div data-open style="display:flex;flex-direction:column;align-items:center;gap:20px">
+<div class="price"><span class="now" data-price>$597</span><span class="was" data-was>$797</span></div>
+<a class="btn" href="#enroll" data-cta>Reserve my spot <span class="ar" aria-hidden="true">→</span></a>
+</div>
+<div data-closed hidden><a class="btn" href="#enroll">Join the waitlist <span class="ar" aria-hidden="true">→</span></a></div>
+</div>
+</section>
+</main>
+
+<footer class="foot">
+<div class="w">
+<p>© Lisa Kalmin. WorldWorks Trainings, Inspire Coaching, Inspire Business Success.</p>
+<p><a href="../">lisakalmin.com</a></p>
+</div>
+</footer>
+
+<div class="mbar" id="mbar" aria-hidden="true">
+<div class="p" data-open><b data-price>$597</b><span><span data-start-short>Starts Aug 3</span> · 6 live sessions</span></div>
+<div class="p" data-closed hidden><b>Next cohort</b><span>Join the waitlist</span></div>
+<a class="btn sm" href="#enroll" tabindex="-1"><span data-open>Reserve my spot</span><span data-closed hidden>Join the list</span></a>
+</div>
+
+<script>
+/* ===== Cohort settings: change these for each new cohort ===== */
+var COHORT = {
+  price: 597,                 // current offer, USD
+  tuition: 797,               // full tuition, USD
+  checkoutUrl: '',            // payment link (Stripe, ThriveCart...). Empty: the card shows a reserve form instead
+  // each session in Pacific time, with its UTC offset (-07:00 in summer, -08:00 from early November)
+  sessions: [
+    '2026-08-03T17:30:00-07:00',
+    '2026-08-19T17:30:00-07:00',
+    '2026-08-27T17:30:00-07:00',
+    '2026-09-03T17:30:00-07:00',
+    '2026-09-14T17:30:00-07:00',
+    '2026-09-21T17:30:00-07:00'
+  ],
+  minutes: 90
+};
+
+(function () {
+  var $ = function (s, r) { return (r || document).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  var money = function (n) { return '$' + n.toLocaleString('en-US'); };
+  var starts = COHORT.sessions.map(function (s) { return new Date(s); });
+  var first = starts[0], now = new Date();
+  var q = location.search;
+  // enrollment is open until the first session starts; ?state=open|closed previews either mode
+  var open = /state=open/.test(q) ? true : /state=closed/.test(q) ? false : now < first;
+
+  $$('[data-open]').forEach(function (el) { el.hidden = !open; });
+  $$('[data-closed]').forEach(function (el) { el.hidden = open; });
+  $$('[data-price]').forEach(function (el) { el.textContent = money(COHORT.price); });
+  $$('[data-was]').forEach(function (el) { el.textContent = money(COHORT.tuition); });
+  $$('[data-save]').forEach(function (el) { el.textContent = money(COHORT.tuition - COHORT.price); });
+  $$('[data-faq-price]').forEach(function (el) { el.textContent = open ? 'Tuition is ' + money(COHORT.tuition) + '. The current special offer is ' + money(COHORT.price) + '.' : 'Tuition is ' + money(COHORT.tuition) + '. People on the waitlist hear about the early offer for the next cohort first.'; });
+  if (!open) $$('[data-cta]').forEach(function (a) { a.textContent = 'Join the waitlist'; });
+
+  // checkout: a real payment link replaces the reserve form
+  if (COHORT.checkoutUrl) {
+    $$('[data-checkout]').forEach(function (a) { a.href = COHORT.checkoutUrl; a.hidden = false; });
+    $$('[data-no-checkout]').forEach(function (el) { el.hidden = true; });
+  }
+
+  // dates, in Pacific time and in the visitor's own zone
+  var PT = 'America/Los_Angeles';
+  var tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
+  var fmt = function (d, o, z) { return new Intl.DateTimeFormat('en-US', Object.assign({ timeZone: z || PT }, o)).format(d); };
+  var tm = function (d, z) { return fmt(d, { hour: 'numeric', minute: '2-digit' }, z).replace(' AM', ' am').replace(' PM', ' pm'); };
+  var end = function (d) { return new Date(d.getTime() + COHORT.minutes * 60000); };
+  var samePT = fmt(first, { hour: 'numeric', minute: 'numeric' }) === fmt(first, { hour: 'numeric', minute: 'numeric' }, tz);
+  var zoneName = fmt(first, { timeZoneName: 'short' }, tz).split(', ').pop().split(' ').pop();
+  $$('[data-start-short]').forEach(function (el) { el.textContent = 'Starts ' + fmt(first, { month: 'short', day: 'numeric' }); });
+  $$('[data-start-long]').forEach(function (el) { el.textContent = fmt(first, { weekday: 'long', month: 'long', day: 'numeric' }); });
+  $$('[data-time]').forEach(function (el) { el.textContent = tm(first).replace(/ (am|pm)$/, '') + ' to ' + tm(end(first)) + ' PT'; });
+
+  var list = $('#sched');
+  starts.forEach(function (d) {
+    var li = document.createElement('li');
+    if (d < now) li.className = 'past';
+    li.innerHTML = '<span class="d">' + fmt(d, { month: 'short', day: 'numeric' }) + '</span><span class="wd">' + fmt(d, { weekday: 'long' }) + ', ' + fmt(d, { year: 'numeric' }) + '</span>' +
+      '<span class="t">' + tm(d).replace(/ (am|pm)$/, '') + ' to ' + tm(end(d)) + ' PT' + (samePT ? '' : '<span>' + tm(d, tz) + ' your time (' + zoneName + ')</span>') + '</span>';
+    list.appendChild(li);
+  });
+  $('#schedNote').innerHTML = open
+    ? '<span><b>Live on Zoom.</b> The link arrives by email when you enroll.</span><span><b>15 to 30 people</b> per cohort.</span>'
+    : '<span><b>This was the last cohort’s schedule.</b> The next one follows the same rhythm.</span><span><a href="#enroll" style="color:var(--rose);font-weight:700;text-underline-offset:5px">Join the waitlist →</a></span>';
+  if (!open) $('[data-sched-kicker]').textContent = 'How a cohort runs';
+
+  // countdown to the first session
+  var cells = { d: $('[data-c="d"]'), h: $('[data-c="h"]'), m: $('[data-c="m"]'), s: $('[data-c="s"]') };
+  var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+  function tick() {
+    var t = Math.max(0, first - new Date()) / 1000;
+    cells.d.textContent = pad(Math.floor(t / 86400)); cells.h.textContent = pad(Math.floor(t % 86400 / 3600));
+    cells.m.textContent = pad(Math.floor(t % 3600 / 60)); cells.s.textContent = pad(Math.floor(t % 60));
+  }
+  if (open && first > now) { tick(); setInterval(tick, 1000); } else $('.count').hidden = true;
+
+  // the self-check: count what rings true, and answer
+  var checks = $$('.check'), n = $('#fitN'), msg = $('#fitMsg'), cta = $('#fitCta');
+  var lines = [
+    'If even two or three of these are true, this course was made for you.',
+    'One is a start. Keep going, be honest.',
+    '<strong>Two. That is enough.</strong> This course was made for you.',
+    '<strong>Three or more.</strong> You are exactly who Lisa built this course for.'
+  ];
+  checks.forEach(function (b) {
+    b.addEventListener('click', function () {
+      b.setAttribute('aria-pressed', String(b.getAttribute('aria-pressed') !== 'true'));
+      var c = checks.filter(function (x) { return x.getAttribute('aria-pressed') === 'true'; }).length;
+      n.textContent = c; msg.innerHTML = lines[Math.min(c, 3)]; cta.hidden = c < 2;
+    });
+  });
+
+  // forms are not connected to a list yet: confirm in place instead of navigating
+  $$('form[data-form]').forEach(function (f) {
+    f.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var name = (f.elements.name.value || '').trim();
+      var p = document.createElement('p'); p.className = 'thanks'; p.setAttribute('role', 'status');
+      p.textContent = (name ? 'Thank you, ' + name + '. ' : 'Thank you. ') + (f.getAttribute('data-form') === 'waitlist' ? 'You are on the list. Lisa’s team will be in touch when the next cohort opens.' : 'Your spot is held. Lisa’s team will email you the next steps.');
+      f.replaceWith(p);
+    });
+  });
+
+  // mobile action bar: always in reach, except while the enroll card itself is on screen
+  var bar = $('#mbar'), enroll = $('#enroll');
+  function onScroll() {
+    var e = enroll.getBoundingClientRect(); var atEnroll = e.top < innerHeight && e.bottom > 0;
+    bar.classList.toggle('on', !atEnroll);
+  }
+  addEventListener('scroll', onScroll, { passive: true }); onScroll();
+})();
+</script>
+</body>
+</html>
