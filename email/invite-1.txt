@@ -1,0 +1,42 @@
+Subject A: Money is still flowing. Is it flowing to you?
+Subject B: The hidden stops keeping money away (free class)
+Preview text: A free 90-minute masterclass on [DATE].
+
+------------------------------------------------------------
+
+Hi {{ subscriber.first_name | default: "there" }},
+
+Every time I fill my gas tank lately, I feel it. Rising prices are stressful, and you're not imagining it.
+
+But here's what I keep seeing: plenty of people are still making good money right now. The difference isn't the economy. It's their relationship with money. So I'm teaching a free class to help you open the flow.
+
+FREE LIVE MASTERCLASS
+Opening the Flow of Money: Letting Go of Your Stops
+
+[DATE]
+[START] to [END] PT
+Live on Zoom, 90 minutes, free
+
+Save my free seat:
+[REGISTER LINK]
+
+In 90 minutes, you'll:
+
+1. Find your hidden money stops, and where they started.
+2. See money as energy you can attract.
+3. Set a new income set point that doesn't depend on the news.
+4. Leave with 4 actions you can take the same day.
+
+"Lisa is one of the most effective people I know at coaching."
+Nicole Kalil, Founder and CEO, WomanWhisperer
+
+Save my free seat:
+[REGISTER LINK]
+
+To your abundant flow!
+Lisa
+
+P.S. Have you been to one of my classes before? Come again. Every class uncovers new layers, and the stop you find this time may not be the one you found last time.
+
+Save my seat again:
+[REGISTER LINK]
