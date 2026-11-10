@@ -8,6 +8,9 @@ Three connected assets with one goal: free registrations for Lisa's live masterc
 | Confirmation page | `masterclass/thank-you/index.html` | `/masterclass/thank-you/` |
 | Email invite #1 (Kit HTML) | `email/invite-1.html` | paste into Kit |
 | Email invite #1 (plain text) | `email/invite-1.txt` | paste into Kit |
+| Confirmation email: Zoom link + calendar (Kit HTML) | `email/confirmation.html` | first email in the Kit sequence for form 9737306 |
+| Confirmation email (plain text) | `email/confirmation.txt` | paste into Kit |
+| Calendar file for Apple / Outlook | `masterclass/masterclass.ics` | `/masterclass/masterclass.ics` |
 | Shared event settings | `masterclass/event.js` | used by both pages |
 
 ## Setup before launch

@@ -1,0 +1,41 @@
+Subject: You're in! Here's your Zoom link for Thursday
+Preview text: Save it to your calendar so you don't miss it.
+
+------------------------------------------------------------
+
+You're in! Your seat is saved.
+
+Hi {{ subscriber.first_name | default: "there" }},
+
+I'm so glad you said yes. Here's everything you need for Thursday. Add it to your calendar now, so the time is held for you.
+
+FREE LIVE MASTERCLASS
+Opening the Flow of Money: Letting Go of Your Stops
+
+Thursday, November 19
+5:30 to 7:00 pm PT
+Live on Zoom, 90 minutes
+
+Add to Google Calendar:
+https://calendar.google.com/calendar/render?action=TEMPLATE&text=Opening%20the%20Flow%20of%20Money%3A%20Letting%20Go%20of%20Your%20Stops&dates=20261120T013000Z/20261120T030000Z&details=Free%20live%20masterclass%20with%20Lisa%20Kalmin.%0A%0AJoin%20on%20Zoom%3A%20https%3A//us02web.zoom.us/j/88428491668%0A%0ABring%20a%20journal%20and%20a%20pen.&location=https%3A%2F%2Fus02web.zoom.us%2Fj%2F88428491668
+
+Add to Apple or Outlook:
+https://lisakalmin.vercel.app/masterclass/masterclass.ics
+
+YOUR ZOOM LINK
+Keep this email. On Thursday, this is the link you'll click to join.
+https://us02web.zoom.us/j/88428491668
+Meeting ID: 884 2849 1668
+
+Before Thursday:
+
+1. Save this email. Star it or move it to a folder so your link is easy to find.
+2. Add it to your calendar with the links above. The invite includes the Zoom link and a reminder.
+3. Grab a journal and a pen. You'll want to write down what comes up.
+
+I'll see you there.
+
+To your abundant flow!
+Lisa
+
+P.S. Hit reply and tell me which money stop sounds most like you: never quite enough, undercharging, avoiding looking, or money that comes in and goes right back out. It helps me shape the class around the people in the room.

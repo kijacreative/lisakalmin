@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Lisa Kalmin//Masterclass//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:opening-the-flow-20261119@lisakalmin.com
+DTSTAMP:20261110T170000Z
+DTSTART:20261120T013000Z
+DTEND:20261120T030000Z
+SUMMARY:Opening the Flow of Money: Letting Go of Your Stops
+DESCRIPTION:Free live masterclass with Lisa Kalmin.\n\nJoin on Zoom: https
+ ://us02web.zoom.us/j/88428491668\n\nBring a journal and a pen.
+LOCATION:https://us02web.zoom.us/j/88428491668
+URL:https://us02web.zoom.us/j/88428491668
+BEGIN:VALARM
+TRIGGER:-PT30M
+ACTION:DISPLAY
+DESCRIPTION:Class with Lisa starts in 30 minutes
+END:VALARM
+END:VEVENT
+END:VCALENDAR

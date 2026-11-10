@@ -1,5 +1,20 @@
 {
   "buildCommand": null,
   "outputDirectory": ".",
-  "framework": null
+  "framework": null,
+  "headers": [
+    {
+      "source": "/masterclass/masterclass.ics",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/calendar; charset=utf-8"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"lisa-kalmin-masterclass.ics\""
+        }
+      ]
+    }
+  ]
 }

@@ -7,7 +7,7 @@ window.EVENT = {
   // start and end in Pacific time with the UTC offset: -08:00 from early November, -07:00 from mid March
   start: '2026-11-19T17:30:00-08:00',    // Thursday, November 19, 5:30 pm PT
   end: '2026-11-19T19:00:00-08:00',    // 7:00 pm PT
-  zoomUrl: '[ZOOM LINK]',          // goes into the calendar invites
+  zoomUrl: 'https://us02web.zoom.us/j/88428491668',  // goes into the calendar invites
   // one small Kit form per answer on the thank-you page, each set to add its own tag
   tagForms: {
     'never-enough': '',
