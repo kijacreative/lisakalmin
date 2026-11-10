@@ -83,6 +83,20 @@ h1,h2,h3{margin:0;text-wrap:balance}
 .fld:focus{outline:2px solid var(--rose);outline-offset:2px;border-color:var(--forest)}
 .reg .btn{width:100%}
 .reg .fine{font-size:14px;color:var(--mid);text-align:center}
+/* the Kit form, restyled to the brand */
+.kit{min-height:132px}
+.kit .formkit-form[data-uid]{max-width:none!important;background:transparent!important;border:0!important;padding:0!important;margin:0!important;font-family:var(--body)!important}
+.kit .formkit-form[data-uid] [data-style="clean"]{padding:0!important}
+.kit .formkit-form[data-uid] .formkit-fields{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:12px!important;margin:0!important}
+.kit .formkit-form[data-uid] .formkit-field{margin:0!important;flex:none!important;min-width:0!important}
+.kit .formkit-form[data-uid] .formkit-input{width:100%!important;min-height:54px!important;padding:12px 20px!important;border-radius:999px!important;border:1.5px solid var(--rule)!important;background:#fff!important;font:400 18px var(--body)!important;color:var(--forest-d)!important}
+.kit .formkit-form[data-uid] .formkit-input::placeholder{color:var(--mid)!important;opacity:1!important}
+.kit .formkit-form[data-uid] .formkit-input:focus{outline:2px solid var(--rose)!important;outline-offset:2px!important;border-color:var(--forest)!important}
+.kit .formkit-form[data-uid] .formkit-submit{grid-column:1/-1;width:100%!important;margin:0!important;min-height:54px!important;padding:0!important;border-radius:999px!important;background:var(--rose)!important;color:#fff!important;font:700 18px/1.2 var(--body)!important;letter-spacing:0!important;text-transform:none!important;box-shadow:0 10px 24px -12px rgba(160,78,92,.7)!important;flex:none!important}
+.kit .formkit-form[data-uid] .formkit-submit:hover{background:var(--rose-h)!important}
+.kit .formkit-form[data-uid] .formkit-submit > span{padding:15px 24px!important;text-transform:none!important}
+.kit .formkit-form[data-uid] .formkit-alert{border-radius:12px!important;font-family:var(--body)!important}
+.kit .formkit-form[data-uid] .formkit-powered-by-convertkit-container{margin:10px 0 0!important}
 .reg .err{font-size:15px;color:var(--rose-h)}
 
 .count{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
@@ -205,6 +219,7 @@ h1,h2,h3{margin:0;text-wrap:balance}
   .hero .sub,.title{font-size:17px}
   .reg{padding:18px;gap:12px}
   .reg .fields{gap:10px}
+  .kit .formkit-form[data-uid] .formkit-fields{grid-template-columns:minmax(0,1fr)!important;gap:10px!important}
   .reg label{margin-bottom:4px}
 }
 .host{display:none;align-items:center;gap:12px}
@@ -230,20 +245,15 @@ h1,h2,h3{margin:0;text-wrap:balance}
 <div class="host"><img src="../img/avatar.jpg" alt="" width="240" height="240"><div><b>With Lisa Kalmin</b><span>Transformational Mindset Wizard</span></div></div>
 <p class="title"><em>Opening the Flow of Money:</em> Letting Go of Your Stops</p>
 <p class="when">
-<span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A04E5C" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span data-date>[DATE]</span></span>
-<span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A04E5C" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><span data-start>[START]</span> to <span data-end>[END]</span> PT</span></span>
+<span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A04E5C" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span data-date>Thursday, November 19</span></span>
+<span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A04E5C" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span><span data-start>5:30</span> to <span data-end>7:00 pm</span> PT</span></span>
 <span><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A04E5C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="6" width="13" height="12" rx="2"/><path d="M15.5 10.5l6-3.5v10l-6-3.5"/></svg>Live on Zoom</span>
 </p>
 
-<form class="reg" id="register" method="post" novalidate aria-label="Save your free seat">
-<div class="fields">
-<div><label for="fn">First name</label><input class="fld" id="fn" name="first_name" autocomplete="given-name" required></div>
-<div><label for="em">Email</label><input class="fld" id="em" name="email_address" type="email" autocomplete="email" inputmode="email" required></div>
-</div>
-<p class="err" id="err" role="alert" hidden></p>
-<button class="btn" type="submit">Save my free seat <span class="ar" aria-hidden="true">→</span></button>
+<div class="reg" id="register" role="group" aria-label="Save your free seat">
+<div class="kit"><script async data-uid="1b66603417" src="https://lisakalmin.kit.com/1b66603417/index.js"></script></div>
 <p class="fine">Free. 90 minutes. Your Zoom link arrives by email.</p>
-</form>
+</div>
 
 <div class="count" id="count" aria-label="Time until class starts">
 <span class="lbl">Class starts in</span>
@@ -298,7 +308,7 @@ h1,h2,h3{margin:0;text-wrap:balance}
 </ol>
 <div class="cta-row">
 <a class="btn" href="#register" data-to-form>Save my free seat <span class="ar" aria-hidden="true">→</span></a>
-<p>Free, live on Zoom. <span data-date>[DATE]</span>.</p>
+<p>Free, live on Zoom. <span data-date>Thursday, November 19</span>.</p>
 </div>
 </div>
 </div>
@@ -406,7 +416,7 @@ h1,h2,h3{margin:0;text-wrap:balance}
 <div class="w">
 <p class="eyebrow">Free live masterclass</p>
 <h2 id="h-final">Your new set point starts here.</h2>
-<p class="when"><span data-date>[DATE]</span><span><span data-start>[START]</span> to <span data-end>[END]</span> PT</span><span>Live on Zoom</span></p>
+<p class="when"><span data-date>Thursday, November 19</span><span><span data-start>5:30</span> to <span data-end>7:00 pm</span> PT</span><span>Live on Zoom</span></p>
 <a class="btn" href="#register" data-to-form>Save my free seat <span class="ar" aria-hidden="true">→</span></a>
 <p class="fine">To your abundant flow! Lisa</p>
 </div>
@@ -420,7 +430,7 @@ h1,h2,h3{margin:0;text-wrap:balance}
 <script src="event.js"></script>
 <script>
 (function () {
-  var E = window.EVENT, form = document.getElementById('register'), err = document.getElementById('err');
+  var E = window.EVENT, form = document.getElementById('register');
   E.fill(); E.countdown(document.getElementById('count'));
 
   // every button leads back to the one form, with the cursor ready in it
@@ -428,24 +438,27 @@ h1,h2,h3{margin:0;text-wrap:balance}
     a.addEventListener('click', function (e) {
       e.preventDefault();
       form.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'center' });
-      setTimeout(function () { document.getElementById('fn').focus({ preventScroll: true }); }, 450);
+      setTimeout(function () { var i = form.querySelector('input'); if (i) i.focus({ preventScroll: true }); }, 450);
     });
   });
 
-  // submit: posts to the Kit form once it is connected, otherwise previews the thank-you page
-  if (E.isSet('registerUrl')) form.action = E.registerUrl;
-  form.addEventListener('submit', function (e) {
-    var fn = form.elements.first_name, em = form.elements.email_address;
-    var bad = !fn.value.trim() ? fn : !/^\S+@\S+\.\S+$/.test(em.value.trim()) ? em : null;
-    if (bad) {
-      e.preventDefault();
-      err.textContent = bad === fn ? 'Please add your first name.' : 'Please check your email address.';
-      err.hidden = false; bad.setAttribute('aria-invalid', 'true'); bad.focus(); return;
-    }
-    err.hidden = true;
-    try { sessionStorage.setItem('mc_reg', JSON.stringify({ first_name: fn.value.trim(), email_address: em.value.trim() })); } catch (x) {}
-    if (!E.isSet('registerUrl')) { e.preventDefault(); location.href = E.thankYouUrl; }
-  });
+  // Kit renders the form after load: brand the button, label the fields, and remember who registered
+  // so the thank-you page can greet them and tag their money-stop answer
+  function brandKit() {
+    var f = form.querySelector('.formkit-form'); if (!f) return false;
+    var span = f.querySelector('.formkit-submit > span'); if (span) span.textContent = 'Save my free seat →';
+    var fn = f.querySelector('[name="fields[first_name]"]'), em = f.querySelector('[name="email_address"]');
+    if (fn) { fn.setAttribute('aria-label', 'First name'); fn.setAttribute('autocomplete', 'given-name'); fn.placeholder = 'First name'; }
+    if (em) { em.setAttribute('aria-label', 'Email'); em.setAttribute('autocomplete', 'email'); em.setAttribute('inputmode', 'email'); em.type = 'email'; em.placeholder = 'Email'; }
+    f.addEventListener('submit', function () {
+      try { sessionStorage.setItem('mc_reg', JSON.stringify({ first_name: fn ? fn.value.trim() : '', email_address: em ? em.value.trim() : '' })); } catch (x) {}
+    }, true);
+    return true;
+  }
+  if (!brandKit()) {
+    var mo = new MutationObserver(function () { if (brandKit()) mo.disconnect(); });
+    mo.observe(form, { childList: true, subtree: true });
+  }
 
   // phone: pin the button once the form is off screen
   var bar = document.getElementById('mbar');

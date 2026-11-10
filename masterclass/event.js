@@ -2,13 +2,12 @@
    Fill these in for each class. While a value is empty (or still a [PLACEHOLDER]),
    the pages show the placeholder copy and work in preview mode. */
 window.EVENT = {
+  // registration is the Kit form embedded on the landing page (form 9737306); set its redirect in Kit
   title: 'Opening the Flow of Money: Letting Go of Your Stops',
   // start and end in Pacific time with the UTC offset: -08:00 from early November, -07:00 from mid March
-  start: '',                       // e.g. '2026-12-02T17:30:00-08:00'
-  end: '',                         // e.g. '2026-12-02T19:00:00-08:00'
-  registerUrl: '[REGISTER LINK]',  // the Kit form's subscription URL, e.g. https://app.kit.com/forms/1234567/subscriptions
+  start: '2026-11-19T17:30:00-08:00',    // Thursday, November 19, 5:30 pm PT
+  end: '2026-11-19T19:00:00-08:00',    // 7:00 pm PT
   zoomUrl: '[ZOOM LINK]',          // goes into the calendar invites
-  thankYouUrl: 'thank-you/',       // where preview-mode registrations land (Kit redirects here once connected)
   // one small Kit form per answer on the thank-you page, each set to add its own tag
   tagForms: {
     'never-enough': '',

@@ -12,11 +12,11 @@ Three connected assets with one goal: free registrations for Lisa's live masterc
 
 ## Setup before launch
 
-1. **Event settings** (`masterclass/event.js`): set `start` and `end` as Pacific time with the offset (for example `2026-12-02T17:30:00-08:00`). Both pages then fill in the date, start the countdown and switch on the calendar buttons. Until then the copy shows `[DATE]`, `[START]` and `[END]`.
-2. **Registration:** create a Kit form (first name and email), set its redirect to `/masterclass/thank-you/`, and put its subscription URL in `registerUrl`. Until that is set, the form runs in preview mode and goes straight to the thank-you page without sending anything.
+1. **Event settings** (`masterclass/event.js`): set to Thursday, November 19, 5:30 to 7:00 pm PT (`2026-11-19T17:30:00-08:00`). The date copy, countdown and calendar buttons all follow it. For the next class, change `start` and `end` and the static date text on both pages and in the email.
+2. **Registration:** the landing page embeds Kit form 9737306 (`lisakalmin.kit.com/1b66603417`), restyled on the page to the brand, with the button relabelled "Save my free seat". **In Kit, change the form's "after subscribing" redirect to `/masterclass/thank-you/`.** It currently redirects to `lisakalmin.com/get-masterclass-recording/masterclass-recording/`. If that form also powers the recording opt-in, duplicate it for the masterclass instead of changing it, and swap the new `data-uid` into `masterclass/index.html`.
 3. **Zoom:** put the Zoom link in `zoomUrl` so it goes into the calendar invites. The link itself reaches people through your Kit confirmation email.
 4. **Money-stop tags:** create four small Kit forms, each set to add one tag (never-enough, undercharge, avoid-looking, in-and-out), and put their form IDs in `tagForms`. The thank-you page sends the registrant's email to the form for the answer they tap. Test one end to end in Kit before launch.
-5. **Email:** upload `email/logo-email.png` to Kit and use its URL for `[LOGO URL]`. Replace `[DATE]`, `[START]`, `[END]` and `[REGISTER LINK]` (the landing page URL). Kit adds the required unsubscribe and address footer to broadcasts.
+5. **Email:** upload `email/logo-email.png` to Kit and use its URL for `[LOGO URL]`, and replace `[REGISTER LINK]` with the landing page URL. The date is already filled in. Kit adds the required unsubscribe and address footer to broadcasts.
 6. **Welcome video** (optional): swap the placeholder on the thank-you page for the embed once Lisa records it.
 
 ## Things to confirm with Lisa
@@ -34,8 +34,8 @@ Three connected assets with one goal: free registrations for Lisa's live masterc
 - Headline: Money is still flowing, even now. Let it flow to you.
 - Subhead: The economy isn't what limits your income. Your relationship with money is, and the hidden stops inside it. In 90 minutes, find your stops and set a new money set point.
 - Title: Opening the Flow of Money: Letting Go of Your Stops
-- Details: [DATE] · [START] to [END] PT · Live on Zoom
-- Form: First name, Email, button "Save my free seat"
+- Details: Thursday, November 19 · 5:30 to 7:00 pm PT · Live on Zoom
+- Form: the Kit form (First name, Email), button relabelled "Save my free seat"
 - Under the button: Free. 90 minutes. Your Zoom link arrives by email.
 - Countdown: Class starts in (days, hours, minutes, seconds)
 - Photo caption: Your host, Lisa Kalmin. Transformational Mindset Wizard
@@ -54,7 +54,7 @@ Three connected assets with one goal: free registrations for Lisa's live masterc
 - See money as energy you can attract, not just numbers you chase.
 - Set a new income set point that doesn't depend on the news.
 - Leave with 4 actions you can take the same day.
-- Button: Save my free seat. Beside it: Free, live on Zoom. [DATE].
+- Button: Save my free seat. Beside it: Free, live on Zoom. Thursday, November 19.
 
 **Proof**
 - Large quote: "Lisa is one of the most effective people I know at coaching." Nicole Kalil, Founder and CEO, WomanWhisperer. Line under it: Nicole says Lisa's trainings changed the trajectory of her life.
@@ -82,14 +82,14 @@ Three connected assets with one goal: free registrations for Lisa's live masterc
 
 **Final CTA**
 - Headline: Your new set point starts here.
-- [DATE] · [START] to [END] PT · Live on Zoom
+- Thursday, November 19 · 5:30 to 7:00 pm PT · Live on Zoom
 - Button: Save my free seat. Sign-off: To your abundant flow! Lisa
 
 ### Confirmation page
 
 - Headline: You're in! Your seat is saved.
 - Sub: Thank you, {first name}. I can't wait to open the flow of money with you.
-- Card: Opening the Flow of Money: Letting Go of Your Stops · [DATE] · [START] to [END] PT · Live on Zoom
+- Card: Opening the Flow of Money: Letting Go of Your Stops · Thursday, November 19 · 5:30 to 7:00 pm PT · Live on Zoom
 - Note: Your link is in your inbox. If you don't see it in a few minutes, check your promotions or spam folder.
 - Buttons: Add to Google Calendar · Add to Apple / Outlook
 - Steps: 1) Check your inbox: find the email with your Zoom link and save it, or star it. 2) Add it to your calendar: use the buttons above so the time is blocked and you get a reminder. 3) Grab a journal: bring a journal and a pen. You'll want to write down what comes up.
