@@ -69,9 +69,9 @@ Three connected assets with one goal: free registrations for Lisa's live masterc
 **About Lisa**
 - Headline: Meet Lisa Kalmin.
 - Lisa Kalmin is a transformational mindset coach, the Transformational Mindset Wizard, who helps people change their relationship with money from the inside out.
-- For 26 years she has helped people see the problem differently, so they can finally act differently. More than 30,000 people have trained with her.
+- For 39 years she has helped people see the problem differently, so they can finally act differently. More than 50,000 people have trained with her.
 - She is the author of The Problem Is How You See the Problem. This class puts that idea to work on your money.
-- Credentials: 26 years of experience · 30,000+ people trained · Author
+- Credentials: 39 years of experience · 50,000+ people trained · Author
 
 **Is this for you?**
 - For you if: you run a business, coach, consult or work as a professional, and money feels tight or stressful · you earn less than you believe you are worth · money comes in, then goes right back out · you are open to seeing money as energy, not just math.
