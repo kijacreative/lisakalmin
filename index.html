@@ -217,6 +217,31 @@ h1,h2{font-family:var(--display);font-weight:800;letter-spacing:-.02em;margin:0;
   .scrolled .logo{width:170px}
 }
 @media (prefers-reduced-motion:reduce){.bar,.logo,.menu a,.menu a::after,.burger span,.sheet{transition:none}}
+
+/* ===== promo banner: the free masterclass, until class ends ===== */
+:root{--promo:0px}
+.has-promo{--promo:calc(46px + env(safe-area-inset-top,0px))}
+.promo{position:fixed;left:0;right:0;top:0;z-index:12;height:var(--promo);padding:env(safe-area-inset-top,0px) 56px 0;display:flex;align-items:center;justify-content:center;background:var(--rose);color:var(--oat);box-shadow:0 1px 0 rgba(20,27,22,.25)}
+.promo a{display:flex;align-items:center;justify-content:center;gap:14px;min-width:0;color:var(--oat);text-decoration:none;font-size:15px;line-height:1.2;white-space:nowrap}
+.promo .pk{font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--rose-l)}
+.promo .pt{overflow:hidden;text-overflow:ellipsis}
+.promo .pm,.promo .bs{display:none}
+.promo b{font-weight:700;padding:6px 14px;border-radius:999px;background:var(--oat);color:var(--rose-h);transition:background .2s}
+.promo a:hover b{background:#fff}
+.promo button{position:absolute;right:10px;bottom:5px;width:36px;height:36px;border:0;border-radius:50%;background:transparent;color:var(--oat);font:400 24px/1 var(--body);cursor:pointer}
+.promo button:hover{background:rgba(248,244,236,.16)}
+.has-promo .bar{top:var(--promo);padding-top:16px}
+.has-promo.scrolled .bar{padding-top:10px}
+.has-promo .step.hero{padding-top:calc(clamp(88px,12vh,128px) + 46px)}
+.has-promo .sheet{padding-top:calc(96px + var(--promo))}
+.has-promo.menu-open .promo{display:none}
+@media (max-width:760px){
+  .promo{padding-left:14px;padding-right:48px;justify-content:flex-start}
+  .promo .pk,.promo .pt,.promo .bl{display:none}
+  .promo .pm,.promo .bs{display:inline}
+  .promo a{justify-content:flex-start;gap:10px;font-size:14px;max-width:100%}
+  .promo b{padding:6px 12px}
+}
 </style>
 </head>
 <body>
@@ -227,6 +252,10 @@ h1,h2{font-family:var(--display);font-weight:800;letter-spacing:-.02em;margin:0;
 <div class="vignette" aria-hidden="true"></div>
 <div class="grain" aria-hidden="true"></div>
 
+<div class="promo" id="promo" role="region" aria-label="Free masterclass" hidden>
+<a href="masterclass/"><span class="pk">Free live masterclass</span><span class="pt">Opening the Flow of Money · Thursday, Nov 19, 5:30pm PT on Zoom</span><span class="pm">Free class · Thu, Nov 19</span><b><span class="bl">Save my free seat →</span><span class="bs">Save my seat →</span></b></a>
+<button type="button" id="promoX" aria-label="Dismiss the masterclass banner">×</button>
+</div>
 <header class="bar" id="bar">
 <a class="brand" href="#top" aria-label="Lisa Kalmin, Breakthrough Coach, back to the top"><span class="logo" role="img" aria-label="Lisa Kalmin, Breakthrough Coach"></span></a>
 <nav class="menu" aria-label="Main">
@@ -494,6 +523,14 @@ h1,h2{font-family:var(--display);font-weight:800;letter-spacing:-.02em;margin:0;
   var root = document.documentElement, burger = document.getElementById('burger'), sheet = document.getElementById('sheet');
   var links = Array.prototype.slice.call(document.querySelectorAll('.menu a, .sheet nav a'));
   var ids = ['course', 'coaching', 'speaking', 'book', 'media', 'community', 'about'];
+  // promo banner: shown until the masterclass ends, unless dismissed this visit
+  var promo = document.getElementById('promo'), promoOff = null;
+  try { promoOff = sessionStorage.getItem('promo-off'); } catch (e) {}
+  if (promo && !promoOff && Date.now() < Date.parse('2026-11-19T19:00:00-08:00')) { promo.hidden = false; root.classList.add('has-promo'); }
+  document.getElementById('promoX').addEventListener('click', function () {
+    promo.hidden = true; root.classList.remove('has-promo');
+    try { sessionStorage.setItem('promo-off', '1'); } catch (e) {}
+  });
   var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   function spy() {
     root.classList.toggle('scrolled', window.scrollY > 8);

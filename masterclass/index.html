@@ -99,12 +99,13 @@ h1,h2,h3{margin:0;text-wrap:balance}
 .kit .formkit-form[data-uid] .formkit-powered-by-convertkit-container{margin:10px 0 0!important}
 .reg .err{font-size:15px;color:var(--rose-h)}
 
-.count{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
-.count .lbl{font-size:14px;color:var(--mid)}
-.count .cells{display:flex;gap:8px}
-.count .cells div{min-width:58px;padding:8px 6px 6px;text-align:center;border-radius:12px;background:var(--blush)}
-.count b{display:block;font-family:var(--display);font-weight:800;font-size:24px;line-height:1;color:var(--forest);font-variant-numeric:tabular-nums}
-.count small{display:block;margin-top:4px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--mid)}
+.count{display:flex;flex-direction:column;gap:10px;margin:-4px -4px 4px;padding:16px 18px 18px;border-radius:16px;background:var(--forest);color:var(--oat)}
+.count .lbl{font-size:13px;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--rose-l);text-align:center}
+.count .cells{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.count .cells div{padding:10px 4px 8px;text-align:center;border-radius:12px;background:rgba(248,244,236,.08);border:1px solid rgba(227,181,188,.25)}
+.count b{display:block;font-family:var(--display);font-weight:800;font-size:clamp(30px,3vw,40px);line-height:1;color:var(--oat);font-variant-numeric:tabular-nums}
+.count small{display:block;margin-top:6px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:rgba(248,244,236,.75)}
+.count.big{width:min(560px,100%);margin:6px 0 4px}
 
 .door{position:relative;justify-self:center;width:min(400px,100%)}
 .door .light{position:absolute;inset:-14% -22% -6%;background:radial-gradient(50% 55% at 50% 42%,rgba(255,238,214,.95) 0%,rgba(255,238,214,.5) 45%,rgba(248,244,236,0) 72%);pointer-events:none}
@@ -212,8 +213,8 @@ h1,h2,h3{margin:0;text-wrap:balance}
 }
 @media (max-width:640px){
   .reg .fields,.fit-grid,.creds{grid-template-columns:minmax(0,1fr)}
-  .count .cells div{min-width:0;flex:1}
-  .count .cells{flex:1}
+  .count .cells{gap:6px}
+  .count small{font-size:10px;letter-spacing:.08em}
   .hero h1{font-size:34px}
   .hero-copy{gap:14px}
   .hero .sub,.title{font-size:17px}
@@ -251,18 +252,19 @@ h1,h2,h3{margin:0;text-wrap:balance}
 </p>
 
 <div class="reg" id="register" role="group" aria-label="Save your free seat">
+<div class="count" id="count" data-countdown="2026-11-19T17:30:00-08:00" aria-label="Time until class starts">
+<p class="lbl">Class starts in</p>
+<div class="cells" role="timer" aria-live="off">
+<div><b data-c="d">--</b><small>Days</small></div>
+<div><b data-c="h">--</b><small>Hours</small></div>
+<div><b data-c="m">--</b><small>Minutes</small></div>
+<div><b data-c="s">--</b><small>Seconds</small></div>
+</div>
+</div>
 <div class="kit"><script async data-uid="1b66603417" src="https://lisakalmin.kit.com/1b66603417/index.js"></script></div>
 <p class="fine">Free. 90 minutes. Your Zoom link arrives by email.</p>
 </div>
 
-<div class="count" id="count" aria-label="Time until class starts">
-<span class="lbl">Class starts in</span>
-<div class="cells" role="timer" aria-live="off">
-<div><b data-c="d">--</b><small>Days</small></div>
-<div><b data-c="h">--</b><small>Hrs</small></div>
-<div><b data-c="m">--</b><small>Min</small></div>
-<div><b data-c="s">--</b><small>Sec</small></div>
-</div>
 </div>
 </div>
 
@@ -417,6 +419,14 @@ h1,h2,h3{margin:0;text-wrap:balance}
 <p class="eyebrow">Free live masterclass</p>
 <h2 id="h-final">Your new set point starts here.</h2>
 <p class="when"><span data-date>Thursday, November 19</span><span><span data-start>5:30</span> to <span data-end>7:00 pm</span> PT</span><span>Live on Zoom</span></p>
+<div class="count big" id="count2" data-countdown="2026-11-19T17:30:00-08:00" aria-label="Time until class starts">
+<div class="cells" role="timer" aria-live="off">
+<div><b data-c="d">--</b><small>Days</small></div>
+<div><b data-c="h">--</b><small>Hours</small></div>
+<div><b data-c="m">--</b><small>Minutes</small></div>
+<div><b data-c="s">--</b><small>Seconds</small></div>
+</div>
+</div>
 <a class="btn" href="#register" data-to-form>Save my free seat <span class="ar" aria-hidden="true">→</span></a>
 <p class="fine">To your abundant flow! Lisa</p>
 </div>
@@ -427,11 +437,27 @@ h1,h2,h3{margin:0;text-wrap:balance}
 
 <div class="mbar" id="mbar"><a class="btn" href="#register" data-to-form tabindex="-1">Save my free seat <span class="ar" aria-hidden="true">→</span></a></div>
 
-<script src="event.js"></script>
+<script src="event.js?v=20261109"></script>
 <script>
 (function () {
   var E = window.EVENT, form = document.getElementById('register');
-  E.fill(); E.countdown(document.getElementById('count'));
+  if (E && E.fill) E.fill();
+
+  // the countdown carries its own start time, so it never depends on the settings file arriving fresh
+  document.querySelectorAll('.count[data-countdown]').forEach(function (box) {
+    var t0 = new Date(box.getAttribute('data-countdown')).getTime(), timer;
+    if (isNaN(t0)) return;
+    var cell = function (k) { return box.querySelector('[data-c="' + k + '"]'); };
+    var d = cell('d'), h = cell('h'), m = cell('m'), sec = cell('s');
+    var pad = function (n) { return (n < 10 ? '0' : '') + n; };
+    function tick() {
+      var t = Math.floor((t0 - Date.now()) / 1000);
+      if (t <= 0) { box.hidden = true; clearInterval(timer); return; }
+      d.textContent = pad(Math.floor(t / 86400)); h.textContent = pad(Math.floor(t % 86400 / 3600));
+      m.textContent = pad(Math.floor(t % 3600 / 60)); sec.textContent = pad(t % 60);
+    }
+    tick(); timer = setInterval(tick, 1000);
+  });
 
   // every button leads back to the one form, with the cursor ready in it
   document.querySelectorAll('[data-to-form]').forEach(function (a) {
