@@ -17,5 +17,167 @@
       ]
     }
   ],
-  "trailingSlash": true
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/blogs-podcasts",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blogs-podcasts/:p*",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/lisa",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/calendar",
+      "destination": "https://tidycal.com/causepeace",
+      "permanent": false
+    },
+    {
+      "source": "/category/:c*",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/gratitude-not-simple-seems",
+      "destination": "/blog/gratitude-not-simple-seems/",
+      "permanent": true
+    },
+    {
+      "source": "/2022-new-year",
+      "destination": "/blog/2022-new-year/",
+      "permanent": true
+    },
+    {
+      "source": "/re-entry-post-pandemic",
+      "destination": "/blog/re-entry-post-pandemic/",
+      "permanent": true
+    },
+    {
+      "source": "/supporting-you-during-covid-19",
+      "destination": "/blog/supporting-you-during-covid-19/",
+      "permanent": true
+    },
+    {
+      "source": "/the-best-thing-that-ever-happened-to-me",
+      "destination": "/blog/the-best-thing-that-ever-happened-to-me/",
+      "permanent": true
+    },
+    {
+      "source": "/vision-and-persistence-wins",
+      "destination": "/blog/vision-and-persistence-wins/",
+      "permanent": true
+    },
+    {
+      "source": "/the-two-res-which-do-you-choose",
+      "destination": "/blog/the-two-res-which-do-you-choose/",
+      "permanent": true
+    },
+    {
+      "source": "/my-12-days-of-christmasakathe-12-keys-to-a-joyous-holiday",
+      "destination": "/blog/my-12-days-of-christmasakathe-12-keys-to-a-joyous-holiday/",
+      "permanent": true
+    },
+    {
+      "source": "/losing-things-on-the-way-to-enlightment",
+      "destination": "/blog/losing-things-on-the-way-to-enlightment/",
+      "permanent": true
+    },
+    {
+      "source": "/there-is-something-about-integrity",
+      "destination": "/blog/there-is-something-about-integrity/",
+      "permanent": true
+    },
+    {
+      "source": "/new-years-blog-2018-2017-taught-2018",
+      "destination": "/blog/new-years-blog-2018-2017-taught-2018/",
+      "permanent": true
+    },
+    {
+      "source": "/top-10-spiritual-ways",
+      "destination": "/blog/top-10-spiritual-ways/",
+      "permanent": true
+    },
+    {
+      "source": "/living-your-breakthrough",
+      "destination": "/blog/living-your-breakthrough/",
+      "permanent": true
+    },
+    {
+      "source": "/huggers",
+      "destination": "/blog/huggers/",
+      "permanent": true
+    },
+    {
+      "source": "/positive-people",
+      "destination": "/blog/positive-people/",
+      "permanent": true
+    },
+    {
+      "source": "/self-actualizers",
+      "destination": "/blog/self-actualizers/",
+      "permanent": true
+    },
+    {
+      "source": "/being-a-leader-is-it-worth-it",
+      "destination": "/blog/being-a-leader-is-it-worth-it/",
+      "permanent": true
+    },
+    {
+      "source": "/2017-new-years-blog-post",
+      "destination": "/blog/2017-new-years-blog-post/",
+      "permanent": true
+    },
+    {
+      "source": "/life-and-business-coach",
+      "destination": "/blog/life-and-business-coach/",
+      "permanent": true
+    },
+    {
+      "source": "/coach-for-life",
+      "destination": "/blog/coach-for-life/",
+      "permanent": true
+    },
+    {
+      "source": "/mentoring-and-coaching",
+      "destination": "/blog/mentoring-and-coaching/",
+      "permanent": true
+    },
+    {
+      "source": "/what-is-transformation",
+      "destination": "/blog/what-is-transformation/",
+      "permanent": true
+    },
+    {
+      "source": "/why-use-transformational-coaching-and-training",
+      "destination": "/blog/why-use-transformational-coaching-and-training/",
+      "permanent": true
+    },
+    {
+      "source": "/worldworks-trainings-background",
+      "destination": "/blog/worldworks-trainings-background/",
+      "permanent": true
+    },
+    {
+      "source": "/this-is-womans-work-with-nicole-kalil-2",
+      "destination": "https://nicolekalil.com/podcast/058",
+      "permanent": true
+    },
+    {
+      "source": "/badass-womens-leadership-summit",
+      "destination": "https://www.purposeup.com/ep-45-lisa-kalmin-the-problem-is-how-you-see-the-problem/",
+      "permanent": true
+    },
+    {
+      "source": "/this-is-womans-work-with-nicole-kalil",
+      "destination": "https://anchor.fm/womanswork/episodes/008--YOUWORK-THE-PROBLEM-IS-HOW-YOU-SEE-THE-PROBLEM-eb858e",
+      "permanent": true
+    }
+  ]
 }
