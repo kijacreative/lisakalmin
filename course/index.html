@@ -185,6 +185,13 @@ form label{font-size:14px;color:var(--mid)}
 .fld{width:100%;padding:14px 16px;border-radius:4px;border:1.5px solid var(--rule);background:var(--paper);font:400 18px var(--body);color:var(--forest-d)}
 .fld:focus{outline:2px solid var(--rose);outline-offset:2px;border-color:var(--forest)}
 .form{display:flex;flex-direction:column;gap:14px}
+.code{display:flex;flex-direction:column;gap:6px;padding:14px 16px;border-radius:12px;border:1.5px dashed var(--rose-l);background:rgba(227,181,188,.1)}
+.code p{margin:0;font-size:16px;line-height:1.45}
+.code b{font-family:var(--display);font-weight:800;font-size:20px;letter-spacing:.06em}
+.code .code-note{font-size:14px;color:var(--soft)}
+.copy{margin-left:8px;padding:4px 12px;border-radius:999px;border:1.5px solid currentColor;background:transparent;color:inherit;font:700 13px var(--body);cursor:pointer;vertical-align:2px}
+.card .code{border-color:var(--rose);background:#FBF1F2}
+.card .code .code-note{color:var(--mid)}
 .thanks{padding:16px;border-radius:10px;background:var(--sage-l);color:var(--forest);font-size:17px}
 
 /* schedule */
@@ -295,7 +302,11 @@ form label{font-size:14px;color:var(--mid)}
 </ul>
 
 <div class="offer" data-open>
-<div class="price"><span class="now" data-price>$797</span><span class="was" data-was hidden>$797</span><span class="tag" data-discount hidden>Special offer</span></div>
+<div class="price"><span class="now" data-price>$797</span><span class="was" data-was hidden>$797</span><span class="tag" data-discount hidden data-tag>Special offer</span></div>
+<div class="code" data-code-box hidden>
+<p>Your masterclass code: <b data-code></b> <button type="button" class="copy" data-copy>Copy</button></p>
+<p class="code-note">Enter it at checkout to save <span data-save>$200</span>. Good through <span data-deadline>Tuesday, November 24</span> at midnight PT.</p>
+</div>
 <div class="offer-row">
 <a class="btn" href="#enroll" data-cta>Reserve my spot <span class="ar" aria-hidden="true">→</span></a>
 <a class="btn ghost" href="#schedule" data-dates>See the dates</a><a class="btn ghost" href="#fit" data-no-dates hidden>Is this for me?</a>
@@ -422,7 +433,7 @@ form label{font-size:14px;color:var(--mid)}
 <div data-open>
 <div style="display:flex;flex-direction:column;gap:20px">
 <p class="kicker" id="h-card">Next cohort · <span data-start-short>Enrolling now</span></p>
-<div class="price"><span class="now" data-price>$797</span><span class="was" data-was hidden>$797</span><span class="tag" data-discount hidden>Special offer</span></div>
+<div class="price"><span class="now" data-price>$797</span><span class="was" data-was hidden>$797</span><span class="tag" data-discount hidden data-tag>Special offer</span></div>
 <p class="small" data-discount hidden>Tuition <span data-was>$797</span>. <span class="save">You save <span data-save>$200</span></span> with the current offer.</p>
 <ul>
 <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#A04E5C" stroke-width="2.2"><path d="M3 8.5l3 3 7-8"/></svg>6 live sessions with Lisa, 90 minutes each</li>
@@ -430,6 +441,10 @@ form label{font-size:14px;color:var(--mid)}
 <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#A04E5C" stroke-width="2.2"><path d="M3 8.5l3 3 7-8"/></svg>Weekly breakthrough assignments</li>
 <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#A04E5C" stroke-width="2.2"><path d="M3 8.5l3 3 7-8"/></svg>Small group of 15 to 30, plus the private group</li>
 </ul>
+<div class="code" data-code-box hidden>
+<p>Your masterclass code: <b data-code></b> <button type="button" class="copy" data-copy>Copy</button></p>
+<p class="code-note">Enter it at checkout to save <span data-save>$200</span>. Good through <span data-deadline>Tuesday, November 24</span> at midnight PT.</p>
+</div>
 <a class="btn wide" href="#" data-checkout hidden>Join now <span class="ar" aria-hidden="true">→</span></a>
 <p class="small" data-checkout-note hidden>Secure checkout through Kit. Seats are limited to 30 so everyone gets time with Lisa.</p>
 <form class="form" data-form="reserve" data-no-checkout>
@@ -546,7 +561,10 @@ var COHORT = {
   // each session in Pacific time, with its UTC offset (-07:00 in summer, -08:00 from early November).
   // Empty: enrolment stays open on the checkout link, and the schedule and countdown stay hidden until dates are added.
   sessions: [],
-  minutes: 90
+  minutes: 90,
+  // masterclass attendee offer: a link like /course/?code=FLOW200 shows this price and the code,
+  // until the deadline (Pacific time). The code itself is entered at Kit's checkout.
+  attendee: { price: 597, deadline: '2026-11-24T23:59:59-08:00', label: 'Masterclass price' }
 };
 
 (function () {
@@ -555,8 +573,25 @@ var COHORT = {
   var money = function (n) { return '$' + n.toLocaleString('en-US'); };
   var starts = COHORT.sessions.map(function (s) { return new Date(s); });
   var first = starts[0], now = new Date(), hasDates = starts.length > 0;
-  var discount = COHORT.price < COHORT.tuition;
   var q = location.search;
+  // masterclass attendees arrive with ?code=...; keep it for this visit, honour it until the deadline
+  var code = new URLSearchParams(q).get('code');
+  try { if (code) sessionStorage.setItem('mwm_code', code); else code = sessionStorage.getItem('mwm_code'); } catch (x) {}
+  var A = COHORT.attendee;
+  if (code && /^[A-Za-z0-9_-]{2,40}$/.test(code) && A && now < new Date(A.deadline)) {
+    COHORT.price = A.price;
+    $$('[data-tag]').forEach(function (el) { el.textContent = A.label; });
+    $$('[data-code]').forEach(function (el) { el.textContent = code.toUpperCase(); });
+    $$('[data-deadline]').forEach(function (el) { el.textContent = new Intl.DateTimeFormat('en-US', { timeZone: 'America/Los_Angeles', weekday: 'long', month: 'long', day: 'numeric' }).format(new Date(A.deadline)); });
+    $$('[data-code-box]').forEach(function (el) { el.hidden = false; });
+    $$('[data-copy]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var done = function () { b.textContent = 'Copied'; setTimeout(function () { b.textContent = 'Copy'; }, 1800); };
+        if (navigator.clipboard) navigator.clipboard.writeText(code.toUpperCase()).then(done, function () {}); else done();
+      });
+    });
+  }
+  var discount = COHORT.price < COHORT.tuition;
   // with dates, enrolment is open until the first session starts; without dates, it is open while there is a checkout link.
   // ?state=open|closed previews either mode
   var open = /state=open/.test(q) ? true : /state=closed/.test(q) ? false : hasDates ? now < first : !!COHORT.checkoutUrl;

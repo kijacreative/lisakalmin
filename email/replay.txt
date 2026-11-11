@@ -1,0 +1,59 @@
+Subject: The recording from today's Opening the Flow of Money masterclass!
+Preview text: Watch the replay, and save $200 on Money, Wealth & Miracles through Tuesday.
+Send: after class on Thursday, November 19, to everyone who registered (Kit form 9737306), attended or not.
+Replace before sending: [REPLAY LINK] [PASSCODE] [DISCOUNT CODE] [COHORT START DATE]
+
+------------------------------------------------------------
+
+Here's your replay!
+
+Hello {{ subscriber.first_name | default: "there" }},
+
+Our masterclass, Opening the Flow of Money: Letting Go of Your Stops, was amazing!
+
+Not to worry, you did not miss this incredible money breakthrough. The replay is below. Watch it, take notes, and journal some of your insights.
+
+To everyone who was there live: what breakthroughs you had! If you missed it, please watch with your full presence. There is good stuff in here. Do you already feel the flow opening up? What money stops did you identify?
+
+THE REPLAY
+Opening the Flow of Money: Letting Go of Your Stops
+90 minutes, recorded live on Zoom, Thursday, November 19
+
+Watch the replay: [REPLAY LINK]
+Passcode: [PASSCODE]
+
+As I shared in the masterclass, I want to offer you an exclusive opportunity to join Money, Wealth & Miracles, which begins [COHORT START DATE].
+
+Here's why you don't want to miss it:
+
+1. Identify your specific pattern around money and wealth, discover the beliefs that have been sabotaging you, and break free of those money stops.
+2. See money for what it really is: an exchange of energy and value, and harness the power of attraction.
+3. Tap into the universal flow of money and abundance, even in these unpredictable times.
+4. Break free of your past programming, so the money you make is money you keep.
+5. Create a new set point and a mindset that can hold increased amounts of wealth.
+
+The economy has been chaotic and unpredictable. It doesn't have to be that way for you financially.
+
+MASTERCLASS PRICE, THROUGH TUESDAY
+$597 (regularly $797)
+Save $200 on Money, Wealth & Miracles through Tuesday, November 24 at midnight PT.
+
+Your code: [DISCOUNT CODE]
+Enter it at checkout. It's waiting for you on the next page too.
+
+Enroll and save $200:
+https://lisakalmin.vercel.app/course/?code=[DISCOUNT CODE]
+
+The first session is [COHORT START DATE], and every session is recorded. Please note: the $200 discount applies when you pay in full.
+
+If you have any questions, let's talk about them. Just reply to this email.
+
+To your abundance!
+Lisa
+
+Lisa Kalmin
+Transformational Mindset Wizard
+Author of "The Problem Is How You See the Problem"
+
+P.S. The $597 masterclass price ends Tuesday, November 24 at midnight PT. Save your seat in Money, Wealth & Miracles while it lasts:
+https://lisakalmin.vercel.app/course/?code=[DISCOUNT CODE]
