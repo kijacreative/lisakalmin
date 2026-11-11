@@ -573,15 +573,17 @@ var COHORT = {
   if (!open) $$('[data-cta]').forEach(function (a) { a.textContent = 'Join the waitlist'; });
 
   // checkout: a real payment link replaces the reserve form
-  // every enrol button goes straight to the checkout
+  // every enrol button goes straight to the checkout; data-commerce lets Kit's commerce.js
+  // open it as a pop-up on this page (without it, the link simply opens Kit's product page)
+  var toCheckout = function (a) { a.href = COHORT.checkoutUrl; a.setAttribute('data-commerce', ''); };
   if (COHORT.checkoutUrl) {
-    $$('[data-checkout]').forEach(function (a) { a.href = COHORT.checkoutUrl; a.hidden = false; });
+    $$('[data-checkout]').forEach(function (a) { toCheckout(a); a.hidden = false; });
     $$('[data-checkout-note]').forEach(function (el) { el.hidden = false; });
     $$('[data-no-checkout]').forEach(function (el) { el.hidden = true; });
     if (open) {
-      $$('[data-cta]').forEach(function (a) { a.href = COHORT.checkoutUrl; a.innerHTML = 'Join now <span class="ar" aria-hidden="true">→</span>'; });
+      $$('[data-cta]').forEach(function (a) { toCheckout(a); a.innerHTML = 'Join now <span class="ar" aria-hidden="true">→</span>'; });
       var mb = $('#mbar .btn');
-      if (mb) { mb.href = COHORT.checkoutUrl; var s0 = mb.querySelector('[data-open]'); if (s0) s0.textContent = 'Join now'; }
+      if (mb) { toCheckout(mb); var s0 = mb.querySelector('[data-open]'); if (s0) s0.textContent = 'Join now'; }
     }
   }
   if (!hasDates) {
@@ -662,5 +664,6 @@ var COHORT = {
   addEventListener('scroll', onScroll, { passive: true }); onScroll();
 })();
 </script>
+<script src="https://lisakalmin.kit.com/commerce.js" async defer></script>
 </body>
 </html>
