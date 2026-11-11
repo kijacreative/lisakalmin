@@ -25,7 +25,7 @@
       "permanent": true
     },
     {
-      "source": "/blogs-podcasts/:p+",
+      "source": "/blogs-podcasts/:p*/",
       "destination": "/blog/",
       "permanent": true
     },
@@ -40,7 +40,7 @@
       "permanent": false
     },
     {
-      "source": "/category/:c*",
+      "source": "/category/:c*/",
       "destination": "/blog/",
       "permanent": true
     },
@@ -190,7 +190,7 @@
       "permanent": true
     },
     {
-      "source": "/money-mindset/:p+",
+      "source": "/money-mindset/:p*/",
       "destination": "/quiz/",
       "permanent": true
     },
