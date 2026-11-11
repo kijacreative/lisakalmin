@@ -305,7 +305,7 @@ form label{font-size:14px;color:var(--mid)}
 <div class="price"><span class="now" data-price>$797</span><span class="was" data-was hidden>$797</span><span class="tag" data-discount hidden data-tag>Special offer</span></div>
 <div class="code" data-code-box hidden>
 <p>Your masterclass code: <b data-code></b> <button type="button" class="copy" data-copy>Copy</button></p>
-<p class="code-note">Enter it at checkout to save <span data-save>$200</span>. Good through <span data-deadline>Tuesday, November 24</span> at midnight PT.</p>
+<p class="code-note">It’s applied for you at checkout, saving <span data-save>$200</span>. Good through <span data-deadline>Tuesday, November 24</span> at midnight PT.</p>
 </div>
 <div class="offer-row">
 <a class="btn" href="#enroll" data-cta>Reserve my spot <span class="ar" aria-hidden="true">→</span></a>
@@ -443,7 +443,7 @@ form label{font-size:14px;color:var(--mid)}
 </ul>
 <div class="code" data-code-box hidden>
 <p>Your masterclass code: <b data-code></b> <button type="button" class="copy" data-copy>Copy</button></p>
-<p class="code-note">Enter it at checkout to save <span data-save>$200</span>. Good through <span data-deadline>Tuesday, November 24</span> at midnight PT.</p>
+<p class="code-note">It’s applied for you at checkout, saving <span data-save>$200</span>. Good through <span data-deadline>Tuesday, November 24</span> at midnight PT.</p>
 </div>
 <a class="btn wide" href="#" data-checkout hidden>Join now <span class="ar" aria-hidden="true">→</span></a>
 <p class="small" data-checkout-note hidden>Secure checkout through Kit. Seats are limited to 30 so everyone gets time with Lisa.</p>
@@ -575,11 +575,12 @@ var COHORT = {
   var first = starts[0], now = new Date(), hasDates = starts.length > 0;
   var q = location.search;
   // masterclass attendees arrive with ?code=...; keep it for this visit, honour it until the deadline
-  var code = new URLSearchParams(q).get('code');
+  var code = new URLSearchParams(q).get('code'), promo = '';
   try { if (code) sessionStorage.setItem('mwm_code', code); else code = sessionStorage.getItem('mwm_code'); } catch (x) {}
   var A = COHORT.attendee;
   if (code && /^[A-Za-z0-9_-]{2,40}$/.test(code) && A && now < new Date(A.deadline)) {
     COHORT.price = A.price;
+    promo = code.toUpperCase();
     $$('[data-tag]').forEach(function (el) { el.textContent = A.label; });
     $$('[data-code]').forEach(function (el) { el.textContent = code.toUpperCase(); });
     $$('[data-deadline]').forEach(function (el) { el.textContent = new Intl.DateTimeFormat('en-US', { timeZone: 'America/Los_Angeles', weekday: 'long', month: 'long', day: 'numeric' }).format(new Date(A.deadline)); });
@@ -610,7 +611,10 @@ var COHORT = {
   // checkout: a real payment link replaces the reserve form
   // every enrol button goes straight to the checkout; data-commerce lets Kit's commerce.js
   // open it as a pop-up on this page (without it, the link simply opens Kit's product page)
-  var toCheckout = function (a) { a.href = COHORT.checkoutUrl; a.setAttribute('data-commerce', ''); };
+  // with an attendee code, Kit's checkout applies it from the link (?promo=CODE), in the pop-up too
+  var buyUrl = COHORT.checkoutUrl;
+  if (promo) buyUrl += (buyUrl.indexOf('?') < 0 ? '?' : '&') + 'promo=' + encodeURIComponent(promo);
+  var toCheckout = function (a) { a.href = buyUrl; a.setAttribute('data-commerce', ''); };
   if (COHORT.checkoutUrl) {
     $$('[data-checkout]').forEach(function (a) { toCheckout(a); a.hidden = false; });
     $$('[data-checkout-note]').forEach(function (el) { el.hidden = false; });
