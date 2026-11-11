@@ -275,7 +275,7 @@ form label{font-size:14px;color:var(--mid)}
 <div class="w">
 <a href="../" aria-label="Lisa Kalmin, Breakthrough Coach, home"><span class="logo" role="img" aria-label="Lisa Kalmin, Breakthrough Coach"></span></a>
 <div class="top-r">
-<p class="top-note" data-open><span data-start-short>Starts Aug 3</span> · <b data-price>$597</b></p>
+<p class="top-note" data-open><span data-start-short>Enrolling now</span> · <b data-price>$797</b></p>
 <a class="btn sm" href="#enroll" data-cta>Reserve my spot</a>
 </div>
 </div>
@@ -295,10 +295,10 @@ form label{font-size:14px;color:var(--mid)}
 </ul>
 
 <div class="offer" data-open>
-<div class="price"><span class="now" data-price>$597</span><span class="was" data-was>$797</span><span class="tag">Special offer</span></div>
+<div class="price"><span class="now" data-price>$797</span><span class="was" data-was hidden>$797</span><span class="tag" data-discount hidden>Special offer</span></div>
 <div class="offer-row">
 <a class="btn" href="#enroll" data-cta>Reserve my spot <span class="ar" aria-hidden="true">→</span></a>
-<a class="btn ghost" href="#schedule">See the dates</a>
+<a class="btn ghost" href="#schedule" data-dates>See the dates</a><a class="btn ghost" href="#fit" data-no-dates hidden>Is this for me?</a>
 </div>
 <div class="count" role="timer" aria-live="off" aria-label="Time until the first session">
 <div><b data-c="d">00</b><span>Days</span></div>
@@ -306,7 +306,7 @@ form label{font-size:14px;color:var(--mid)}
 <div><b data-c="m">00</b><span>Min</span></div>
 <div><b data-c="s">00</b><span>Sec</span></div>
 </div>
-<p class="small">First session <span data-start-long>Monday, August 3</span>, <span data-time>5:30 to 7:00 pm PT</span>.</p>
+<p class="small" data-dates>First session <span data-start-long>Monday, August 3</span>, <span data-time>5:30 to 7:00 pm PT</span>.</p>
 </div>
 
 <div class="offer" data-closed hidden>
@@ -421,16 +421,17 @@ form label{font-size:14px;color:var(--mid)}
 <aside class="card" aria-labelledby="h-card">
 <div data-open>
 <div style="display:flex;flex-direction:column;gap:20px">
-<p class="kicker" id="h-card">Next cohort · <span data-start-short>Starts Aug 3</span></p>
-<div class="price"><span class="now" data-price>$597</span><span class="was" data-was>$797</span><span class="tag">Special offer</span></div>
-<p class="small">Tuition <span data-was>$797</span>. <span class="save">You save <span data-save>$200</span></span> with the current offer.</p>
+<p class="kicker" id="h-card">Next cohort · <span data-start-short>Enrolling now</span></p>
+<div class="price"><span class="now" data-price>$797</span><span class="was" data-was hidden>$797</span><span class="tag" data-discount hidden>Special offer</span></div>
+<p class="small" data-discount hidden>Tuition <span data-was>$797</span>. <span class="save">You save <span data-save>$200</span></span> with the current offer.</p>
 <ul>
 <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#A04E5C" stroke-width="2.2"><path d="M3 8.5l3 3 7-8"/></svg>6 live sessions with Lisa, 90 minutes each</li>
 <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#A04E5C" stroke-width="2.2"><path d="M3 8.5l3 3 7-8"/></svg>Coaching and Q&amp;A in every session</li>
 <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#A04E5C" stroke-width="2.2"><path d="M3 8.5l3 3 7-8"/></svg>Weekly breakthrough assignments</li>
 <li><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="#A04E5C" stroke-width="2.2"><path d="M3 8.5l3 3 7-8"/></svg>Small group of 15 to 30, plus the private group</li>
 </ul>
-<a class="btn wide" href="#" data-checkout hidden>Enroll now <span class="ar" aria-hidden="true">→</span></a>
+<a class="btn wide" href="#" data-checkout hidden>Join now <span class="ar" aria-hidden="true">→</span></a>
+<p class="small" data-checkout-note hidden>Secure checkout through Kit. Seats are limited to 30 so everyone gets time with Lisa.</p>
 <form class="form" data-form="reserve" data-no-checkout>
 <div class="row"><label for="rn">First name</label><input class="fld" id="rn" name="name" autocomplete="given-name" required></div>
 <div class="row"><label for="re">Email address</label><input class="fld" id="re" name="email" type="email" autocomplete="email" placeholder="you@example.com" required></div>
@@ -457,7 +458,7 @@ form label{font-size:14px;color:var(--mid)}
 </section>
 
 <!-- SCHEDULE -->
-<section class="sec" id="schedule" aria-labelledby="h-sched">
+<section class="sec" id="schedule" aria-labelledby="h-sched" data-dates>
 <div class="w">
 <div class="head">
 <p class="kicker" data-sched-kicker>Workshop schedule</p>
@@ -504,7 +505,7 @@ form label{font-size:14px;color:var(--mid)}
 <details><summary>How much time does it take?</summary><p>Six live sessions of 90 minutes over about seven weeks, plus a weekly breakthrough assignment to put what you learn into practice.</p></details>
 <details><summary>How big are the groups?</summary><p>Between 15 and 30 people. Small enough that Lisa coaches you directly in the live Q&amp;A, large enough that you learn from other people’s breakthroughs too.</p></details>
 <details><summary>Do I need to have read Lisa’s book?</summary><p>No. The course is built on <em>The Problem Is How You See The Problem</em>, and the book is a good companion, but you do not need it to start.</p></details>
-<details><summary>What does it cost?</summary><p data-faq-price>Tuition is $797. The current special offer is $597.</p></details>
+<details><summary>What does it cost?</summary><p data-faq-price>Tuition is $797.</p></details>
 </div>
 </div>
 </section>
@@ -515,7 +516,7 @@ form label{font-size:14px;color:var(--mid)}
 <h2 class="display" id="h-close">Transform your <span>money story</span> today.</h2>
 <p class="lead">Don’t let your past decide your financial future. Join Money Wealth and Miracles and open the door to abundance, prosperity and the miracles waiting for you.</p>
 <div data-open style="display:flex;flex-direction:column;align-items:center;gap:20px">
-<div class="price"><span class="now" data-price>$597</span><span class="was" data-was>$797</span></div>
+<div class="price"><span class="now" data-price>$797</span><span class="was" data-was hidden>$797</span></div>
 <a class="btn" href="#enroll" data-cta>Reserve my spot <span class="ar" aria-hidden="true">→</span></a>
 </div>
 <div data-closed hidden><a class="btn" href="#enroll">Join the waitlist <span class="ar" aria-hidden="true">→</span></a></div>
@@ -531,7 +532,7 @@ form label{font-size:14px;color:var(--mid)}
 </footer>
 
 <div class="mbar" id="mbar" aria-hidden="true">
-<div class="p" data-open><b data-price>$597</b><span><span data-start-short>Starts Aug 3</span> · 6 live sessions</span></div>
+<div class="p" data-open><b data-price>$797</b><span><span data-start-short>Enrolling now</span> · 6 live sessions</span></div>
 <div class="p" data-closed hidden><b>Next cohort</b><span>Join the waitlist</span></div>
 <a class="btn sm" href="#enroll" tabindex="-1"><span data-open>Reserve my spot</span><span data-closed hidden>Join the list</span></a>
 </div>
@@ -539,18 +540,12 @@ form label{font-size:14px;color:var(--mid)}
 <script>
 /* ===== Cohort settings: change these for each new cohort ===== */
 var COHORT = {
-  price: 597,                 // current offer, USD
-  tuition: 797,               // full tuition, USD
-  checkoutUrl: '',            // payment link (Stripe, ThriveCart...). Empty: the card shows a reserve form instead
-  // each session in Pacific time, with its UTC offset (-07:00 in summer, -08:00 from early November)
-  sessions: [
-    '2026-08-03T17:30:00-07:00',
-    '2026-08-19T17:30:00-07:00',
-    '2026-08-27T17:30:00-07:00',
-    '2026-09-03T17:30:00-07:00',
-    '2026-09-14T17:30:00-07:00',
-    '2026-09-21T17:30:00-07:00'
-  ],
+  price: 797,                 // what Kit charges, USD
+  tuition: 797,               // full tuition, USD; set price lower to show a special offer with tuition struck through
+  checkoutUrl: 'https://lisakalmin.kit.com/products/copy-of-money-wealth-miracles',   // Kit product page; empty shows a reserve form instead
+  // each session in Pacific time, with its UTC offset (-07:00 in summer, -08:00 from early November).
+  // Empty: enrolment stays open on the checkout link, and the schedule and countdown stay hidden until dates are added.
+  sessions: [],
   minutes: 90
 };
 
@@ -559,26 +554,43 @@ var COHORT = {
   var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
   var money = function (n) { return '$' + n.toLocaleString('en-US'); };
   var starts = COHORT.sessions.map(function (s) { return new Date(s); });
-  var first = starts[0], now = new Date();
+  var first = starts[0], now = new Date(), hasDates = starts.length > 0;
+  var discount = COHORT.price < COHORT.tuition;
   var q = location.search;
-  // enrollment is open until the first session starts; ?state=open|closed previews either mode
-  var open = /state=open/.test(q) ? true : /state=closed/.test(q) ? false : now < first;
+  // with dates, enrolment is open until the first session starts; without dates, it is open while there is a checkout link.
+  // ?state=open|closed previews either mode
+  var open = /state=open/.test(q) ? true : /state=closed/.test(q) ? false : hasDates ? now < first : !!COHORT.checkoutUrl;
+  $$('[data-dates]').forEach(function (el) { el.hidden = !hasDates; });
+  $$('[data-no-dates]').forEach(function (el) { el.hidden = hasDates; });
+  $$('[data-discount]').forEach(function (el) { el.hidden = !discount; });
 
   $$('[data-open]').forEach(function (el) { el.hidden = !open; });
   $$('[data-closed]').forEach(function (el) { el.hidden = open; });
   $$('[data-price]').forEach(function (el) { el.textContent = money(COHORT.price); });
-  $$('[data-was]').forEach(function (el) { el.textContent = money(COHORT.tuition); });
+  $$('[data-was]').forEach(function (el) { el.textContent = money(COHORT.tuition); if (!el.closest('[data-discount]')) el.hidden = !discount; });
   $$('[data-save]').forEach(function (el) { el.textContent = money(COHORT.tuition - COHORT.price); });
-  $$('[data-faq-price]').forEach(function (el) { el.textContent = open ? 'Tuition is ' + money(COHORT.tuition) + '. The current special offer is ' + money(COHORT.price) + '.' : 'Tuition is ' + money(COHORT.tuition) + '. People on the waitlist hear about the early offer for the next cohort first.'; });
+  $$('[data-faq-price]').forEach(function (el) { el.textContent = !open ? 'Tuition is ' + money(COHORT.tuition) + '. People on the waitlist hear about the early offer for the next cohort first.' : discount ? 'Tuition is ' + money(COHORT.tuition) + '. The current special offer is ' + money(COHORT.price) + '.' : 'Tuition is ' + money(COHORT.price) + '.'; });
   if (!open) $$('[data-cta]').forEach(function (a) { a.textContent = 'Join the waitlist'; });
 
   // checkout: a real payment link replaces the reserve form
+  // every enrol button goes straight to the checkout
   if (COHORT.checkoutUrl) {
     $$('[data-checkout]').forEach(function (a) { a.href = COHORT.checkoutUrl; a.hidden = false; });
+    $$('[data-checkout-note]').forEach(function (el) { el.hidden = false; });
     $$('[data-no-checkout]').forEach(function (el) { el.hidden = true; });
+    if (open) {
+      $$('[data-cta]').forEach(function (a) { a.href = COHORT.checkoutUrl; a.innerHTML = 'Join now <span class="ar" aria-hidden="true">→</span>'; });
+      var mb = $('#mbar .btn');
+      if (mb) { mb.href = COHORT.checkoutUrl; var s0 = mb.querySelector('[data-open]'); if (s0) s0.textContent = 'Join now'; }
+    }
+  }
+  if (!hasDates) {
+    $$('[data-start-short]').forEach(function (el) { el.textContent = 'Enrolling now'; });
+    var cd = $('.count'); if (cd) cd.hidden = true;
   }
 
   // dates, in Pacific time and in the visitor's own zone
+  if (hasDates) {
   var PT = 'America/Los_Angeles';
   var tz = Intl.DateTimeFormat().resolvedOptions().timeZone;
   var fmt = function (d, o, z) { return new Intl.DateTimeFormat('en-US', Object.assign({ timeZone: z || PT }, o)).format(d); };
@@ -612,6 +624,7 @@ var COHORT = {
     cells.m.textContent = pad(Math.floor(t % 3600 / 60)); cells.s.textContent = pad(Math.floor(t % 60));
   }
   if (open && first > now) { tick(); setInterval(tick, 1000); } else $('.count').hidden = true;
+  }
 
   // the self-check: count what rings true, and answer
   var checks = $$('.check'), n = $('#fitN'), msg = $('#fitMsg'), cta = $('#fitCta');
