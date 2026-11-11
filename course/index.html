@@ -574,9 +574,10 @@ var COHORT = {
   var starts = COHORT.sessions.map(function (s) { return new Date(s); });
   var first = starts[0], now = new Date(), hasDates = starts.length > 0;
   var q = location.search;
-  // masterclass attendees arrive with ?code=...; keep it for this visit, honour it until the deadline
+  // masterclass attendees arrive with ?code=...; honour it until the deadline.
+  // no code in the URL: original price, and the checkout opens without a code
   var code = new URLSearchParams(q).get('code'), promo = '';
-  try { if (code) sessionStorage.setItem('mwm_code', code); else code = sessionStorage.getItem('mwm_code'); } catch (x) {}
+  try { sessionStorage.removeItem('mwm_code'); } catch (x) {}
   var A = COHORT.attendee;
   if (code && /^[A-Za-z0-9_-]{2,40}$/.test(code) && A && now < new Date(A.deadline)) {
     COHORT.price = A.price;
