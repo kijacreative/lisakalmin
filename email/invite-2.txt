@@ -1,0 +1,42 @@
+Send: Thursday, November 12, 5:30 am PT
+Subject: The hidden stops keeping money away (free class)
+Preview text: Live and free on Thursday, November 19. I didn't want this to get buried.
+
+------------------------------------------------------------
+
+Dear {{ subscriber.first_name | default: "friend" }},
+
+I sent you an email a few days ago about my FREE Masterclass, Opening the Flow of Money...Letting Go of Your Stops, and I just wanted to make sure it didn't get buried in your inbox.
+
+Because right now...this topic matters.
+
+We're living in a time when everything costs more and stress around money is at an all-time high. And...it looks like inflation is staying stuck and interest rates are going up!
+
+But here's what I know to be true after years of working with students on this:
+
+The economy is not what's blocking your money flow. Your hidden stops are.
+
+And most people don't even know they have them, or if they do...they don't know how to identify them and let them go.
+
+That's exactly what we'll work through together on Thursday, November 19, from 5:30 to 7pm PST, live and free!
+
+FREE LIVE MASTERCLASS
+Opening the Flow of Money: Letting Go of Your Stops
+Thursday, November 19, 5:30 to 7:00 pm PST
+Live on Zoom, 90 minutes, free
+
+Register here:
+https://lisakalmin.com/masterclass/
+
+Spots on Zoom are limited, and they are filling up.
+
+This 90 minutes is a game changer...I promise.
+
+If you've attended before, come back. Every time I teach this class, new layers surface. Even for me.
+
+Let's open the flow together.
+
+With love,
+Lisa
+
+P.S. Questions? Just reply or reach out at support@lisakalmin.com. I'd love to hear from you.

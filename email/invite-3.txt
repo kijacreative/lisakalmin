@@ -1,0 +1,44 @@
+Send: Monday, November 16, 5:30 am PT
+Subject: Are you prepared?
+Preview text: Rates, rising costs, and the one thing you can control. Free class this Thursday.
+
+------------------------------------------------------------
+
+{{ subscriber.first_name | default: "Friend" }},
+
+I was just listening to a pretty reputable news source that said interest rates are going up .25 to .50% next month.
+
+UGH. I don't know if that will happen, and even if it does, it's outside of my control. Probably yours too.
+
+So what do we prepare for? Chaos, uncertainty, higher costs...probably all three!
+
+But HOW do you prepare, or set yourself up?
+
+That is where your money and financial mindset come into play!
+
+There is enough money in the world...OK, but how do you make sure money flows to you?
+
+By opening the flow of money.
+
+Come to my FREE MONEY MASTERCLASS, Opening the Flow of Money...Letting Go of Your Stops, this Thursday, November 19, at 5:30pm PST. I will support you in opening the flow right away, and show you how to be OK even in the most chaotic money circumstances!
+
+FREE LIVE MASTERCLASS, THIS THURSDAY
+Opening the Flow of Money: Letting Go of Your Stops
+Thursday, November 19, 5:30 to 7:00 pm PST
+Live on Zoom, 90 minutes, free
+
+Click here to register:
+https://lisakalmin.com/masterclass/
+
+These 90 minutes are a mind-blowing game changer. Be prepared, at least with the things you can control.
+
+Please reply if you have any questions, and feel free to share this!
+
+See you soon!
+Lisa
+
+Lisa Kalmin
+Transformational Mindset Wizard
+Author of "The Problem Is How You See the Problem"
+
+P.S. The masterclass is live, with my coaching...and if you must miss it, register anyway and I'll send you the recording!
