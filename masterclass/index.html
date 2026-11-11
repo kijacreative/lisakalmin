@@ -261,6 +261,7 @@ h1,h2,h3{margin:0;text-wrap:balance}
 </div>
 </div>
 <div class="kit"><script async data-uid="1b66603417" src="https://lisakalmin.kit.com/1b66603417/index.js"></script></div>
+<p class="err" id="regErr" role="alert" hidden></p>
 <p class="fine">Free. 90 minutes. Your Zoom link arrives by email.</p>
 </div>
 
@@ -435,7 +436,7 @@ h1,h2,h3{margin:0;text-wrap:balance}
 
 <div class="mbar" id="mbar"><a class="btn" href="#register" data-to-form tabindex="-1">Save my free seat <span class="ar" aria-hidden="true">→</span></a></div>
 
-<script src="event.js?v=20261109"></script>
+<script src="event.js?v=20261111"></script>
 <script>
 (function () {
   var E = window.EVENT, form = document.getElementById('register');
@@ -474,11 +475,37 @@ h1,h2,h3{margin:0;text-wrap:balance}
     var fn = f.querySelector('[name="fields[first_name]"]'), em = f.querySelector('[name="email_address"]');
     if (fn) { fn.setAttribute('aria-label', 'First name'); fn.setAttribute('autocomplete', 'given-name'); fn.placeholder = 'First name'; }
     if (em) { em.setAttribute('aria-label', 'Email'); em.setAttribute('autocomplete', 'email'); em.setAttribute('inputmode', 'email'); em.type = 'email'; em.placeholder = 'Email'; }
-    f.addEventListener('submit', function () {
-      try { sessionStorage.setItem('mc_reg', JSON.stringify({ first_name: fn ? fn.value.trim() : '', email_address: em ? em.value.trim() : '' })); } catch (x) {}
-    }, true);
+    f.setAttribute('data-ours', '1');
     return true;
   }
+  // registration: we post to Kit ourselves, then send people to our own thank-you page
+  // (Kit's own handler would follow the redirect set in Kit). If the request can't be made,
+  // the form falls back to a normal post and Kit's redirect.
+  var err = document.getElementById('regErr');
+  document.addEventListener('submit', function (e) {
+    var f = e.target;
+    if (!f.matches || !f.matches('#register .formkit-form[data-ours]')) return;
+    e.preventDefault(); e.stopImmediatePropagation();
+    var fn = f.querySelector('[name="fields[first_name]"]'), em = f.querySelector('[name="email_address"]');
+    var name = fn ? fn.value.trim() : '', email = em ? em.value.trim() : '';
+    var say = function (msg, el) { err.textContent = msg; err.hidden = false; if (el) { el.setAttribute('aria-invalid', 'true'); el.focus(); } };
+    if (fn && !name) return say('Please add your first name.', fn);
+    if (!/^\S+@\S+\.\S+$/.test(email)) return say('Please check your email address.', em);
+    err.hidden = true;
+    var btn = f.querySelector('.formkit-submit'), label = btn && btn.querySelector('span');
+    if (btn) { btn.disabled = true; if (label) label.textContent = 'Saving your seat…'; }
+    var reset = function () { if (btn) { btn.disabled = false; if (label) label.textContent = 'Save my free seat →'; } };
+    try { sessionStorage.setItem('mc_reg', JSON.stringify({ first_name: name, email_address: email })); } catch (x) {}
+    fetch(f.action, { method: 'POST', body: new FormData(f), headers: { Accept: 'application/json' } })
+      .then(function (r) { return r.json(); })
+      .then(function (j) {
+        if (j && j.status === 'success') { location.href = 'thank-you/'; return; }
+        var m = j && j.errors && j.errors.messages && j.errors.messages[0];
+        reset(); say(m ? m + '.' : 'Something went wrong. Please try again.', em);
+      })
+      .catch(function () { f.removeAttribute('data-ours'); HTMLFormElement.prototype.submit.call(f); });
+  }, true);
+
   if (!brandKit()) {
     var mo = new MutationObserver(function () { if (brandKit()) mo.disconnect(); });
     mo.observe(form, { childList: true, subtree: true });

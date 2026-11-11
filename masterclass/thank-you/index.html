@@ -81,6 +81,21 @@ h1,h2,h3{margin:0;text-wrap:balance}
 .video p{position:absolute;left:22px;bottom:18px;z-index:1;color:var(--oat);font-size:16px}
 .video p b{display:block;font-size:19px}
 
+.w-wide{max-width:1120px}
+.offer{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(24px,4vw,48px);align-items:center;padding:clamp(20px,3vw,32px);border-radius:24px;background:var(--paper);border:1px solid var(--rule);box-shadow:0 30px 60px -40px rgba(47,59,51,.45)}
+.offer img{width:100%;aspect-ratio:1440/1272;object-fit:cover;border-radius:16px}
+.offer-copy{display:flex;flex-direction:column;gap:16px}
+.offer-copy .lead{font-size:18px;color:var(--mid)}
+.offer-copy .lead b{color:var(--forest)}
+.price{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 14px}
+.price .now{font-family:var(--display);font-weight:800;font-size:48px;line-height:1;letter-spacing:-.02em;color:var(--forest)}
+.price .was{font-size:22px;color:var(--mid);text-decoration:line-through;text-decoration-color:var(--rose);text-decoration-thickness:2px}
+.price .tag{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--oat);background:var(--rose);padding:5px 12px;border-radius:999px}
+.incl{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;font-size:17px;color:var(--forest-d)}
+.incl li{display:flex;gap:10px;align-items:flex-start}
+.incl svg{flex:none;margin-top:5px}
+.how{padding:14px 16px;border-radius:14px;background:var(--blush);font-size:16px;color:var(--forest)}
+.more{align-self:flex-start;font-weight:700;color:var(--rose);text-underline-offset:5px}
 .deeper{display:grid;grid-template-columns:120px minmax(0,1fr);gap:24px;align-items:center;padding:clamp(22px,3vw,32px);border-radius:22px;background:var(--blush)}
 .deeper img{width:120px;height:120px;border-radius:50%;object-fit:cover}
 .deeper p{font-size:19px;color:var(--forest)}
@@ -88,7 +103,7 @@ h1,h2,h3{margin:0;text-wrap:balance}
 .foot{padding:28px 0 40px;text-align:center;font-size:14px;color:var(--mid)}
 
 @media (max-width:720px){
-  .steps,.opts{grid-template-columns:minmax(0,1fr)}
+  .steps,.opts,.offer{grid-template-columns:minmax(0,1fr)}
   .deeper{grid-template-columns:minmax(0,1fr);text-align:center;justify-items:center}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
@@ -117,6 +132,28 @@ h1,h2,h3{margin:0;text-wrap:balance}
 <a class="btn line" id="ics" href="#" download="lisa-kalmin-masterclass.ics">Add to Apple / Outlook</a>
 </div>
 <p class="cal-hint" id="calHint" hidden>Calendar buttons switch on once the class date is set.</p>
+</div>
+</div>
+</section>
+
+<section class="sec" style="padding-top:0" aria-labelledby="h-offer">
+<div class="w w-wide">
+<div class="offer">
+<img src="../../kit/money-wealth-miracles-product.jpg" alt="Money, Wealth &amp; Miracles, a live group course with Lisa Kalmin" width="1440" height="1272" loading="lazy">
+<div class="offer-copy">
+<p class="eyebrow">Your attendee bonus</p>
+<h2 class="h2" id="h-offer">Come live on November 19 and save $200 on Money, Wealth &amp; Miracles.</h2>
+<p class="lead">The masterclass opens the door. <b>Money, Wealth &amp; Miracles</b> is where you walk through it: six live sessions where you rewrite the money story you grew up with, with me and a small group.</p>
+<div class="price"><span class="now" data-attendee-price>$597</span><span class="was" data-full-price>$797</span><span class="tag">For live attendees</span></div>
+<ul class="incl">
+<li><svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="#A04E5C" stroke-width="2.2" aria-hidden="true"><path d="M3 8.5l3 3 7-8"/></svg>Six live 90-minute sessions on Zoom</li>
+<li><svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="#A04E5C" stroke-width="2.2" aria-hidden="true"><path d="M3 8.5l3 3 7-8"/></svg>Live coaching and Q&amp;A with me in every session</li>
+<li><svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="#A04E5C" stroke-width="2.2" aria-hidden="true"><path d="M3 8.5l3 3 7-8"/></svg>Weekly breakthrough assignments</li>
+<li><svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="#A04E5C" stroke-width="2.2" aria-hidden="true"><path d="M3 8.5l3 3 7-8"/></svg>A small group of 15 to 30, plus a private community</li>
+</ul>
+<p class="how"><b>How to get it:</b> I’ll share the attendee price live, at the end of class on Thursday, November 19. It’s my thank-you for showing up, so it’s only for people who are there live.</p>
+<a class="more" href="../../course/">See what’s inside the program →</a>
+</div>
 </div>
 </div>
 </section>
@@ -160,12 +197,12 @@ h1,h2,h3{margin:0;text-wrap:balance}
 </div>
 </section>
 
-<section class="sec" style="padding-top:0" aria-label="Going deeper">
+<section class="sec" style="padding-top:0" aria-label="See you in class">
 <div class="w">
 <div class="deeper">
 <img src="../../img/avatar.jpg" alt="Lisa Kalmin" width="240" height="240" loading="lazy">
 <div>
-<p><b>Want to go deeper?</b> At the end of class, I’ll share how you can keep going with me.</p>
+<p><b>See you on the 19th.</b> Come as you are, bring your questions, and stay to the end for your attendee price.</p>
 <p class="sig">To your abundant flow! Lisa</p>
 </div>
 </div>
@@ -175,10 +212,15 @@ h1,h2,h3{margin:0;text-wrap:balance}
 
 <footer class="foot">© Lisa Kalmin</footer>
 
-<script src="../event.js?v=20261109"></script>
+<script src="../event.js?v=20261111"></script>
 <script>
 (function () {
   var E = window.EVENT; E.fill();
+  var money = function (n) { return '$' + Number(n).toLocaleString('en-US'); };
+  if (E.offer) {
+    document.querySelectorAll('[data-attendee-price]').forEach(function (el) { el.textContent = money(E.offer.attendeePrice); });
+    document.querySelectorAll('[data-full-price]').forEach(function (el) { el.textContent = money(E.offer.fullPrice); });
+  }
   var reg = null; try { reg = JSON.parse(sessionStorage.getItem('mc_reg') || 'null'); } catch (x) {}
   // Kit can also pass the name in the redirect, e.g. ?first_name=Ana
   var qn = new URLSearchParams(location.search).get('first_name');
