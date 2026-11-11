@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Underearning Financial Scorecard | Lisa Kalmin</title>
+<meta name="description" content="Are you a high achiever under-earning without realizing it? Take Lisa Kalmin’s free 5-minute Underearning Financial Scorecard and discover your Money Mindset Pattern.">
+<meta name="theme-color" content="#141B16">
+<meta property="og:title" content="Underearning Financial Scorecard | Lisa Kalmin">
+<meta property="og:description" content="Are you a high achiever under-earning without realizing it? Take Lisa Kalmin’s free 5-minute Underearning Financial Scorecard and discover your Money Mindset Pattern.">
+<meta property="og:image" content="/img/og.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" href="/img/lotus.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css?v=1">
+<style>
+.quiz{min-height:calc(100vh - 70px);min-height:calc(100svh - 70px)}
+.quiz .w{max-width:880px}
+.qcard{display:flex;flex-direction:column;gap:28px}
+.progress{height:6px;border-radius:99px;background:rgba(227,181,188,.2);overflow:hidden}
+.progress i{display:block;height:100%;width:0;background:var(--rose-m);transition:width .3s}
+.qtop{display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:15px;color:var(--soft)}
+.qtop b{color:var(--oat)}
+.statement{font-family:var(--display);font-weight:800;letter-spacing:-.02em;font-size:clamp(28px,4vw,46px);line-height:1.12;min-height:3.4em}
+.scale{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:8px}
+.scale button{aspect-ratio:1/1;min-height:44px;border-radius:10px;border:1.5px solid rgba(227,181,188,.45);background:transparent;color:var(--oat);font:700 clamp(17px,2.2vw,22px) var(--body);cursor:pointer;transition:background .15s,border-color .15s,transform .15s}
+.scale button:hover{background:rgba(227,181,188,.14);border-color:var(--rose-l)}
+.scale button[aria-pressed=true]{background:var(--rose);border-color:var(--rose);transform:translateY(-2px)}
+.ends{display:flex;justify-content:space-between;font-size:14px;color:var(--soft);margin-top:-16px}
+.qnav{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.qnav button.back{background:none;border:0;color:var(--soft);font:500 16px var(--body);cursor:pointer;padding:8px 0;text-decoration:underline;text-underline-offset:5px}
+.qnav button.back:disabled{visibility:hidden}
+.hint{font-size:14px;color:var(--soft)}
+.howto{background:var(--forest-l);border-radius:16px;padding:clamp(22px,3vw,32px);display:flex;flex-direction:column;gap:12px;color:var(--soft)}
+.howto b{color:var(--oat)}
+.gate form{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:640px}
+.gate label{display:flex;flex-direction:column;gap:8px;font-size:14px;color:var(--rose-l)}
+.gate input{padding:15px 16px;border-radius:6px;border:1.5px solid rgba(227,181,188,.5);background:var(--oat);color:var(--forest-d);font:400 18px var(--body)}
+.gate .full{grid-column:1/-1}
+.gate .err{color:#FFD2D8;font-size:16px}
+.total{font-family:var(--display);font-weight:800;font-size:clamp(64px,10vw,120px);line-height:1;letter-spacing:-.03em;color:var(--oat)}
+.total small{font-size:.28em;color:var(--soft);letter-spacing:0;font-family:var(--body);font-weight:500}
+.patscale{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.patscale li{padding:14px 12px;border-radius:10px;border:1px solid rgba(227,181,188,.25);display:flex;flex-direction:column;gap:2px;font-size:14px;color:var(--soft)}
+.patscale li b{color:var(--oat);font-size:15px}
+.patscale li.on{background:var(--rose);border-color:var(--rose);color:var(--oat)}
+.patscale-ends{display:flex;justify-content:space-between;font-size:13px;letter-spacing:.2em;text-transform:uppercase;color:var(--rose-l);margin-top:-4px}
+.pattern{display:flex;flex-direction:column;gap:22px}
+.pattern .ticks li{border-color:rgba(227,181,188,.22)}
+@media (max-width:640px){
+  .scale{grid-template-columns:repeat(5,minmax(0,1fr))}
+  .gate form{grid-template-columns:1fr}
+  .patscale{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (prefers-reduced-motion:reduce){.progress i,.scale button{transition:none}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+<div class="w">
+<a class="brand" href="/" aria-label="Lisa Kalmin, Breakthrough Coach, home"><span class="logo" role="img" aria-label="Lisa Kalmin, Breakthrough Coach"></span></a>
+<nav class="menu" aria-label="Main">
+<a href="/course/">Course</a>
+<a href="/coaching/">Coaching</a>
+<a href="/speaking/">Speaking</a>
+<a href="/#book">Books</a>
+<a href="/blog/">Blog &amp; Podcasts</a>
+<a href="/about/">About</a>
+<a href="/contact/">Contact</a>
+</nav>
+<button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="sheet" aria-label="Open menu"><span></span><span></span><span></span></button>
+</div>
+</header>
+<nav class="sheet" id="sheet" aria-label="Main" hidden>
+<a href="/course/">Course</a>
+<a href="/coaching/">Coaching</a>
+<a href="/speaking/">Speaking</a>
+<a href="/#book">Books</a>
+<a href="/blog/">Blog &amp; Podcasts</a>
+<a href="/about/">About</a>
+<a href="/contact/">Contact</a>
+</nav>
+
+<main id="main">
+<section class="quiz dark sec tight">
+<div class="w">
+
+<div id="v-intro" class="qcard">
+<p class="kicker">Free money mindset quiz · 5 minutes</p>
+<h1 class="h1">Are you a high achiever under-earning without realizing it?</h1>
+<hr class="rule">
+<p class="lead muted">The Underearning Financial Scorecard uncovers the patterns keeping you from building wealth, and gives you your Money Mindset Pattern to start your transformation.</p>
+<div class="howto">
+<p><b>Rate yourself from 1 to 10 on each of 30 statements.</b> 1 means you completely disagree, 10 means you completely agree.</p>
+<p>Be honest with yourself. If you think “yeah, I kind of think that,” score it at least a 5. Go with your first response.</p>
+</div>
+<div class="btns"><button class="btn" type="button" id="start">Start the scorecard <span class="ar" aria-hidden="true">→</span></button></div>
+</div>
+
+<div id="v-q" class="qcard" hidden>
+<div class="qtop"><span>Statement <b id="qn">1</b> of 30</span><span>Running total: <b id="running">0</b></span></div>
+<div class="progress" aria-hidden="true"><i id="bar"></i></div>
+<p class="statement" id="qs" aria-live="polite"></p>
+<div class="scale" id="scale" role="group" aria-label="Rate from 1, completely disagree, to 10, completely agree"></div>
+<div class="ends" aria-hidden="true"><span>1 · Completely disagree</span><span>Completely agree · 10</span></div>
+<div class="qnav"><button type="button" class="back" id="back">← Back</button><span class="hint">Tip: type 1 to 9, or 0 for 10</span></div>
+</div>
+
+<div id="v-gate" class="qcard gate" hidden>
+<p class="kicker">All 30 rated</p>
+<h2 class="h1" style="font-size:clamp(36px,5vw,60px)">Where should we send your result?</h2>
+<p class="lead muted">Enter your name and email to see your Money Mindset Pattern now. Lisa will also send you invitations to free masterclasses and an occasional note.</p>
+<form id="gateForm" novalidate>
+<label>First name<input id="qf" name="first_name" autocomplete="given-name" required></label>
+<label>Last name<input id="ql" name="last_name" autocomplete="family-name"></label>
+<label class="full">Email<input id="qe" name="email_address" type="email" autocomplete="email" required placeholder="you@example.com"></label>
+<p class="err full" id="gateErr" role="alert" hidden></p>
+<div class="btns full"><button class="btn" type="submit">See my pattern <span class="ar" aria-hidden="true">→</span></button><button type="button" class="btn line" id="gateBack">Review my answers</button></div>
+</form>
+</div>
+
+<div id="v-result" class="qcard" hidden>
+<h2 class="kicker" id="rname">Here is your result.</h2>
+<p class="total"><span id="rt">0</span> <small>out of 300</small></p>
+<ol class="patscale" aria-label="Money Mindset Patterns, from proactive to passive"><li data-pattern="manifester"><b>Money Manifester</b><span>30 to 99</span></li><li data-pattern="manager"><b>Money Manager</b><span>100 to 169</span></li><li data-pattern="clueless"><b>Money Clueless</b><span>170 to 234</span></li><li data-pattern="victim"><b>Money Victim</b><span>235 to 300</span></li></ol>
+<div class="patscale-ends" aria-hidden="true"><span>Proactive</span><span>Passive</span></div>
+<div class="pattern" data-pattern="manifester" hidden>
+<p class="kicker">Your Money Mindset Pattern · 30 to 99</p>
+<h2 class="h1" style="font-size:clamp(40px,6vw,72px)">Money Manifester</h2>
+<p class="lead">You are proactive in the face of your circumstances.</p>
+<ul class="ticks"><li>You see opportunity even in challenges.</li><li>You believe in your value.</li><li>You attract wealth and opportunities.</li><li>You create value for other people.</li></ul>
+<p class="lead" style="color:var(--rose-l)">You know there is another level for you, but don’t know how to access it!</p>
+</div>
+<div class="pattern" data-pattern="manager" hidden>
+<p class="kicker">Your Money Mindset Pattern · 100 to 169</p>
+<h2 class="h1" style="font-size:clamp(40px,6vw,72px)">Money Manager</h2>
+<p class="lead">You sometimes overcome your obstacles and sometimes don’t.</p>
+<ul class="ticks"><li>You worry or stress about money even when you have it.</li><li>You are looking at how to “get” more money rather than seeing the flow of money as energetic.</li><li>You micromanage your finances, or the people who handle your finances.</li></ul>
+<p class="lead" style="color:var(--rose-l)">You desire to feel confident and joyful about your money and finances!</p>
+</div>
+<div class="pattern" data-pattern="clueless" hidden>
+<p class="kicker">Your Money Mindset Pattern · 170 to 234</p>
+<h2 class="h1" style="font-size:clamp(40px,6vw,72px)">Money Clueless</h2>
+<p class="lead">You work hard but feel disconnected from money.</p>
+<ul class="ticks"><li>You find yourself disappointed in your finances at the end of the month.</li><li>You feel ill-equipped to handle your finances.</li><li>You are too busy to care most of the time.</li></ul>
+<p class="lead" style="color:var(--rose-l)">You know you are in the way of your financial security and want to change!</p>
+</div>
+<div class="pattern" data-pattern="victim" hidden>
+<p class="kicker">Your Money Mindset Pattern · 235 to 300</p>
+<h2 class="h1" style="font-size:clamp(40px,6vw,72px)">Money Victim</h2>
+<p class="lead">You feel like the system is rigged against you.</p>
+<ul class="ticks"><li>Every time you try something new it fails.</li><li>You feel helpless and powerless in regard to accumulating wealth.</li><li>You feel trapped in a financial loop.</li></ul>
+<p class="lead" style="color:var(--rose-l)">You are looking for a way out of your scarcity and frustration!</p>
+</div>
+<div class="howto">
+<p><b>Ready to break free of your pattern?</b> Money Wealth and Miracles is Lisa’s live group course for rewriting the money story you grew up with. Or work one to one with Lisa in Breakthrough Coaching.</p>
+<div class="btns"><a class="btn" href="/course/">See the course <span class="ar" aria-hidden="true">→</span></a><a class="btn line" href="/coaching/">Breakthrough Coaching</a></div>
+</div>
+<p><button type="button" class="back lnk" id="again" style="background:none;border:0;font:inherit;cursor:pointer;color:var(--soft)">Take the scorecard again</button></p>
+</div>
+
+</div>
+</section>
+<script type="application/json" id="statements">["Money is the root of all evil.", "Most rich people probably did something disingenuous or dishonest to get their money.", "Getting rich takes too much work and struggle.", "To be rich, you have to use people and take advantage of them.", "If I get rich, everyone will want something from me.", "I’m not very good in the area of money and finances.", "You can’t strive for wealth and be happy and fulfilled at the same time.", "It’s not right to make a lot more money than my parents.", "It takes money to make money.", "Striving for wealth can cause stress and health problems.", "I’m not smart or intelligent enough to get rich.", "I’m too young to get rich.", "I’m too old to get rich.", "I don’t like selling or promoting.", "I don’t enjoy managing money.", "Money corrupts artistic and creative endeavors.", "It’s not right for me to be rich while others have so little or nothing.", "Rich people aren’t generally happy.", "If success comes easy, it’s not as worthwhile.", "I have some resentment toward extremely wealthy people.", "If you’re rich in love, health, and happiness, you don’t need money.", "Rich people are more disconnected and less grateful than poor people.", "Once I have a lot of money, I’ll finally feel secure.", "God will make me rich, poor or middle-class.", "I don’t feel like I deserve to be rich.", "Having excess money means you’re greedy and/or selfish.", "If I really strive for wealth and don’t succeed, I’ll feel like a failure.", "People should only have as much money as they need to live comfortably.", "I don’t enjoy taking on responsibility.", "If I ask for help, people will think I’m weak."]</script>
+
+</main>
+
+<footer class="foot">
+<div class="w">
+<span class="ls" role="img" aria-label="Lisa Kalmin, Breakthrough Coach"></span>
+<nav aria-label="Footer">
+<a href="/course/">Course</a>
+<a href="/coaching/">Coaching</a>
+<a href="/speaking/">Speaking</a>
+<a href="/#book">Books</a>
+<a href="/blog/">Blog &amp; Podcasts</a>
+<a href="/about/">About</a>
+<a href="/contact/">Contact</a>
+<a href="/the-skinny/">The Skinny on Transformation</a>
+<a href="/quiz/">Money mindset quiz</a>
+<a href="/masterclass/">Free masterclass</a>
+</nav>
+<div class="contact">
+<a href="mailto:support@lisakalmin.com">support@lisakalmin.com</a>
+<a href="tel:+1-949-283-7463">(949) 283-7463</a>
+<p><a href="https://www.facebook.com/lisa.kalmin/" rel="noopener">Facebook</a> · <a href="https://www.instagram.com/lisakalmin/" rel="noopener">Instagram</a> · <a href="https://www.linkedin.com/in/lisa-kalmin/" rel="noopener">LinkedIn</a> · <a href="https://twitter.com/LisaKalmin" rel="noopener">X (Twitter)</a></p>
+</div>
+<p class="fine">© Lisa Kalmin. WorldWorks Trainings, Inspire Coaching, Inspire Business Success.</p>
+</div>
+</footer>
+<script src="/assets/site.js?v=1" defer></script>
+<script>
+(function () {
+  // The Underearning Financial Scorecard. 30 statements rated 1 to 10, total 30 to 300.
+  // Name and email go to Kit form 10176902 (uid ed7afc7f69), then the pattern shows on this page.
+  var KIT = 'https://app.kit.com/forms/10176902/subscriptions';
+  var PATTERNS = [['manifester', 99], ['manager', 169], ['clueless', 234], ['victim', 300]];
+  var Q = JSON.parse(document.getElementById('statements').textContent);
+  var $ = function (s) { return document.querySelector(s); };
+  var views = { intro: $('#v-intro'), q: $('#v-q'), gate: $('#v-gate'), result: $('#v-result') };
+  var answers = [], i = 0, scale = $('#scale');
+  function show(v) {
+    Object.keys(views).forEach(function (k) { views[k].hidden = k !== v; });
+    scrollTo(0, 0);
+    var h = views[v].querySelector('h1,h2,.statement'); if (h) { h.setAttribute('tabindex', '-1'); h.focus({ preventScroll: true }); }
+  }
+  for (var n = 1; n <= 10; n++) {
+    var b = document.createElement('button'); b.type = 'button'; b.textContent = n; b.setAttribute('aria-pressed', 'false');
+    b.setAttribute('aria-label', n + (n === 1 ? ', completely disagree' : n === 10 ? ', completely agree' : ''));
+    b.addEventListener('click', (function (v) { return function () { pick(v); }; })(n));
+    scale.appendChild(b);
+  }
+  function render() {
+    $('#qn').textContent = i + 1; $('#qs').textContent = Q[i];
+    $('#bar').style.width = (i / Q.length * 100) + '%';
+    Array.prototype.forEach.call(scale.children, function (b, k) { b.setAttribute('aria-pressed', String(answers[i] === k + 1)); });
+    $('#back').disabled = i === 0;
+    $('#running').textContent = answers.reduce(function (a, b) { return a + (b || 0); }, 0);
+  }
+  var busy = false;
+  function pick(v) {
+    if (busy) return;
+    answers[i] = v; render(); busy = true;
+    setTimeout(function () {
+      busy = false;
+      if (i < Q.length - 1) { i++; render(); $('#qs').focus({ preventScroll: true }); }
+      else { $('#bar').style.width = '100%'; show('gate'); }
+    }, 220);
+  }
+  $('#start').addEventListener('click', function () { i = 0; render(); show('q'); });
+  $('#back').addEventListener('click', function () { if (i > 0) { i--; render(); } });
+  $('#gateBack').addEventListener('click', function () { i = Q.length - 1; render(); show('q'); });
+  addEventListener('keydown', function (e) {
+    if (views.q.hidden || e.metaKey || e.ctrlKey || e.altKey || /input|textarea/i.test(e.target.tagName)) return;
+    if (/^[0-9]$/.test(e.key)) pick(e.key === '0' ? 10 : +e.key);
+    else if (e.key === 'Backspace' && i > 0) { i--; render(); }
+  });
+  // an email typed into the homepage community form comes along (sessionStorage, never the URL)
+  try { var pre = sessionStorage.getItem('quiz_email'); if (pre) $('#qe').value = pre; } catch (x) {}
+
+  function patternFor(total) { for (var k = 0; k < PATTERNS.length; k++) if (total <= PATTERNS[k][1]) return PATTERNS[k][0]; return 'victim'; }
+  function result(total, first) {
+    var p = patternFor(total);
+    $('#rt').textContent = total;
+    $('#rname').textContent = first ? first + ', here is your result.' : 'Here is your result.';
+    document.querySelectorAll('.pattern').forEach(function (el) { el.hidden = el.getAttribute('data-pattern') !== p; });
+    document.querySelectorAll('.patscale li').forEach(function (el) { el.classList.toggle('on', el.getAttribute('data-pattern') === p); });
+    show('result');
+  }
+  var form = $('#gateForm'), err = $('#gateErr'), btn = form.querySelector('button[type=submit]');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    err.hidden = true;
+    if (!form.checkValidity()) { form.reportValidity(); return; }
+    var total = answers.reduce(function (a, b) { return a + b; }, 0), p = patternFor(total);
+    var first = $('#qf').value.trim(), last = $('#ql').value.trim();
+    var fd = new FormData();
+    fd.append('email_address', $('#qe').value.trim());
+    fd.append('first_name', first);
+    fd.append('fields[last_name]', last);
+    fd.append('fields[money_mindset_score]', String(total));
+    fd.append('fields[money_mindset_pattern]', p);
+    btn.disabled = true; btn.firstChild.textContent = 'Scoring… ';
+    fetch(KIT, { method: 'POST', body: fd, headers: { Accept: 'application/json' } })
+      .then(function (r) { return r.json().catch(function () { return { status: r.ok ? 'success' : 'failed' }; }); })
+      .then(function (j) {
+        if (j && j.status === 'failed') {
+          var m = j.errors && j.errors.messages; err.textContent = (m && m.join(' ')) || 'Please check your email address and try again.'; err.hidden = false;
+          btn.disabled = false; btn.firstChild.textContent = 'See my pattern '; return;
+        }
+        try { sessionStorage.removeItem('quiz_email'); } catch (x) {}
+        result(total, first);
+      })
+      .catch(function () { result(total, first); }); // network trouble should not cost them their result
+  });
+  $('#again').addEventListener('click', function () { answers = []; i = 0; btn.disabled = false; btn.firstChild.textContent = 'See my pattern '; show('intro'); });
+})();
+</script>
+</body>
+</html>

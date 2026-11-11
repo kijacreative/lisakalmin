@@ -1,0 +1,30 @@
+Subject: Your free chapter is here
+Preview text: Chapter one of The Problem Is How You See The Problem, ready when you are.
+Send: immediately, when someone requests the chapter (Kit form 10176929).
+
+------------------------------------------------------------
+
+Hi {{ subscriber.first_name | default: "there" }},
+
+Thank you for asking for the first chapter of my book, The Problem Is How You See The Problem: The Secret to Transforming Your Life. It's ready for you whenever you are.
+
+FREE SAMPLE CHAPTER
+Get comfortable, read it with your full presence, and notice what shifts.
+
+Read chapter one: https://lisakalmin.vercel.app/book/chapter-1/
+
+A THOUGHT BEFORE YOU START
+
+Most of us try to fix the problem in front of us. This book is about something underneath that: the way we see the problem in the first place. When that shifts, the same situation can look completely different, and new actions become possible.
+
+As you read, keep a journal nearby. Write down the problems in your life that come to mind. By the end of the chapter, you may already see one of them differently.
+
+GET THE WHOLE BOOK
+If chapter one opens something up, the rest of the book will take you further. It's on Amazon in paperback and Kindle.
+
+Buy it on Amazon: https://www.amazon.com/dp/1689229837
+
+To your abundance!
+Lisa
+
+P.S. The book is the foundation of my live group course, Money Wealth and Miracles. If you'd like to put it into practice with me, see the course here: https://lisakalmin.vercel.app/course/

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="x-apple-disable-message-reformatting">
+<meta name="color-scheme" content="light">
+<meta name="supported-color-schemes" content="light">
+<title>Your Money Mindset Pattern</title>
+<!--
+  Quiz result: sent the moment someone submits the Underearning Financial Scorecard
+  (first email in the Kit sequence or automation triggered by form 10176902, uid ed7afc7f69).
+  Subject: Your Money Mindset Pattern is here
+  Preview text: Your result from the Underearning Financial Scorecard, plus your next step.
+  Needs two Kit custom fields, which the quiz page fills in:
+    money_mindset_score    (30 to 300)
+    money_mindset_pattern  (manifester | manager | clueless | victim)
+  Without them, the email falls back to a link to the quiz.
+-->
+<!--[if mso]><noscript><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml></noscript><![endif]-->
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&family=Plus+Jakarta+Sans:wght@800&display=swap" rel="stylesheet">
+<style>
+  body{margin:0;padding:0;width:100%!important;background:#F8F4EC}
+  table{border-collapse:collapse}
+  img{border:0;outline:none;text-decoration:none;-ms-interpolation-mode:bicubic}
+  a{color:#A04E5C}
+  @media (max-width:620px){
+    .container{width:100%!important}
+    .px{padding-left:22px!important;padding-right:22px!important}
+    .card{padding:24px 20px!important}
+    .h1{font-size:27px!important;line-height:33px!important}
+    .stack{display:block!important;width:100%!important;padding:0 0 16px!important}
+  }
+</style>
+</head>
+<body style="margin:0;padding:0;background:#F8F4EC;">
+<div style="display:none;max-height:0;overflow:hidden;mso-hide:all;font-size:1px;line-height:1px;color:#F8F4EC;opacity:0;">Your result from the Underearning Financial Scorecard, plus your next step.&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;&#8199;&#65279;&#847;</div>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#F8F4EC" style="background:#F8F4EC;">
+<tr><td align="center" style="padding:24px 10px;">
+<table role="presentation" class="container" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px;max-width:600px;">
+
+<tr><td class="px" style="padding:8px 40px 20px;">
+<img src="https://lisakalmin.vercel.app/email/logo-email.png" width="180" height="30" alt="Lisa Kalmin" style="display:block;width:180px;height:auto;font-family:'Jost',Helvetica,Arial,sans-serif;font-size:22px;font-weight:700;letter-spacing:1px;color:#2F3B33;">
+</td></tr>
+
+<tr><td bgcolor="#FDFBF7" class="px" style="background:#FDFBF7;padding:36px 40px 8px;font-family:'Jost',Helvetica,Arial,sans-serif;font-size:18px;line-height:28px;color:#232C26;border-radius:18px 18px 0 0;">
+<p style="margin:0 0 10px;font-family:'Plus Jakarta Sans',Helvetica,Arial,sans-serif;font-weight:800;font-size:30px;line-height:36px;letter-spacing:-0.5px;color:#2F3B33;" class="h1">Your Money Mindset Pattern</p>
+<p style="margin:0 0 18px;font-size:18px;line-height:28px;color:#232C26;">Hi {{ subscriber.first_name | default: "there" }},</p>
+<p style="margin:0 0 24px;font-size:18px;line-height:28px;color:#232C26;">Thank you for taking the Underearning Financial Scorecard. It takes courage to look honestly at what you believe about money. Here is your result, so you can come back to it anytime.</p>
+</td></tr>
+<tr><td bgcolor="#FDFBF7" class="px" style="background:#FDFBF7;padding:0 40px 28px;font-family:'Jost',Helvetica,Arial,sans-serif;font-size:18px;line-height:28px;color:#232C26;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr><td class="card" bgcolor="#F1DCDF" style="background:#F1DCDF;border-radius:16px;padding:28px 30px;font-family:'Jost',Helvetica,Arial,sans-serif;color:#2F3B33;">
+{% if subscriber.money_mindset_score != blank %}<p style="margin:0 0 14px;font-size:16px;line-height:24px;color:#56635B;">Your score: <strong>{{ subscriber.money_mindset_score }}</strong> out of 300</p>{% endif %}
+{% if subscriber.money_mindset_pattern == "manifester" %}
+<p style="margin:0 0 10px;font-size:12px;line-height:16px;letter-spacing:3px;text-transform:uppercase;font-weight:500;color:#A04E5C;">Your Money Mindset Pattern · 30 to 99</p>
+<p style="margin:0 0 12px;font-family:'Plus Jakarta Sans',Helvetica,Arial,sans-serif;font-weight:800;font-size:28px;line-height:34px;color:#2F3B33;">Money Manifester</p>
+<p style="margin:0 0 0px;font-size:17px;line-height:26px;color:#2F3B33;">You are proactive in the face of your circumstances. You see opportunity even in challenges, you believe in your value, and you attract wealth. You know there is another level for you, but don’t know how to access it.</p>
+{% elsif subscriber.money_mindset_pattern == "manager" %}
+<p style="margin:0 0 10px;font-size:12px;line-height:16px;letter-spacing:3px;text-transform:uppercase;font-weight:500;color:#A04E5C;">Your Money Mindset Pattern · 100 to 169</p>
+<p style="margin:0 0 12px;font-family:'Plus Jakarta Sans',Helvetica,Arial,sans-serif;font-weight:800;font-size:28px;line-height:34px;color:#2F3B33;">Money Manager</p>
+<p style="margin:0 0 0px;font-size:17px;line-height:26px;color:#2F3B33;">You sometimes overcome your obstacles and sometimes don’t. You may worry about money even when you have it, or look at how to “get” more rather than seeing the flow of money as energy. You want to feel confident and joyful about your money.</p>
+{% elsif subscriber.money_mindset_pattern == "clueless" %}
+<p style="margin:0 0 10px;font-size:12px;line-height:16px;letter-spacing:3px;text-transform:uppercase;font-weight:500;color:#A04E5C;">Your Money Mindset Pattern · 170 to 234</p>
+<p style="margin:0 0 12px;font-family:'Plus Jakarta Sans',Helvetica,Arial,sans-serif;font-weight:800;font-size:28px;line-height:34px;color:#2F3B33;">Money Clueless</p>
+<p style="margin:0 0 0px;font-size:17px;line-height:26px;color:#2F3B33;">You work hard but feel disconnected from money, and you are often disappointed in your finances at the end of the month. You know you are in the way of your financial security, and you want to change.</p>
+{% elsif subscriber.money_mindset_pattern == "victim" %}
+<p style="margin:0 0 10px;font-size:12px;line-height:16px;letter-spacing:3px;text-transform:uppercase;font-weight:500;color:#A04E5C;">Your Money Mindset Pattern · 235 to 300</p>
+<p style="margin:0 0 12px;font-family:'Plus Jakarta Sans',Helvetica,Arial,sans-serif;font-weight:800;font-size:28px;line-height:34px;color:#2F3B33;">Money Victim</p>
+<p style="margin:0 0 0px;font-size:17px;line-height:26px;color:#2F3B33;">You feel like the system is rigged against you and that you are stuck in a financial loop. You are looking for a way out of scarcity and frustration, and that is exactly where the shift begins.</p>
+{% else %}
+<p style="margin:0 0 10px;font-size:12px;line-height:16px;letter-spacing:3px;text-transform:uppercase;font-weight:500;color:#A04E5C;">Your Money Mindset Pattern</p>
+<p style="margin:0 0 12px;font-family:'Plus Jakarta Sans',Helvetica,Arial,sans-serif;font-weight:800;font-size:28px;line-height:34px;color:#2F3B33;">Your result is waiting.</p>
+<p style="margin:0 0 0px;font-size:17px;line-height:26px;color:#2F3B33;">If you haven’t finished the scorecard yet, it takes about 5 minutes: <a href="https://lisakalmin.vercel.app/quiz/" style="color:#A04E5C;font-weight:700;">take it here</a>.</p>
+{% endif %}
+</td></tr></table>
+</td></tr>
+<tr><td bgcolor="#FDFBF7" class="px" style="background:#FDFBF7;padding:0 40px 20px;font-family:'Jost',Helvetica,Arial,sans-serif;font-size:18px;line-height:28px;color:#232C26;">
+<p style="margin:0 0 14px;font-family:'Plus Jakarta Sans',Helvetica,Arial,sans-serif;font-weight:800;font-size:22px;line-height:28px;color:#2F3B33;">What your pattern is telling you</p>
+<p style="margin:0 0 18px;font-size:18px;line-height:28px;color:#232C26;">These beliefs were handed to you long before you could choose them. They are not the truth about you, they are a way of seeing. And the problem is how you see the problem: when the way you see money shifts, what you do with it shifts too.</p>
+<p style="margin:0 0 8px;font-size:18px;line-height:28px;color:#232C26;">Many of my clients are high achievers who are under-earning without realizing it. They overwork and undercharge, avoid the money conversation, and feel like an imposter despite years of results. If any of that sounds familiar, you are in the right place.</p>
+</td></tr>
+<tr><td bgcolor="#FDFBF7" class="px" style="background:#FDFBF7;padding:0 40px 28px;font-family:'Jost',Helvetica,Arial,sans-serif;font-size:18px;line-height:28px;color:#232C26;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+<tr><td class="card" bgcolor="#DDE3D3" style="background:#DDE3D3;border-radius:16px;padding:28px 30px;font-family:'Jost',Helvetica,Arial,sans-serif;color:#2F3B33;">
+<p style="margin:0 0 10px;font-size:12px;line-height:16px;letter-spacing:3px;text-transform:uppercase;font-weight:500;color:#A04E5C;">Your next step</p>
+<p style="margin:0 0 10px;font-family:'Plus Jakarta Sans',Helvetica,Arial,sans-serif;font-weight:800;font-size:22px;line-height:28px;color:#2F3B33;">Money Wealth and Miracles</p>
+<p style="margin:0 0 20px;font-size:17px;line-height:26px;color:#2F3B33;">My live group course to break free of your money stops, see money as an exchange of energy, and create a new set point that can hold more wealth. Six live sessions with me, in a small group.</p>
+<table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+<td align="center" bgcolor="#A04E5C" style="border-radius:999px;background:#A04E5C;">
+<!--[if mso]><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="https://lisakalmin.vercel.app/course/" style="height:50px;v-text-anchor:middle;width:260px;" arcsize="50%" stroke="f" fillcolor="#A04E5C"><w:anchorlock/><center style="color:#F8F4EC;font-family:Helvetica,Arial,sans-serif;font-size:17px;font-weight:bold;">See the course</center></v:roundrect><![endif]-->
+<!--[if !mso]><!--><a href="https://lisakalmin.vercel.app/course/" style="display:inline-block;padding:15px 32px;border-radius:999px;background:#A04E5C;font-family:'Jost',Helvetica,Arial,sans-serif;font-size:17px;line-height:20px;font-weight:700;color:#F8F4EC;text-decoration:none;">See the course</a><!--<![endif]-->
+</td></tr></table>
+<p style="margin:18px 0 0;font-size:16px;line-height:24px;color:#2F3B33;">Prefer one to one? <a href="https://lisakalmin.vercel.app/coaching/" style="color:#A04E5C;font-weight:700;">Apply for Breakthrough Coaching</a>.</p>
+</td></tr></table>
+</td></tr>
+<tr><td bgcolor="#FDFBF7" class="px" style="background:#FDFBF7;padding:20px 40px 28px;font-family:'Jost',Helvetica,Arial,sans-serif;font-size:18px;line-height:28px;color:#232C26;">
+<p style="margin:0 0 4px;font-size:18px;line-height:28px;color:#232C26;">To your abundance!</p>
+<p style="margin:0;font-weight:700;color:#2F3B33;">Lisa</p>
+</td></tr>
+<tr><td bgcolor="#FDFBF7" class="px" style="background:#FDFBF7;border-radius:0 0 18px 18px;padding:24px 40px 36px;border-top:1px solid #C9D1C1;font-family:'Jost',Helvetica,Arial,sans-serif;font-size:17px;line-height:26px;color:#232C26;">
+<p style="margin:0;"><strong style="color:#2F3B33;">P.S.</strong> Hit reply and tell me which statement on the scorecard hit hardest. I read every reply, and it helps me know what to teach next.</p>
+</td></tr>
+
+<tr><td class="px" style="padding:22px 40px 8px;font-family:'Jost',Helvetica,Arial,sans-serif;font-size:13px;line-height:20px;color:#56635B;text-align:center;">
+You’re receiving this because you took Lisa Kalmin’s Underearning Financial Scorecard.
+</td></tr>
+
+</table>
+</td></tr>
+</table>
+</body>
+</html>

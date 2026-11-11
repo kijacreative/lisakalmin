@@ -178,6 +178,31 @@
       "source": "/this-is-womans-work-with-nicole-kalil",
       "destination": "https://anchor.fm/womanswork/episodes/008--YOUWORK-THE-PROBLEM-IS-HOW-YOU-SEE-THE-PROBLEM-eb858e",
       "permanent": true
+    },
+    {
+      "source": "/book-chapter-1",
+      "destination": "/book/chapter-1/",
+      "permanent": true
+    },
+    {
+      "source": "/money-mindset",
+      "destination": "/quiz/",
+      "permanent": true
+    },
+    {
+      "source": "/money-mindset/:p*",
+      "destination": "/quiz/",
+      "permanent": true
+    },
+    {
+      "source": "/breakthrough-coaching",
+      "destination": "/coaching/",
+      "permanent": true
+    },
+    {
+      "source": "/transformational-coaching",
+      "destination": "/coaching/",
+      "permanent": true
     }
   ]
 }

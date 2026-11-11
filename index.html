@@ -407,11 +407,12 @@ h1,h2{font-family:var(--display);font-weight:800;letter-spacing:-.02em;margin:0;
 <p class="l" style="color:#E3B5BC">Free sample chapter</p>
 <h2 class="h">Read the first chapter of The Problem Is How You See The Problem.</h2>
 <div class="rule on"></div>
-<p class="b" style="color:rgba(248,244,236,.8)">Enter your email and chapter one is on its way.</p>
-<form style="display:flex;flex-direction:column;gap:12px">
+<p class="b" style="color:rgba(248,244,236,.8)">Enter your email and start reading chapter one right away.</p>
+<form id="bookForm" action="https://app.kit.com/forms/10176929/subscriptions" method="post" style="display:flex;flex-direction:column;gap:12px">
 <label for="em7" class="c" style="color:#E3B5BC">Email address</label>
-<input id="em7" class="fld" type="email" placeholder="you@example.com" style="background:#F8F4EC">
-<div style="padding-top:8px"><button type="button" class="btn inv">Send me chapter one <span aria-hidden="true">→</span></button></div>
+<input id="em7" class="fld" type="email" name="email_address" autocomplete="email" required placeholder="you@example.com" style="background:#F8F4EC">
+<p class="c" id="bookErr" role="alert" style="color:#FFD2D8" hidden></p>
+<div style="padding-top:8px"><button type="submit" class="btn inv">Send me chapter one <span aria-hidden="true">→</span></button></div>
 </form>
 </div>
 </div>
@@ -494,9 +495,9 @@ h1,h2{font-family:var(--display);font-weight:800;letter-spacing:-.02em;margin:0;
 </div>
 <div id="community" style="display:flex;flex-wrap:wrap;gap:32px;align-items:flex-end;justify-content:space-between;background:#3A473E;border-radius:20px;padding:40px">
 <div style="display:flex;flex-direction:column;gap:8px;max-width:480px"><p class="l" style="color:#E3B5BC">Free community</p><p class="s">Start with the money mindset quiz. Your result, invitations to free masterclasses, and one note a month.</p></div>
-<form style="display:flex;flex-wrap:wrap;gap:12px;flex:1 1 420px;max-width:560px;align-items:flex-end">
-<div style="flex:1 1 240px;display:flex;flex-direction:column;gap:8px"><label for="em10" class="c" style="color:#E3B5BC">Email address</label><input id="em10" class="fld" type="email" placeholder="you@example.com" style="background:#F8F4EC"></div>
-<button type="button" class="btn inv">Take the quiz <span aria-hidden="true">→</span></button>
+<form id="quizForm" action="quiz/" style="display:flex;flex-wrap:wrap;gap:12px;flex:1 1 420px;max-width:560px;align-items:flex-end">
+<div style="flex:1 1 240px;display:flex;flex-direction:column;gap:8px"><label for="em10" class="c" style="color:#E3B5BC">Email address</label><input id="em10" class="fld" type="email" autocomplete="email" placeholder="you@example.com" style="background:#F8F4EC"></div>
+<button type="submit" class="btn inv">Take the quiz <span aria-hidden="true">→</span></button>
 </form>
 </div>
 </div>
@@ -555,6 +556,32 @@ h1,h2{font-family:var(--display);font-weight:800;letter-spacing:-.02em;margin:0;
       if (root.classList.contains('menu-open')) { root.classList.remove('menu-open'); burger.setAttribute('aria-expanded', 'false'); burger.setAttribute('aria-label', 'Open menu'); sheet.classList.remove('on'); sheet.hidden = true; }
       if (el && (id === 'course' || id === 'coaching' || id === 'speaking')) { e.preventDefault(); el.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' }); }
     });
+  });
+})();
+</script>
+<script>
+// homepage forms: the book form joins Kit form 10176929 (uid 25d4a453bc) and opens chapter one;
+// the community form opens the quiz, carrying the email in sessionStorage (never the URL)
+(function () {
+  var bf = document.getElementById('bookForm'), be = document.getElementById('bookErr');
+  bf.addEventListener('submit', function (e) {
+    e.preventDefault(); be.hidden = true;
+    if (!bf.checkValidity()) { bf.reportValidity(); return; }
+    var btn = bf.querySelector('button[type=submit]'); btn.disabled = true;
+    fetch(bf.action, { method: 'POST', body: new FormData(bf), headers: { Accept: 'application/json' } })
+      .then(function (r) { return r.json().catch(function () { return { status: r.ok ? 'success' : 'failed' }; }); })
+      .then(function (j) {
+        if (j && j.status === 'failed') { var m = j.errors && j.errors.messages; be.textContent = (m && m.join(' ')) || 'Please check your email address and try again.'; be.hidden = false; btn.disabled = false; return; }
+        location.href = 'book/chapter-1/';
+      })
+      .catch(function () { location.href = 'book/chapter-1/'; });
+  });
+  var qf = document.getElementById('quizForm');
+  qf.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var v = document.getElementById('em10').value.trim();
+    try { if (v) sessionStorage.setItem('quiz_email', v); } catch (x) {}
+    location.href = 'quiz/';
   });
 })();
 </script>

@@ -1,0 +1,49 @@
+Subject: Your Money Mindset Pattern is here
+Preview text: Your result from the Underearning Financial Scorecard, plus your next step.
+Send: immediately, when someone submits the quiz (Kit form 10176902).
+Needs Kit custom fields: money_mindset_score, money_mindset_pattern (manifester | manager | clueless | victim)
+
+------------------------------------------------------------
+
+Hi {{ subscriber.first_name | default: "there" }},
+
+Thank you for taking the Underearning Financial Scorecard. It takes courage to look honestly at what you believe about money. Here is your result, so you can come back to it anytime.
+
+Your score: {{ subscriber.money_mindset_score }} out of 300
+
+{% if subscriber.money_mindset_pattern == "manifester" %}
+YOUR MONEY MINDSET PATTERN (30 to 99)
+Money Manifester
+You are proactive in the face of your circumstances. You see opportunity even in challenges, you believe in your value, and you attract wealth. You know there is another level for you, but don’t know how to access it.
+{% elsif subscriber.money_mindset_pattern == "manager" %}
+YOUR MONEY MINDSET PATTERN (100 to 169)
+Money Manager
+You sometimes overcome your obstacles and sometimes don’t. You may worry about money even when you have it, or look at how to “get” more rather than seeing the flow of money as energy. You want to feel confident and joyful about your money.
+{% elsif subscriber.money_mindset_pattern == "clueless" %}
+YOUR MONEY MINDSET PATTERN (170 to 234)
+Money Clueless
+You work hard but feel disconnected from money, and you are often disappointed in your finances at the end of the month. You know you are in the way of your financial security, and you want to change.
+{% elsif subscriber.money_mindset_pattern == "victim" %}
+YOUR MONEY MINDSET PATTERN (235 to 300)
+Money Victim
+You feel like the system is rigged against you and that you are stuck in a financial loop. You are looking for a way out of scarcity and frustration, and that is exactly where the shift begins.
+{% else %}
+Your result is waiting. If you haven't finished the scorecard yet, it takes about 5 minutes: https://lisakalmin.vercel.app/quiz/
+{% endif %}
+
+WHAT YOUR PATTERN IS TELLING YOU
+
+These beliefs were handed to you long before you could choose them. They are not the truth about you, they are a way of seeing. And the problem is how you see the problem: when the way you see money shifts, what you do with it shifts too.
+
+Many of my clients are high achievers who are under-earning without realizing it. They overwork and undercharge, avoid the money conversation, and feel like an imposter despite years of results. If any of that sounds familiar, you are in the right place.
+
+YOUR NEXT STEP: MONEY WEALTH AND MIRACLES
+My live group course to break free of your money stops, see money as an exchange of energy, and create a new set point that can hold more wealth. Six live sessions with me, in a small group.
+
+See the course: https://lisakalmin.vercel.app/course/
+Prefer one to one? Apply for Breakthrough Coaching: https://lisakalmin.vercel.app/coaching/
+
+To your abundance!
+Lisa
+
+P.S. Hit reply and tell me which statement on the scorecard hit hardest. I read every reply, and it helps me know what to teach next.
