@@ -28,7 +28,7 @@ YOUR MONEY MINDSET PATTERN (235 to 300)
 Money Victim
 You feel like the system is rigged against you and that you are stuck in a financial loop. You are looking for a way out of scarcity and frustration, and that is exactly where the shift begins.
 {% else %}
-Your result is waiting. If you haven't finished the scorecard yet, it takes about 5 minutes: https://lisakalmin.vercel.app/quiz/
+Your result is waiting. If you haven't finished the scorecard yet, it takes about 5 minutes: https://masterclass.lisakalmin.com/quiz/
 {% endif %}
 
 WHAT YOUR PATTERN IS TELLING YOU
@@ -40,8 +40,8 @@ Many of my clients are high achievers who are under-earning without realizing it
 YOUR NEXT STEP: MONEY WEALTH AND MIRACLES
 My live group course to break free of your money stops, see money as an exchange of energy, and create a new set point that can hold more wealth. Six live sessions with me, in a small group.
 
-See the course: https://lisakalmin.vercel.app/course/
-Prefer one to one? Apply for Breakthrough Coaching: https://lisakalmin.vercel.app/coaching/
+See the course: https://masterclass.lisakalmin.com/course/
+Prefer one to one? Apply for Breakthrough Coaching: https://masterclass.lisakalmin.com/coaching/
 
 To your abundance!
 Lisa

@@ -20,7 +20,7 @@ Add to Google Calendar:
 https://calendar.google.com/calendar/render?action=TEMPLATE&text=Opening%20the%20Flow%20of%20Money%3A%20Letting%20Go%20of%20Your%20Stops&dates=20261120T013000Z/20261120T030000Z&details=Free%20live%20masterclass%20with%20Lisa%20Kalmin.%0A%0AJoin%20on%20Zoom%3A%20https%3A//us02web.zoom.us/j/88428491668%0A%0ABring%20a%20journal%20and%20a%20pen.&location=https%3A%2F%2Fus02web.zoom.us%2Fj%2F88428491668
 
 Add to Apple or Outlook:
-https://lisakalmin.vercel.app/masterclass/masterclass.ics
+https://masterclass.lisakalmin.com/masterclass/masterclass.ics
 
 YOUR ZOOM LINK
 Keep this email. On Thursday, this is the link you'll click to join.

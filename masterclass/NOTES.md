@@ -19,7 +19,7 @@ Three connected assets with one goal: free registrations for Lisa's live masterc
 2. **Registration:** the landing page embeds Kit form 9737306 (`lisakalmin.kit.com/1b66603417`), restyled on the page to the brand, with the button relabelled "Save my free seat". **In Kit, change the form's "after subscribing" redirect to `/masterclass/thank-you/`.** It currently redirects to `lisakalmin.com/get-masterclass-recording/masterclass-recording/`. If that form also powers the recording opt-in, duplicate it for the masterclass instead of changing it, and swap the new `data-uid` into `masterclass/index.html`.
 3. **Zoom:** put the Zoom link in `zoomUrl` so it goes into the calendar invites. The link itself reaches people through your Kit confirmation email.
 4. **Money-stop tags:** create four small Kit forms, each set to add one tag (never-enough, undercharge, avoid-looking, in-and-out), and put their form IDs in `tagForms`. The thank-you page sends the registrant's email to the form for the answer they tap. Test one end to end in Kit before launch.
-5. **Email:** the logo loads from https://lisakalmin.vercel.app/email/logo-email.png. Replace `[REGISTER LINK]` with the landing page URL. The date is already filled in. Kit adds the required unsubscribe and address footer to broadcasts.
+5. **Email:** the logo loads from https://masterclass.lisakalmin.com/email/logo-email.png. Replace `[REGISTER LINK]` with the landing page URL. The date is already filled in. Kit adds the required unsubscribe and address footer to broadcasts.
 6. **Welcome video** (optional): swap the placeholder on the thank-you page for the embed once Lisa records it.
 
 ## Things to confirm with Lisa
