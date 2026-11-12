@@ -2,7 +2,7 @@
    Fill these in for each class. While a value is empty (or still a [PLACEHOLDER]),
    the pages show the placeholder copy and work in preview mode. */
 window.EVENT = {
-  // registration is the Kit form embedded on the landing page (form 9737306); set its redirect in Kit
+  // registration is the Kit form embedded on the landing page (form 10115136); set its redirect in Kit
   title: 'Opening the Flow of Money: Letting Go of Your Stops',
   // start and end in Pacific time with the UTC offset: -08:00 from early November, -07:00 from mid March
   start: '2026-11-19T17:30:00-08:00',    // Thursday, November 19, 5:30 pm PT

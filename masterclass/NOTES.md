@@ -8,7 +8,7 @@ Three connected assets with one goal: free registrations for Lisa's live masterc
 | Confirmation page | `masterclass/thank-you/index.html` | `/masterclass/thank-you/` |
 | Email invite #1 (Kit HTML) | `email/invite-1.html` | paste into Kit |
 | Email invite #1 (plain text) | `email/invite-1.txt` | paste into Kit |
-| Confirmation email: Zoom link + calendar (Kit HTML) | `email/confirmation.html` | first email in the Kit sequence for form 9737306 |
+| Confirmation email: Zoom link + calendar (Kit HTML) | `email/confirmation.html` | first email in the Kit sequence for form 10115136 |
 | Confirmation email (plain text) | `email/confirmation.txt` | paste into Kit |
 | Calendar file for Apple / Outlook | `masterclass/masterclass.ics` | `/masterclass/masterclass.ics` |
 | Shared event settings | `masterclass/event.js` | used by both pages |
@@ -16,7 +16,7 @@ Three connected assets with one goal: free registrations for Lisa's live masterc
 ## Setup before launch
 
 1. **Event settings** (`masterclass/event.js`): set to Thursday, November 19, 5:30 to 7:00 pm PT (`2026-11-19T17:30:00-08:00`). The date copy, countdown and calendar buttons all follow it. For the next class, change `start` and `end` and the static date text on both pages and in the email.
-2. **Registration:** the landing page embeds Kit form 9737306 (`lisakalmin.kit.com/1b66603417`), restyled on the page to the brand, with the button relabelled "Save my free seat". **In Kit, change the form's "after subscribing" redirect to `/masterclass/thank-you/`.** It currently redirects to `lisakalmin.com/get-masterclass-recording/masterclass-recording/`. If that form also powers the recording opt-in, duplicate it for the masterclass instead of changing it, and swap the new `data-uid` into `masterclass/index.html`.
+2. **Registration:** the landing page embeds Kit form 10115136 (`lisakalmin.kit.com/bf58f32c21`), restyled on the page to the brand, with the button relabelled "Save my free seat". **In Kit, change the form's "after subscribing" redirect to `/masterclass/thank-you/`.** It currently redirects to `lisakalmin.com/get-masterclass-recording/masterclass-recording/`. If that form also powers the recording opt-in, duplicate it for the masterclass instead of changing it, and swap the new `data-uid` into `masterclass/index.html`.
 3. **Zoom:** put the Zoom link in `zoomUrl` so it goes into the calendar invites. The link itself reaches people through your Kit confirmation email.
 4. **Money-stop tags:** create four small Kit forms, each set to add one tag (never-enough, undercharge, avoid-looking, in-and-out), and put their form IDs in `tagForms`. The thank-you page sends the registrant's email to the form for the answer they tap. Test one end to end in Kit before launch.
 5. **Email:** the logo loads from https://masterclass.lisakalmin.com/email/logo-email.png. Replace `[REGISTER LINK]` with the landing page URL. The date is already filled in. Kit adds the required unsubscribe and address footer to broadcasts.
