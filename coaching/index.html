@@ -23,7 +23,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/site.css?v=1">
-</head>
+<style>
+.session{gap:12px}
+.session .price{font-family:var(--display);font-weight:800;font-size:34px;line-height:1;color:var(--forest);margin:4px 0 2px}
+.session .btn{margin-top:auto;align-self:stretch;width:auto;white-space:nowrap;justify-content:center}
+.session .muted{flex:1}
+@media (max-width:900px){.sessions{grid-template-columns:minmax(0,1fr)}}
+</style></head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="top">
@@ -59,7 +65,7 @@
 <h1 class="h1">Breakthrough Coaching</h1>
 <hr class="rule">
 <p class="lead">Work with Lisa on the breakthrough you keep circling, in money, in work or in the conversation you have been avoiding. A limited number of private engagements each year.</p>
-<div class="btns"><a class="btn" href="https://tidycal.com/causepeace">Apply for a spot <span class="ar" aria-hidden="true">→</span></a><a class="btn line" href="/the-skinny/">The Skinny on Transformation</a></div>
+<div class="btns"><a class="btn" href="#sessions">Book a session <span class="ar" aria-hidden="true">→</span></a><a class="btn line" href="/the-skinny/">The Skinny on Transformation</a></div>
 </div>
 <div class="pic"><img src="/img/portrait-light.jpg" alt="Lisa Kalmin smiling, a saffron scarf around her shoulders" width="960" height="1200" style="object-position:50% 30%"></div>
 </div>
@@ -132,14 +138,37 @@
 </div>
 </div>
 </section>
-<section class="sec cta dark">
+
+<section class="sec" id="sessions" aria-labelledby="h-sessions">
 <div class="w">
-<div class="stack">
-<p class="kicker">Let’s talk</p>
-<h2 class="h2">Apply for a spot.</h2>
-<p class="lead muted">Book a 30-minute session. We will explore what matters to you now and long term, and see how we could work together. Invest the time and Lisa promises it will be valuable.</p>
+<div class="head">
+<p class="kicker">Book a session</p>
+<h2 class="h2" id="h-sessions">Pick the time that fits.</h2>
+<p class="lead muted">39 years of experience and more than 50,000 clients served. Choose a session and pick a time on Lisa’s calendar. It only takes a minute.</p>
 </div>
-<div class="btns"><a class="btn" href="https://tidycal.com/causepeace">Apply for a spot <span class="ar" aria-hidden="true">→</span></a></div>
+<div class="g3 sessions">
+<article class="card session">
+<p class="kicker">15 minutes</p>
+<h3 class="h3">15 minute meeting</h3>
+<p class="price">Free</p>
+<p class="muted">A quick hello. Meet Lisa, ask your questions and see whether coaching is the right fit.</p>
+<a class="btn" href="https://tidycal.com/causepeace/15-minute-meeting" rel="noopener">Book now <span class="ar" aria-hidden="true">→</span></a>
+</article>
+<article class="card session">
+<p class="kicker">30 minutes, by phone</p>
+<h3 class="h3">30 minute meeting</h3>
+<p class="price">Free</p>
+<p class="muted">Explore what matters to you now and long term, and how you could work together. Invest the time and Lisa promises it will be valuable.</p>
+<a class="btn" href="https://tidycal.com/causepeace/30-minute-meeting" rel="noopener">Book now <span class="ar" aria-hidden="true">→</span></a>
+</article>
+<article class="card session">
+<p class="kicker">1 hour</p>
+<h3 class="h3">60 minute session</h3>
+<p class="price">$150</p>
+<p class="muted">A full coaching hour on the breakthrough you keep circling, in money, in work or in the conversation you have been avoiding.</p>
+<a class="btn" href="https://tidycal.com/causepeace/60-minute-meeting" rel="noopener">Book now <span class="ar" aria-hidden="true">→</span></a>
+</article>
+</div>
 </div>
 </section>
 </main>

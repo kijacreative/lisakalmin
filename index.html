@@ -106,6 +106,11 @@ h1,h2{font-family:var(--display);font-weight:800;letter-spacing:-.02em;margin:0;
 .card p{margin:0}
 .card .out{color:var(--oat)}
 .card .meta{font-size:14px;color:var(--soft);letter-spacing:.02em}
+.slots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.slots a{display:flex;flex-direction:column;gap:2px;padding:12px 14px;border-radius:10px;border:1px solid var(--line);color:var(--oat);text-decoration:none;transition:background .2s,border-color .2s}
+.slots a:hover,.slots a:focus-visible{background:rgba(248,244,236,.1);border-color:var(--oat)}
+.slots b{font-size:18px;font-weight:700}
+.slots span{font-size:13px;color:var(--soft)}
 
 /* close */
 .end{flex-direction:column;justify-content:center;gap:40px}
@@ -327,8 +332,13 @@ h1,h2{font-family:var(--display);font-weight:800;letter-spacing:-.02em;margin:0;
 <h2 id="h-coaching">Breakthrough Coaching</h2>
 <div class="rule"></div>
 <p class="out">Work with Lisa on the breakthrough you keep circling, in money, in work or in the conversation you have been avoiding.</p>
-<p class="meta">A limited number of private engagements each year.</p>
-<a class="btn" href="coaching/">Apply for a spot <span class="ar" aria-hidden="true">→</span></a>
+<p class="meta">Book a session with Lisa. Pick the length that fits.</p>
+<div class="slots" role="group" aria-label="Book a coaching session">
+<a href="https://tidycal.com/causepeace/15-minute-meeting" rel="noopener"><b>15 min</b><span>Free</span></a>
+<a href="https://tidycal.com/causepeace/30-minute-meeting" rel="noopener"><b>30 min</b><span>Free, by phone</span></a>
+<a href="https://tidycal.com/causepeace/60-minute-meeting" rel="noopener"><b>60 min</b><span>$150</span></a>
+</div>
+<a class="btn" href="coaching/">About coaching <span class="ar" aria-hidden="true">→</span></a>
 </article>
 </section>
 
@@ -430,10 +440,9 @@ h1,h2{font-family:var(--display);font-weight:800;letter-spacing:-.02em;margin:0;
 <section class="w" style="padding-top:112px;padding-bottom:112px;display:flex;flex-wrap:wrap;gap:80px;align-items:center">
 <div style="flex:1 1 560px">
 <div style="position:relative;width:100%;aspect-ratio:16/9;border-radius:20px;overflow:hidden;background:#2F3B33">
-<img src="img/reel.jpg" alt="Lisa Kalmin smiling, thumbnail for the speaking reel" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%">
-<div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(to top,rgba(47,59,51,.82),rgba(47,59,51,.38) 55%)"></div>
-<span aria-hidden="true" style="position:absolute;inset:0;display:grid;place-items:center"><span style="width:min(96px,22%);aspect-ratio:1/1;border-radius:50%;border:2px solid #E3B5BC;display:grid;place-items:center;background:rgba(47,59,51,.45)"><svg width="30" height="30" viewBox="0 0 28 28" fill="#F8F4EC"><path d="M8 4l16 10L8 24z"/></svg></span></span>
-<p class="c" style="position:absolute;left:24px;bottom:20px;color:#F8F4EC;margin:0">Speaking reel, [00:00]</p>
+<video controls playsinline preload="none" poster="img/reel.jpg" aria-label="A video from Lisa Kalmin" style="position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:cover;background:#2F3B33">
+<source src="https://m33-client-portal.s3.amazonaws.com/Videos/Lisa+Kalmin+Ad+-+V4-1.mp4" type="video/mp4">
+</video>
 </div>
 </div>
 <div style="flex:1 1 480px;display:flex;flex-direction:column;gap:28px">
@@ -444,11 +453,11 @@ h1,h2{font-family:var(--display);font-weight:800;letter-spacing:-.02em;margin:0;
 <div style="padding:20px 0;border-top:1px solid #C9D1C1"><p class="s" style="font-weight:700;color:#2F3B33">The Conversation You Are Avoiding</p><p class="b" style="color:#56635B">A practical way to say the hard sentence, at work and at home.</p></div>
 <div style="padding:20px 0;border-top:1px solid #C9D1C1;border-bottom:1px solid #C9D1C1"><p class="s" style="font-weight:700;color:#2F3B33">One Conversation Away</p><p class="b" style="color:#56635B">How a single direct exchange changes what a team does next.</p></div>
 </div>
-<div><a class="btn o" href="speaking/">Download the one-sheet <span aria-hidden="true">↓</span></a></div>
+<div><a class="btn o" href="speaking/">Learn more <span aria-hidden="true">→</span></a></div>
 </div>
 </section>
 
-<!-- 09 MEDIA -->
+<!-- 09 MEDIA: from the Blog and Podcasts page -->
 <section id="media" style="background:#DDE3D3">
 <div class="w" style="padding-top:112px;padding-bottom:112px;display:flex;flex-direction:column;gap:48px">
 <div style="display:flex;flex-direction:column;gap:20px;max-width:640px">
@@ -456,35 +465,68 @@ h1,h2{font-family:var(--display);font-weight:800;letter-spacing:-.02em;margin:0;
 <h2 class="h" style="color:#2F3B33">Hear how Lisa talks about it.</h2>
 </div>
 <div style="display:flex;flex-direction:column;gap:24px">
-
 <article class="mrow" style="background:#F8F4EC;border-radius:20px;padding:32px">
-<div style="position:relative;width:100%;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#2F3B33">
-<img src="img/interview.jpg" alt="Lisa Kalmin, thumbnail for the ABC15 Arizona interview" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 40%">
-<div aria-hidden="true" style="position:absolute;inset:0;background:rgba(47,59,51,.38)"></div>
+<a href="https://nicolekalil.com/podcast/058" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" style="position:relative;display:block;width:100%;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#2F3B33">
+<img src="img/blog/this-is-womans-work-with-nicole-kalil-2.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+<span style="position:absolute;inset:0;background:rgba(47,59,51,.3)"></span>
 <span aria-hidden="true" style="position:absolute;inset:0;display:grid;place-items:center"><span style="width:56px;height:56px;border-radius:50%;border:2px solid #E3B5BC;display:grid;place-items:center;background:rgba(47,59,51,.45)"><svg width="20" height="20" viewBox="0 0 28 28" fill="#F8F4EC"><path d="M8 4l16 10L8 24z"/></svg></span></span>
-</div>
+</a>
 <div style="display:flex;flex-direction:column;gap:12px">
-<p class="l" style="color:#56635B">ABC15 Arizona, interview</p>
-<p class="s" style="font-weight:700;color:#2F3B33">[Segment title]</p>
-<ul style="margin:0;padding-left:20px;color:#232C26" class="b"><li>[00:00] [Takeaway, one sentence.]</li><li>[00:00] [Takeaway, one sentence.]</li><li>[00:00] [Takeaway, one sentence.]</li></ul>
+<p class="l" style="color:#56635B">This Is Woman’s Work with Nicole Kalil, June 2021</p>
+<p class="s" style="font-weight:700;color:#2F3B33">Languishing and re-entry</p>
+<p class="b" style="color:#232C26">Hopeful as things open up, or hesitant to go back to your pre-covid way of life? Lisa and Nicole on languishing and what it takes to re-enter.</p>
 </div>
-<a class="lnk" href="#media">Watch, [0:00] →</a>
+<a class="lnk" href="https://nicolekalil.com/podcast/058" target="_blank" rel="noopener">Listen →</a>
 </article>
 
 <article class="mrow" style="background:#F8F4EC;border-radius:20px;padding:32px">
-<div style="position:relative;width:100%;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#2F3B33">
-<img src="img/room.jpg" alt="A sunlit room with armchairs and a round oak table, thumbnail for the Leading Conversations episode" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:40% 62%">
-<div aria-hidden="true" style="position:absolute;inset:0;background:rgba(47,59,51,.38)"></div>
+<a href="https://www.purposeup.com/ep-45-lisa-kalmin-the-problem-is-how-you-see-the-problem/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" style="position:relative;display:block;width:100%;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#2F3B33">
+<img src="img/blog/badass-womens-leadership-summit.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+<span style="position:absolute;inset:0;background:rgba(47,59,51,.3)"></span>
 <span aria-hidden="true" style="position:absolute;inset:0;display:grid;place-items:center"><span style="width:56px;height:56px;border-radius:50%;border:2px solid #E3B5BC;display:grid;place-items:center;background:rgba(47,59,51,.45)"><svg width="20" height="20" viewBox="0 0 28 28" fill="#F8F4EC"><path d="M8 4l16 10L8 24z"/></svg></span></span>
-</div>
+</a>
 <div style="display:flex;flex-direction:column;gap:12px">
-<p class="l" style="color:#56635B">Leading Conversations with Cheryl Esposito</p>
-<p class="s" style="font-weight:700;color:#2F3B33">[Episode title]</p>
-<ul style="margin:0;padding-left:20px;color:#232C26" class="b"><li>[00:00] [Takeaway, one sentence.]</li><li>[00:00] [Takeaway, one sentence.]</li><li>[00:00] [Takeaway, one sentence.]</li></ul>
+<p class="l" style="color:#56635B">PurposeUp podcast, episode 45</p>
+<p class="s" style="font-weight:700;color:#2F3B33">The Problem Is How You See the Problem</p>
+<p class="b" style="color:#232C26">Emotions, meaning, and how to reinterpret your reality so it empowers you, even in uncertain times.</p>
 </div>
-<a class="lnk" href="#media">Watch, [0:00] →</a>
+<a class="lnk" href="https://www.purposeup.com/ep-45-lisa-kalmin-the-problem-is-how-you-see-the-problem/" target="_blank" rel="noopener">Listen →</a>
 </article>
 
+<article class="mrow" style="background:#F8F4EC;border-radius:20px;padding:32px">
+<a href="https://anchor.fm/womanswork/episodes/008--YOUWORK-THE-PROBLEM-IS-HOW-YOU-SEE-THE-PROBLEM-eb858e" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true" style="position:relative;display:block;width:100%;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#2F3B33">
+<img src="img/blog/this-is-womans-work-with-nicole-kalil.jpg" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+<span style="position:absolute;inset:0;background:rgba(47,59,51,.3)"></span>
+<span aria-hidden="true" style="position:absolute;inset:0;display:grid;place-items:center"><span style="width:56px;height:56px;border-radius:50%;border:2px solid #E3B5BC;display:grid;place-items:center;background:rgba(47,59,51,.45)"><svg width="20" height="20" viewBox="0 0 28 28" fill="#F8F4EC"><path d="M8 4l16 10L8 24z"/></svg></span></span>
+</a>
+<div style="display:flex;flex-direction:column;gap:12px">
+<p class="l" style="color:#56635B">This Is Woman’s Work with Nicole Kalil, episode 8</p>
+<p class="s" style="font-weight:700;color:#2F3B33">#YOUWORK: The Problem Is How You See the Problem</p>
+<p class="b" style="color:#232C26">Lisa on emotions, meaning, and reinterpreting your reality to empower yourself through the pandemic and beyond.</p>
+</div>
+<a class="lnk" href="https://anchor.fm/womanswork/episodes/008--YOUWORK-THE-PROBLEM-IS-HOW-YOU-SEE-THE-PROBLEM-eb858e" target="_blank" rel="noopener">Listen →</a>
+</article>
+</div>
+<div style="display:flex;flex-direction:column;gap:28px;border-top:1px solid #C9D1C1;padding-top:40px">
+<p class="l" style="color:#56635B">From the blog</p>
+<div class="g3">
+<a href="blog/gratitude-not-simple-seems/" style="display:flex;flex-direction:column;gap:12px;text-decoration:none;color:#2F3B33">
+<img src="img/blog/gratitude-not-simple-seems.jpg" alt="" loading="lazy" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px">
+<span class="c" style="color:#56635B;letter-spacing:.2em;text-transform:uppercase">February 2022</span>
+<span class="s" style="font-weight:700">Gratitude: Not As Simple as It Seems</span>
+</a>
+<a href="blog/2022-new-year/" style="display:flex;flex-direction:column;gap:12px;text-decoration:none;color:#2F3B33">
+<img src="img/blog/2022-new-year.jpg" alt="" loading="lazy" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px">
+<span class="c" style="color:#56635B;letter-spacing:.2em;text-transform:uppercase">January 2022</span>
+<span class="s" style="font-weight:700">2022 New Year</span>
+</a>
+<a href="blog/what-is-transformation/" style="display:flex;flex-direction:column;gap:12px;text-decoration:none;color:#2F3B33">
+<img src="img/blog/what-is-transformation.jpg" alt="" loading="lazy" style="display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px">
+<span class="c" style="color:#56635B;letter-spacing:.2em;text-transform:uppercase">From the blog</span>
+<span class="s" style="font-weight:700">What Is Transformation?</span>
+</a>
+</div>
+<div><a class="btn o" href="blog/">See all articles and podcasts <span aria-hidden="true">→</span></a></div>
 </div>
 </div>
 </section>
@@ -498,7 +540,7 @@ h1,h2{font-family:var(--display);font-weight:800;letter-spacing:-.02em;margin:0;
 </div>
 <div class="g3" style="gap:48px">
 <div style="display:flex;flex-direction:column;gap:16px;border-top:1px solid rgba(227,181,188,.5);padding-top:24px"><p class="s" style="font-weight:700">Money Wealth and Miracles</p><a class="lnk on" href="course/">Join the next cohort →</a></div>
-<div style="display:flex;flex-direction:column;gap:16px;border-top:1px solid rgba(227,181,188,.5);padding-top:24px"><p class="s" style="font-weight:700">Breakthrough Coaching</p><a class="lnk on" href="coaching/">Apply for a spot →</a></div>
+<div style="display:flex;flex-direction:column;gap:16px;border-top:1px solid rgba(227,181,188,.5);padding-top:24px"><p class="s" style="font-weight:700">Breakthrough Coaching</p><a class="lnk on" href="https://tidycal.com/causepeace/15-minute-meeting" rel="noopener">Book a free 15 minutes →</a><a class="lnk on" href="https://tidycal.com/causepeace/30-minute-meeting" rel="noopener">Book a free 30-minute call →</a><a class="lnk on" href="https://tidycal.com/causepeace/60-minute-meeting" rel="noopener">Book a 60-minute session, $150 →</a></div>
 <div style="display:flex;flex-direction:column;gap:16px;border-top:1px solid rgba(227,181,188,.5);padding-top:24px"><p class="s" style="font-weight:700">Speaking and Keynotes</p><a class="lnk on" href="speaking/#dates">Check my dates →</a></div>
 </div>
 <div id="community" style="display:flex;flex-wrap:wrap;gap:32px;align-items:flex-end;justify-content:space-between;background:#3A473E;border-radius:20px;padding:40px">
