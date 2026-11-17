@@ -10,6 +10,8 @@ Three connected assets with one goal: free registrations for Lisa's live masterc
 | Email invite #1 (plain text) | `email/invite-1.txt` | paste into Kit |
 | Confirmation email: Zoom link + calendar (Kit HTML) | `email/confirmation.html` | first email in the Kit sequence for form 10115136 |
 | Confirmation email (plain text) | `email/confirmation.txt` | paste into Kit |
+| Last chance email, day of class (Kit HTML) | `email/last-chance.html` | broadcast Thu Nov 19, 9:00 am PT, excluding registrants |
+| Last chance email (plain text) | `email/last-chance.txt` | paste into Kit |
 | Calendar file for Apple / Outlook | `masterclass/masterclass.ics` | `/masterclass/masterclass.ics` |
 | Shared event settings | `masterclass/event.js` | used by both pages |
 

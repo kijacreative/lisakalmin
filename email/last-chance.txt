@@ -1,0 +1,52 @@
+Send: Thursday, November 19, 9:00 am PT (the day of the class)
+Audience: the list, excluding anyone who already registered (Kit form 10115136)
+Subject: Tonight at 5:30: last chance to save your seat
+Preview text: Opening the Flow of Money is live and free tonight. Registration closes when class starts.
+
+------------------------------------------------------------
+
+{{ subscriber.first_name | default: "Friend" }},
+
+This is it. My FREE MONEY MASTERCLASS is tonight at 5:30pm PST, and this is the last email I'll send you about it.
+
+I've watched so many people work harder and harder, waiting for the economy to calm down before money gets easier. Waiting for rates to drop. Waiting for the right month.
+
+Here's what I know after 39 years of doing this work:
+
+The economy isn't what's stopping your money. Your hidden stops are.
+
+Tonight, in 90 minutes together, you'll:
+
+1. Find your hidden money stops, and where they started.
+2. See money as energy you can attract, not just numbers you chase.
+3. Set a new income set point that doesn't depend on the news.
+4. Leave with 4 actions you can take the same day.
+
+LAST CHANCE, TONIGHT
+Opening the Flow of Money: Letting Go of Your Stops
+Tonight, Thursday, November 19, 5:30 to 7:00 pm PST
+Live on Zoom, 90 minutes, free
+
+Save your free seat:
+https://masterclass.lisakalmin.com/masterclass
+
+Registering takes less than a minute, and the Zoom link lands in your inbox right away.
+
+Come as you are. Bring your questions. Stay to the end, because that's where it all comes together.
+
+Let's open the flow, tonight.
+
+With love,
+Lisa
+
+Lisa Kalmin
+Transformational Mindset Wizard
+Author of "The Problem Is How You See the Problem"
+
+P.S. Can't make it live? Register anyway before 5:30 tonight and I'll send you the recording!
+
+------------------------------------------------------------
+You're receiving this because you joined Lisa Kalmin's list.
+Unsubscribe: {{ unsubscribe_url }}
+Update your preferences: {{ subscriber_preferences_url }}
+{{ address }}
