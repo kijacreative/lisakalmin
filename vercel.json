@@ -161,7 +161,12 @@
     },
     {
       "source": "/worldworks-trainings-background/",
-      "destination": "/blog/worldworks-trainings-background/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog/worldworks-trainings-background/",
+      "destination": "/blog/",
       "permanent": true
     },
     {
