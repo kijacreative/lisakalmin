@@ -1,0 +1,45 @@
+Subject: You're in! Welcome to Money, Wealth & Miracles
+Preview text: Module 1 is Monday, December 14 at 5:30 pm PT. Here are all six dates.
+Send: automatically right after purchase (Kit product purchase trigger, or the first email of the buyers' sequence)
+
+------------------------------------------------------------
+
+You're in!
+
+Hi {{ subscriber.first_name | default: "there" }},
+
+Congratulations on opening your flow of money and investing in yourself through my amazing course, Money, Wealth & Miracles!
+
+I am thrilled to guide you on your journey, and I'm excited about your shift to align yourself with the FLOW!
+
+YOUR WORKSHOP SCHEDULE
+Module 1: Monday, December 14, 2026 at 5:30 pm PT
+Six live sessions on Zoom, 90 minutes each. Every session is recorded.
+
+Module 1: Mon, Dec 14, 2026, 5:30 to 7:00 pm PT
+Module 2: Tue, Jan 5, 2027, 5:30 to 7:00 pm PT
+Module 3: Mon, Jan 18, 2027, 5:30 to 7:00 pm PT
+Module 4: Wed, Jan 27, 2027, 5:30 to 7:00 pm PT
+Module 5: Thu, Feb 4, 2027, 5:30 to 7:00 pm PT
+Module 6: Thu, Feb 11, 2027, 5:30 to 7:00 pm PT
+
+Save these dates in your calendar now. I'll send a reminder with your Zoom link and more detail before Module 1.
+
+In the meantime, if you attended the Opening the Flow of Money masterclass, keep using what you learned, and feel free to reach out if you have any questions. Just reply to this email.
+
+BRING A PAL
+Do you have friends or family you'd like to join you? It's fun to participate with a pal! Forward this email, or share this link:
+https://www.lisakalmin.com/course/?utm_source=referral&utm_medium=email&utm_campaign=mwm-purchase
+
+See you on the 14th!
+Lisa
+
+Lisa Kalmin
+Transformational Mindset Wizard
+Author of "The Problem Is How You See the Problem"
+
+------------------------------------------------------------
+You're receiving this because you enrolled in Money, Wealth & Miracles.
+Unsubscribe: {{ unsubscribe_url }}
+Update your preferences: {{ subscriber_preferences_url }}
+{{ address }}
