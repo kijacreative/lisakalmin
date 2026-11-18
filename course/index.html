@@ -1,13 +1,15 @@
 <!doctype html>
 <html lang="en">
 <head>
-<!-- Google Tag Manager -->
-<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-PCBSRF9P"></script>
+<!-- Google Tag Manager, with consent mode: analytics cookies wait for "Accept" in the cookie bar -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', wait_for_update: 500 });
+  try { if (localStorage.getItem('lk_consent') === 'granted') gtag('consent', 'update', { ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted', analytics_storage: 'granted' }); } catch (e) {}
   gtag('js', new Date());
 </script>
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-PCBSRF9P"></script>
 <!-- End Google Tag Manager -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -283,20 +285,6 @@ form label{font-size:14px;color:var(--mid)}
 }
 
 /* quiz pop-up: a lead for visitors who are not ready to buy yet */
-.qpop{position:fixed;inset:0;z-index:40;display:grid;place-items:center;padding:20px;background:rgba(20,27,22,.62);opacity:0;transition:opacity .25s}
-.qpop[hidden]{display:none}
-.qpop.on{opacity:1}
-.qpop .box{position:relative;width:min(520px,100%);max-height:calc(100vh - 40px);overflow:auto;background:var(--oat);color:var(--forest-d);border-radius:20px;padding:clamp(28px,5vw,44px);box-shadow:0 30px 70px -20px rgba(0,0,0,.55);transform:translateY(12px);transition:transform .25s}
-.qpop.on .box{transform:none}
-.qpop .k{margin:0 0 12px;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--rose)}
-.qpop h2{margin:0 0 14px;font-family:var(--display);font-weight:800;font-size:clamp(26px,4vw,32px);line-height:1.12;letter-spacing:-.01em;color:var(--forest)}
-.qpop p.t{margin:0 0 24px;color:var(--mid);font-size:17px;line-height:1.55}
-.qpop .go{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:54px;padding:14px 24px;border-radius:999px;background:var(--rose);color:#fff;font:700 18px/1.2 var(--body);text-decoration:none}
-.qpop .go:hover{background:var(--rose-h)}
-.qpop .no{display:block;margin:14px auto 0;background:none;border:0;color:var(--mid);font:400 15px var(--body);text-decoration:underline;text-underline-offset:4px;cursor:pointer}
-.qpop .x{position:absolute;top:12px;right:12px;width:40px;height:40px;border-radius:50%;border:0;background:transparent;color:var(--mid);font-size:26px;line-height:1;cursor:pointer}
-.qpop .x:hover{background:var(--linen)}
-@media (prefers-reduced-motion:reduce){.qpop,.qpop .box{transition:none}}
 </style>
 </head>
 <body>
@@ -728,57 +716,7 @@ var COHORT = {
   addEventListener('scroll', onScroll, { passive: true }); onScroll();
 })();
 </script>
-<!-- quiz pop-up -->
-<div class="qpop" id="qpop" role="dialog" aria-modal="true" aria-labelledby="qpop-h" hidden>
-<div class="box">
-<button class="x" type="button" data-qclose aria-label="Close">×</button>
-<p class="k">Free money mindset quiz · 5 minutes</p>
-<h2 id="qpop-h">Are you under-earning without realizing it?</h2>
-<p class="t">Before you decide on the course, take the Underearning Financial Scorecard. Rate 30 quick statements and see which money pattern is running your income.</p>
-<a class="go" href="/quiz/">Take the free quiz <span aria-hidden="true">→</span></a>
-<button class="no" type="button" data-qclose>No thanks, keep reading</button>
-</div>
-</div>
-<script>
-// quiz pop-up: once per visitor, after 25 seconds, halfway down the page, or on leaving (desktop).
-// never for masterclass attendees arriving with ?code=, and never once they have clicked to check out.
-(function () {
-  var pop = document.getElementById('qpop'); if (!pop) return;
-  var KEY = 'lk_quizpop';
-  var seen = function () { try { return localStorage.getItem(KEY); } catch (x) { return null; } };
-  var mark = function () { try { localStorage.setItem(KEY, String(Date.now())); } catch (x) {} };
-  if (new URLSearchParams(location.search).get('code') || seen()) return;
-  var done = false, last = null, timer;
-  function open() {
-    if (done || seen()) return; done = true; mark(); cleanup();
-    last = document.activeElement; pop.hidden = false;
-    requestAnimationFrame(function () { pop.classList.add('on'); pop.querySelector('.go').focus(); });
-    document.addEventListener('keydown', onKey);
-  }
-  function close() {
-    pop.classList.remove('on'); document.removeEventListener('keydown', onKey);
-    setTimeout(function () { pop.hidden = true; if (last && last.focus) last.focus(); }, 250);
-  }
-  function onKey(e) {
-    if (e.key === 'Escape') return close();
-    if (e.key === 'Tab') {
-      var f = pop.querySelectorAll('a,button'), a = f[0], b = f[f.length - 1];
-      if (e.shiftKey && document.activeElement === a) { e.preventDefault(); b.focus(); }
-      else if (!e.shiftKey && document.activeElement === b) { e.preventDefault(); a.focus(); }
-    }
-  }
-  function onScroll() { var h = document.documentElement.scrollHeight - innerHeight; if (h > 0 && scrollY / h > 0.5) open(); }
-  function onLeave(e) { if (!e.relatedTarget && e.clientY <= 0) open(); }
-  function cleanup() { clearTimeout(timer); removeEventListener('scroll', onScroll); document.removeEventListener('mouseout', onLeave); }
-  pop.addEventListener('click', function (e) { if (e.target === pop || e.target.closest('[data-qclose]')) close(); });
-  pop.querySelector('.go').addEventListener('click', mark);
-  // someone heading to checkout is not interrupted
-  document.addEventListener('click', function (e) { if (e.target.closest('[data-checkout],[data-commerce],a[href*="kit.com"]')) { done = true; mark(); cleanup(); } }, true);
-  timer = setTimeout(open, 25000);
-  addEventListener('scroll', onScroll, { passive: true });
-  if (matchMedia('(hover: hover) and (pointer: fine)').matches) document.addEventListener('mouseout', onLeave);
-})();
-</script>
 <script src="https://lisakalmin.kit.com/commerce.js" async defer></script>
+<script src="/assets/extras.js?v=1" defer></script>
 </body>
 </html>

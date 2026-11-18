@@ -1,13 +1,15 @@
 <!doctype html>
 <html lang="en">
 <head>
-<!-- Google Tag Manager -->
-<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-PCBSRF9P"></script>
+<!-- Google Tag Manager, with consent mode: analytics cookies wait for "Accept" in the cookie bar -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied', wait_for_update: 500 });
+  try { if (localStorage.getItem('lk_consent') === 'granted') gtag('consent', 'update', { ad_storage: 'granted', ad_user_data: 'granted', ad_personalization: 'granted', analytics_storage: 'granted' }); } catch (e) {}
   gtag('js', new Date());
 </script>
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-PCBSRF9P"></script>
 <!-- End Google Tag Manager -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
@@ -146,5 +148,6 @@
 </div>
 </footer>
 <script src="/assets/site.js?v=1" defer></script>
+<script src="/assets/extras.js?v=1" defer></script>
 </body>
 </html>
