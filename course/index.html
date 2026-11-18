@@ -489,7 +489,7 @@ form label{font-size:14px;color:var(--mid)}
 <div class="w">
 <div class="head">
 <p class="kicker" data-sched-kicker>Workshop schedule</p>
-<h2 class="h2" id="h-sched">Six evenings, seven weeks.</h2>
+<h2 class="h2" id="h-sched">Six evenings, December to February.</h2>
 <p class="lead" style="color:var(--mid)">Every session is live on Zoom, <span data-time>5:30 to 7:00 pm PT</span>.</p>
 </div>
 <ol class="sched" id="sched"></ol>
@@ -529,7 +529,7 @@ form label{font-size:14px;color:var(--mid)}
 </div>
 <div class="faq">
 <details><summary>Where does the course happen?</summary><p>Online, live on Zoom. You join from wherever you are; all you need is a computer or phone with a camera and a quiet spot for 90 minutes.</p></details>
-<details><summary>How much time does it take?</summary><p>Six live sessions of 90 minutes over about seven weeks, plus a weekly breakthrough assignment to put what you learn into practice.</p></details>
+<details><summary>How much time does it take?</summary><p>Six live sessions of 90 minutes over about two months, plus a weekly breakthrough assignment to put what you learn into practice.</p></details>
 <details><summary>How big are the groups?</summary><p>Between 15 and 30 people. Small enough that Lisa coaches you directly in the live Q&amp;A, large enough that you learn from other people’s breakthroughs too.</p></details>
 <details><summary>Do I need to have read Lisa’s book?</summary><p>No. The course is built on <em>The Problem Is How You See The Problem</em>, and the book is a good companion, but you do not need it to start.</p></details>
 <details><summary>What does it cost?</summary><p data-faq-price>Tuition is $797.</p></details>
@@ -572,7 +572,14 @@ var COHORT = {
   checkoutUrl: 'https://lisakalmin.kit.com/products/copy-of-money-wealth-miracles',   // Kit product page; empty shows a reserve form instead
   // each session in Pacific time, with its UTC offset (-07:00 in summer, -08:00 from early November).
   // Empty: enrolment stays open on the checkout link, and the schedule and countdown stay hidden until dates are added.
-  sessions: ['2026-12-14T17:30:00-08:00'],   // Module 1. Add the other five as they are set.
+  sessions: [
+    '2026-12-14T17:30:00-08:00',
+    '2027-01-05T17:30:00-08:00',
+    '2027-01-18T17:30:00-08:00',
+    '2027-01-27T17:30:00-08:00',
+    '2027-02-04T17:30:00-08:00',
+    '2027-02-11T17:30:00-08:00'
+  ],
   minutes: 90,
   // masterclass attendee offer: a link like /course/?code=FLOW200 shows this price and the code,
   // until the deadline (Pacific time). The code itself is entered at Kit's checkout.
