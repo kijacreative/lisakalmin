@@ -572,7 +572,7 @@ var COHORT = {
   checkoutUrl: 'https://lisakalmin.kit.com/products/copy-of-money-wealth-miracles',   // Kit product page; empty shows a reserve form instead
   // each session in Pacific time, with its UTC offset (-07:00 in summer, -08:00 from early November).
   // Empty: enrolment stays open on the checkout link, and the schedule and countdown stay hidden until dates are added.
-  sessions: [],
+  sessions: ['2026-12-14T17:30:00-08:00'],   // Module 1. Add the other five as they are set.
   minutes: 90,
   // masterclass attendee offer: a link like /course/?code=FLOW200 shows this price and the code,
   // until the deadline (Pacific time). The code itself is entered at Kit's checkout.
@@ -665,7 +665,8 @@ var COHORT = {
     list.appendChild(li);
   });
   $('#schedNote').innerHTML = open
-    ? '<span><b>Live on Zoom.</b> The link arrives by email when you enroll.</span><span><b>15 to 30 people</b> per cohort.</span>'
+    ? (starts.length < 6 ? '<span><b>Module 1 starts ' + fmt(first, { weekday: 'long', month: 'long', day: 'numeric' }) + '.</b> The dates for the other modules come by email when you enroll, and every session is recorded.</span>' : '') +
+      '<span><b>Live on Zoom.</b> The link arrives by email when you enroll.</span><span><b>15 to 30 people</b> per cohort.</span>'
     : '<span><b>This was the last cohort’s schedule.</b> The next one follows the same rhythm.</span><span><a href="#enroll" style="color:var(--rose);font-weight:700;text-underline-offset:5px">Join the waitlist →</a></span>';
   if (!open) $('[data-sched-kicker]').textContent = 'How a cohort runs';
 
