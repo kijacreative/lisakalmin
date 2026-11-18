@@ -208,6 +208,101 @@
       "source": "/transformational-coaching/",
       "destination": "/coaching/",
       "permanent": true
+    },
+    {
+      "source": "/home/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/get-started-with-lisa/",
+      "destination": "/coaching/",
+      "permanent": true
+    },
+    {
+      "source": "/miracles/",
+      "destination": "/course/",
+      "permanent": true
+    },
+    {
+      "source": "/miracles/:p*/",
+      "destination": "/course/",
+      "permanent": true
+    },
+    {
+      "source": "/mwm2/",
+      "destination": "/course/",
+      "permanent": true
+    },
+    {
+      "source": "/mwm2/:p*/",
+      "destination": "/course/",
+      "permanent": true
+    },
+    {
+      "source": "/miracles-graduates/",
+      "destination": "/course/",
+      "permanent": true
+    },
+    {
+      "source": "/miracles-graduates/:p*/",
+      "destination": "/course/",
+      "permanent": true
+    },
+    {
+      "source": "/masterclass-old/",
+      "destination": "/masterclass/",
+      "permanent": true
+    },
+    {
+      "source": "/masterclass-old/:p*/",
+      "destination": "/masterclass/",
+      "permanent": true
+    },
+    {
+      "source": "/get-masterclass-recording/",
+      "destination": "/masterclass/",
+      "permanent": true
+    },
+    {
+      "source": "/get-masterclass-recording/:p*/",
+      "destination": "/masterclass/",
+      "permanent": true
+    },
+    {
+      "source": "/recenter-and-reclaim-your-power-masterclass/",
+      "destination": "/masterclass/",
+      "permanent": true
+    },
+    {
+      "source": "/recenter-and-reclaim-your-power-masterclass/:p*/",
+      "destination": "/masterclass/",
+      "permanent": true
+    },
+    {
+      "source": "/badass-summit/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/badass-summit/:p*/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/rose/",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/author/:a*/",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/feed/",
+      "destination": "/blog/",
+      "permanent": true
     }
   ]
 }
