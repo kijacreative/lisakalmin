@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /email/
+Disallow: /kit/
+Disallow: /masterclass/thank-you/
+
+Sitemap: https://www.lisakalmin.com/sitemap.xml
