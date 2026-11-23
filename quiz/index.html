@@ -283,6 +283,9 @@
           btn.disabled = false; btn.firstChild.textContent = 'See my pattern '; return;
         }
         try { sessionStorage.removeItem('quiz_email'); } catch (x) {}
+        // GTM: fire the Meta "Lead" tag (and any other) on this event, once Kit has the subscriber
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({ event: 'quiz_lead', money_mindset_pattern: p, money_mindset_score: total });
         result(total, first);
       })
       .catch(function () { result(total, first); }); // network trouble should not cost them their result
