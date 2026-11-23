@@ -1,7 +1,7 @@
-# Money Wealth and Miracles: 20 seats by December 14
+# Money Wealth and Miracles: 30 seats by December 14
 
-**Goal:** 20 paid seats before doors close **Monday, December 14 at 5:30 pm PT** (Module 1 starts then).
-**Today:** 6 booked (Monday, November 23). **Need:** 14 more in 21 days, about 5 a week.
+**Goal:** 30 paid seats, a full room (groups are capped at 30), before doors close **Monday, December 14 at 5:30 pm PT** (Module 1 starts then).
+**Today:** 6 booked (Monday, November 23). **Need:** 24 more in 21 days, about 8 a week.
 **Offer:** $797 full price. $597 with a $200 code (pay in full). Checkout is the Kit product `lisakalmin.kit.com/products/copy-of-money-wealth-miracles`.
 
 Files in this folder:
@@ -21,22 +21,23 @@ This folder is in `.vercelignore`, so the codes and strategy are not published o
 
 ---
 
-## 1. Where the 14 seats come from
+## 1. Where the 24 seats come from
 
 The warmest people buy first and cheapest. Spend Lisa's time in order of warmth: masterclass people, then followers who engage, then the main list, then cold.
 
 | Source | Price | Target seats | Why it can work |
 |---|---|---|---|
-| Masterclass registrants and attendees | $597 (FLOW200) | 5 | They already saw Lisa teach and heard the offer. Many missed the Nov 22 deadline over a weekend. |
-| Main list, full price (5 emails) | $797 | 2 | Long-time readers who trust Lisa; a few buy at full price every launch. |
-| Main list clickers, final week | $597 (MIRACLE200) | 2 | They clicked and looked. A personal note and a price nudge closes some of them. |
-| Instagram followers (DMs) | $597 (FRIEND200) | 3 | One-to-one conversations convert far better than broadcasts. |
-| Referrals from the 6 buyers | $797, or $597 with FRIEND200 | 1 | "Bring a pal" is already in the purchase email; ask each buyer directly too. |
-| Meta ads to quiz, then retargeting | $597 (QUIZ200) | 1 to 2 | Cold leads rarely buy within 3 weeks, but the quiz builds the list for the next cohort too. |
-| Cold email and IG prospects | $597 (QUIZ200 / FRIEND200) | 0 to 1 | Small, slow channels this close to the date. Run them light and treat anything as a bonus. |
-| **Total** | | **14 to 16** | |
+| Masterclass registrants and attendees | $597 (FLOW200) | 7 | They already saw Lisa teach and heard the offer. Many missed the Nov 22 deadline over a weekend. |
+| Main list clickers, final week | $597 (MIRACLE200) | 4 | They clicked and looked. A personal note and a price nudge closes some of them. |
+| Instagram followers (DMs) | $597 (FRIEND200) | 4 | One-to-one conversations convert far better than broadcasts. |
+| Main list, full price (5 emails) | $797 | 3 | Long-time readers who trust Lisa; a few buy at full price every launch. |
+| Live "Ask Lisa" Q&A (Dec 9) and 15-minute calls | the person's own code | 2 | Live time with Lisa closes warm people who are on the fence. |
+| Referrals from the 6 buyers | $797, or $597 with FRIEND200 | 2 | "Bring a pal" is already in the purchase email; ask each buyer directly too. |
+| Meta ads to quiz, then retargeting | $597 (QUIZ200) | 2 | Cold leads rarely buy within 3 weeks, but the quiz builds the list for the next cohort too. |
+| Cold email and IG prospects | $597 (QUIZ200 / FRIEND200) | 1 | Small, slow channels this close to the date. Run them light and treat anything as a bonus. |
+| **Total** | | **25** | One seat of cushion over the 24 needed. |
 
-**If we are behind on Monday, December 7** (fewer than 13 total seats): turn on the two accelerators in section 6.
+With only one seat of cushion, the Q&A and 15-minute calls in section 6 are **planned from the start**, not held back. **If we are behind on Monday, December 7** (fewer than 17 total seats), add the payment plan and widen the DMs (section 6).
 
 ---
 
@@ -94,10 +95,10 @@ Pacific time. Main list gets a quiet Thanksgiving week after the masterclass pus
 | Wed Dec 2 | Cold email 2 | Prospects DM 1 | | |
 | **Thu Dec 3** | Main 2 | Story: testimonial + "DM me MIRACLE" | | |
 | Fri Dec 4 | Masterclass 4 | Prospects DM 2 | | |
-| **Sun Dec 6** | Main 3 | | | |
-| **Mon Dec 7** | Cold email 3. Build the `mwm-clicked` segment | Check-in: are we at 13? | | Decide on accelerators |
+| **Sun Dec 6** | Main 3, with the Dec 9 Q&A invite | | | |
+| **Mon Dec 7** | Cold email 3. Build the `mwm-clicked` segment | Check-in: are we at 17? | | Payment plan and wider DMs if behind |
 | **Tue Dec 8** | Clickers 1 (MIRACLE200) / Masterclass 5 | Final-week nudge to warm DM threads | Retargeting budget up | |
-| **Wed Dec 9** | Main 4 (full price, clickers excluded) | | | Optional: live "Ask Lisa" Q&A, 5:30 pm |
+| **Wed Dec 9** | Main 4 (full price, clickers excluded) | | | Live "Ask Lisa" Q&A, 5:30 pm |
 | Thu Dec 10 | Cold email 4 | Story: "4 days" countdown | | |
 | **Fri Dec 11** | Clickers 2 / Masterclass 6 | Prospects DM 3 | | |
 | Sat Dec 12 | | | Lead campaign off, all budget to retargeting | |
@@ -120,11 +121,14 @@ Pacific time. Main list gets a quiet Thanksgiving week after the masterclass pus
 
 ---
 
-## 6. Accelerators if we're behind on December 7
+## 6. Accelerators
 
-1. **Live "Ask Lisa" Q&A, Wednesday, December 9, 5:30 to 6:15 pm PT on Zoom.** Free, for masterclass registrants, main list clickers, quiz leads and DM threads. 30 minutes of coaching on a real money question from the group, then 10 minutes on the course and the code. Live events convert warm people far better than another email. Invite blocks are in `email-masterclass.md` and `email-main-list.md`.
+Items 1 and 2 are part of the 30-seat plan from the start. Items 3 and 4 are for falling behind (under 10 on Nov 30, or under 17 on Dec 7).
+
+1. **Live "Ask Lisa" Q&A, Wednesday, December 9, 5:30 to 6:15 pm PT on Zoom.** Free, for masterclass registrants, main list clickers, quiz leads and DM threads. 30 minutes of coaching on a real money question from the group, then 10 minutes on the course and the code. Live events convert warm people far better than another email. Invite blocks are in `email-masterclass.md` and `email-main-list.md`; use them (they're marked optional there). Also invite quiz leads and open DM threads.
 2. **15-minute "Is this right for me?" calls with Lisa.** Offer them by reply to anyone who clicked twice or asked a question. A personal call closes the people who are on the fence about money or time.
 3. **Payment plan** (only if the price is the stated objection): for example 2 payments of $398.50 at full price. The current copy says "pay in full to receive the $200 discount," so a plan stays at full price.
+4. **Wider DMs:** the next 100 followers, with Lisa's voice notes, and ask each buyer for one name.
 
 Do **not** extend the deadline past Module 1. The start date is the real reason to decide now, and keeping it honest matters for the next cohort.
 
@@ -136,7 +140,7 @@ Do **not** extend the deadline past Module 1. The start date is the real reason 
 |---|---|---|---|---|---|---|---|---|---|
 | Nov 23 | 6 | | | | | | | | |
 
-Pace check: 9 by Nov 30, 13 by Dec 7, 20 by Dec 14. Most launches take half their sales in the last 72 hours, so being "on pace" on Dec 7 with 13 is a good sign, not a worry.
+Pace check: 10 by Nov 30, 17 by Dec 7, 30 by Dec 14. Most launches close a large share of their sales in the last 72 hours, so being at 17 on Dec 7 is on track, not behind.
 
 ---
 
