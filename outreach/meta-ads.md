@@ -47,7 +47,7 @@ The site has Google Tag Manager (GTM-PCBSRF9P) but no Meta pixel yet. The quiz a
 | B. Lookalike | 1 to 3% lookalike of Lisa's Kit list, masterclass registrants and course buyers (upload the email lists) | $20 |
 | C. Advantage+ audience | Broad, with Lisa's lists as audience suggestions | $15 |
 
-**Exclude** from all ad sets: course buyers, people who already took the quiz (pixel `Lead`, 180 days), and the uploaded masterclass list (they get retargeting instead).
+**Exclude** from all ad sets: **L1 Booked** and the pixel `Purchase` event, people who already took the quiz (pixel `Lead`, 180 days), and **L2 Warm, not booked** (they get retargeting instead). Lists are defined in section 3.
 
 **Kill and scale rules**
 
@@ -64,19 +64,31 @@ The site has Google Tag Manager (GTM-PCBSRF9P) but no Meta pixel yet. The quiz a
 - **Starts:** Sat Nov 28. Budget ramps up in the final week (table above).
 - **Link until Dec 3:** `https://www.lisakalmin.com/course/?utm_source=meta&utm_medium=paid&utm_campaign=mwm-dec-retarget`
 - **Link from Dec 4:** `https://www.lisakalmin.com/course/?code=MIRACLE200&utm_source=meta&utm_medium=paid&utm_campaign=mwm-dec-retarget`
-- **On Dec 4:** pause the full-price ads and turn on the MIRACLE200 ads in the same ad set, so learning carries over.
+- **On Dec 4:** pause the full-price ads and turn on the MIRACLE200 ads in the same ad set, so learning carries over. In the same edit, move **L3** from the audience to the exclusions.
 
-**Audience (one ad set, combined):**
+**Audience, Nov 28 to Dec 3 (full-price ads):**
 
 - Took the quiz (pixel `Lead`, 30 days)
 - Visited `/course/` (30 days) or `/masterclass/` (60 days)
 - Engaged with Lisa's Instagram or Facebook page (60 days)
 - Watched 50% or more of any Lisa video ad (30 days)
-- Uploaded lists: main Kit list and masterclass registrants
+- Uploaded lists: **L2 Warm, not booked** and **L3 Main list, full price only** (below)
 
-**Exclude:** course buyers.
+**Audience, Dec 4 to Dec 14 ($597 ads):** the same, **minus L3**. The main list is left off the MIRACLE200 ads: Lisa's call, so people who were only offered $797 by email don't see $597 in their feed. L3 is added as an **exclusion**, which also removes main list people who show up through site visits or engagement.
 
-Note: from Dec 4 the ads show MIRACLE200 publicly, so the rest of the main list may see $597 even though their emails say $797. That's acceptable for the final ten days; if Lisa prefers, exclude the uploaded main list from retargeting from Dec 4 and keep only quiz takers, site visitors, engagers and masterclass registrants.
+**Exclude, always:** **L1 Booked** and the pixel `Purchase` event (180 days).
+
+### Uploaded lists: built in Kit, with booked people removed
+
+Meta can only leave out buyers it knows about, so every list we upload must already have the booked people taken out, and we upload the buyers as their own list to exclude. Build each as a Kit segment, export the subscribers as CSV (email, first name), and upload to Meta as a customer list custom audience with the same name.
+
+| List | Kit segment | Used as | Refresh |
+|---|---|---|---|
+| **L1 Booked** | Tag `mwm-buyer` (everyone who has bought, including the original 6) | Exclusion in **every** campaign and ad set, lead ads included | Every morning, so new buyers stop seeing ads within a day |
+| **L2 Warm, not booked** | Tag `masterclass-nov19` **or** `quiz-lead` **or** `mwm-clicked`, **and not** `mwm-buyer` | Retargeting audience, both phases | Dec 3 (before $597 opens), Dec 8 (after the clicker segment), Dec 11 |
+| **L3 Main list, full price only** | All subscribers, **not** `masterclass-nov19`, `quiz-lead`, `mwm-clicked` or `mwm-buyer` | Retargeting audience until Dec 3, **exclusion** from Dec 4 | Same days as L2, so people who click move from L3 to L2 |
+
+Before uploading, check the 6 current buyers are tagged `mwm-buyer` in Kit; if they bought before the tag automation existed, add the tag by hand. Lookalikes (campaign 1, ad set B) can still be built from the whole Kit list: a lookalike is a model, not people who see the ads.
 
 ---
 
@@ -163,7 +175,7 @@ Links: the full-price link until Dec 3, the MIRACLE200 link from Dec 4 (section 
 |---|---|---|
 | R2 Testimonial | Nov 28 to Dec 3 | $797, no code |
 | R3 Carousel | Nov 28 to Dec 14 | $797 until Dec 3, then swap card 5 to MIRACLE200 |
-| R1 Video | Dec 4 to Dec 14 | $597 with MIRACLE200 |
+| R1 Video | Dec 4 to Dec 14 (main list excluded) | $597 with MIRACLE200 |
 | R4 Countdown | Dec 11 to Dec 14 | $597 with MIRACLE200 |
 
 ### Ad R1 · "You know your pattern" (Lisa video, script V2) · from Dec 4

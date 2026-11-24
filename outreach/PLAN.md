@@ -4,7 +4,7 @@
 **Today:** 6 booked (Monday, November 23). **Need:** 24 more in 21 days, about 8 a week.
 **Offer, in two phases:**
 - **Nov 24 to Dec 3: full price, $797, for everyone.** No codes. The masterclass code FLOW200 is retired; its links now show $797 and say the code has expired.
-- **Dec 4 to Dec 14 at 5:30 pm PT: $597 with MIRACLE200** (pay in full), for warm people only: masterclass registrants, main list clickers, quiz takers, Instagram conversations, retargeting ads and friends of buyers. The rest of the main list stays at full price.
+- **Dec 4 to Dec 14 at 5:30 pm PT: $597 with MIRACLE200** (pay in full), for warm people only: masterclass registrants, main list clickers, quiz takers, Instagram conversations, retargeting ads and friends of buyers. The rest of the main list stays at full price, and is excluded from the $597 ads.
 
 Checkout is the Kit product `lisakalmin.kit.com/products/copy-of-money-wealth-miracles`.
 
@@ -73,6 +73,12 @@ With only one seat of cushion, the Q&A and 15-minute calls in section 6 are **pl
 
 **The open-and-click rule.** A click is the real signal (opens are unreliable since Apple Mail Privacy Protection marks most emails as opened). In Kit, for each course link in main list emails 1 to 5, set the link to add the tag `mwm-clicked`. On Monday, December 7, everyone with `mwm-clicked` and without `mwm-buyer` moves to the MIRACLE200 emails and **stops getting the full-price emails 4 and 5**, so no one sees two prices. Anyone who clicks email 4 or 5 also gets the tag, and so joins the later MIRACLE200 sends.
 
+**Lists for Meta, with booked people removed.** Three Kit segments are exported and uploaded as Meta custom audiences (details and refresh days in `meta-ads.md`, section 3):
+
+- **L1 Booked:** tag `mwm-buyer`. Excluded from every ad. Refreshed every morning.
+- **L2 Warm, not booked:** `masterclass-nov19`, `quiz-lead` or `mwm-clicked`, and not `mwm-buyer`. Retargeted in both phases.
+- **L3 Main list, full price only:** everyone else, not `mwm-buyer`. Retargeted at full price until Dec 3, then **excluded** from the $597 ads, so the main list never sees MIRACLE200 in an ad.
+
 **Exclude Canada and the EU from cold email.** Canada's anti-spam law (CASL) and the GDPR require consent first.
 
 ---
@@ -93,12 +99,12 @@ Pacific time. Main list gets a quiet Thanksgiving week after the masterclass pus
 | Mon Nov 30 | Cold email 1 (low volume) | | | |
 | **Tue Dec 1** | Main 1 / Masterclass 3 ($797) | Followers DM round 3 | | |
 | Wed Dec 2 | Cold email 2 | Prospects DM 1 | | |
-| **Thu Dec 3** | Main 2 | Story: testimonial + "DM me MIRACLE" | | |
-| **Fri Dec 4** | **MIRACLE200 opens.** Masterclass 4 / quiz leads broadcast | DMs: MIRACLE200 to every open thread | Retargeting switches to the $597 ads | |
+| **Thu Dec 3** | Main 2 | Story: testimonial + "DM me MIRACLE" | Refresh L1, L2, L3 uploads | |
+| **Fri Dec 4** | **MIRACLE200 opens.** Masterclass 4 / quiz leads broadcast | DMs: MIRACLE200 to every open thread | Retargeting switches to the $597 ads; L3 (main list) moves to exclusions | |
 | Sat Dec 5 | | Prospects DM 2 | | |
 | **Sun Dec 6** | Main 3 ($797), with the Dec 9 Q&A invite | | | |
 | **Mon Dec 7** | Cold email 3. Build the `mwm-clicked` segment | Check-in: are we at 17? | | Payment plan and wider DMs if behind |
-| **Tue Dec 8** | Clickers 1 (MIRACLE200) / Masterclass 5 | Final-week nudge to warm DM threads | Retargeting budget up | |
+| **Tue Dec 8** | Clickers 1 (MIRACLE200) / Masterclass 5 | Final-week nudge to warm DM threads | Retargeting budget up; refresh L2 and L3 | |
 | **Wed Dec 9** | Main 4 (full price, clickers excluded) | | | Live "Ask Lisa" Q&A, 5:30 pm |
 | Thu Dec 10 | Cold email 4 (MIRACLE200) | Story: "4 days" countdown | | |
 | **Fri Dec 11** | Clickers 2 / Masterclass 6 | Prospects DM 3 | | |
@@ -114,7 +120,7 @@ Pacific time. Main list gets a quiet Thanksgiving week after the masterclass pus
 
 1. **Kit discount code:** create MIRACLE200, $200 off, pay in full, live Dec 4 at 12:00 am PT to Dec 14 at 5:30 pm PT. Turn FLOW200 off.
 2. **Course page:** done (section 2). After deploying, check `?code=MIRACLE200` shows $797 now, and with `&at=2026-12-05T10:00:00-08:00` shows $597. On Dec 4, click through to Kit's checkout and confirm $597.
-3. **Kit tags and automations:** `mwm-buyer` on purchase (and remove from all sequences); link triggers for `mwm-clicked`; import Zoom attendees as `masterclass-attended`.
+3. **Kit tags and automations:** `mwm-buyer` on purchase (and remove from all sequences); tag the 6 current buyers `mwm-buyer` by hand if they aren't already; link triggers for `mwm-clicked`; import Zoom attendees as `masterclass-attended`. Then build the L1, L2 and L3 segments and upload them to Meta (section 3).
 4. **Meta pixel and Conversions API** through GTM (GTM-PCBSRF9P), with a `Lead` tag triggered by the `quiz_lead` dataLayer event the quiz now sends and a `Purchase` event on Kit's purchase (Kit's own Meta pixel setting on the product, or the thank-you redirect). Details in `meta-ads.md`.
 5. **Consent bar:** the site defaults ad cookies to denied for every visitor until they click Accept. For US visitors that throws away most pixel data and makes ads expensive. Consider granting by default in the US and keeping the opt-in for the EU, UK and Canada.
 6. **Cold email:** a separate sending domain and inbox in a cold-email tool (Instantly, Smartlead or similar), **never Kit** (Kit's terms ban purchased or scraped lists, and it would hurt the main list's deliverability). See `email-cold.md`.
