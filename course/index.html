@@ -319,6 +319,10 @@ form label{font-size:14px;color:var(--mid)}
 <p>Your code: <b data-code></b> <button type="button" class="copy-btn" data-copy>Copy</button></p>
 <p class="code-note">It’s applied for you at checkout, saving <span data-save>$200</span>. Good through <span data-deadline>Monday, December 14</span> at 5:30 pm PT, when Module 1 begins.</p>
 </div>
+<div class="code" data-code-expired hidden role="status">
+<p>The code <b data-expired-code></b> has expired.</p>
+<p class="code-note">That offer has ended, so the price shown is full tuition. Questions? Write to <a href="mailto:support@lisakalmin.com">support@lisakalmin.com</a>.</p>
+</div>
 <div class="offer-row">
 <a class="btn" href="#enroll" data-cta>Reserve my spot <span class="ar" aria-hidden="true">→</span></a>
 <a class="btn ghost" href="#schedule" data-dates>See the dates</a><a class="btn ghost" href="#fit" data-no-dates hidden>Is this for me?</a>
@@ -457,6 +461,10 @@ form label{font-size:14px;color:var(--mid)}
 <p>Your code: <b data-code></b> <button type="button" class="copy-btn" data-copy>Copy</button></p>
 <p class="code-note">It’s applied for you at checkout, saving <span data-save>$200</span>. Good through <span data-deadline>Monday, December 14</span> at 5:30 pm PT, when Module 1 begins.</p>
 </div>
+<div class="code" data-code-expired hidden role="status">
+<p>The code <b data-expired-code></b> has expired.</p>
+<p class="code-note">That offer has ended, so the price shown is full tuition. Questions? Write to <a href="mailto:support@lisakalmin.com">support@lisakalmin.com</a>.</p>
+</div>
 <a class="btn wide" href="#" data-checkout hidden>Join now <span class="ar" aria-hidden="true">→</span></a>
 <p class="small" data-checkout-note hidden>Secure checkout through Kit. Seats are limited to 30 so everyone gets time with Lisa.</p>
 <form class="form" data-form="reserve" data-no-checkout>
@@ -583,7 +591,9 @@ var COHORT = {
   minutes: 90,
   // code offer: a link like /course/?code=FLOW200 (or MIRACLE200, QUIZ200, FRIEND200) shows this price and the code,
   // until the deadline (Pacific time). The code itself is entered at Kit's checkout.
-  attendee: { price: 597, deadline: '2026-12-14T17:30:00-08:00', label: 'Your price' }
+  attendee: { price: 597, deadline: '2026-12-14T17:30:00-08:00', label: 'Your price' },
+  // codes that no longer work: a link with one shows full price and an "expired" note instead
+  expiredCodes: ['FLOW200']
 };
 
 (function () {
@@ -598,7 +608,13 @@ var COHORT = {
   var code = new URLSearchParams(q).get('code'), promo = '';
   try { sessionStorage.removeItem('mwm_code'); } catch (x) {}
   var A = COHORT.attendee;
-  if (code && /^[A-Za-z0-9_-]{2,40}$/.test(code) && A && now < new Date(A.deadline)) {
+  var validCode = code && /^[A-Za-z0-9_-]{2,40}$/.test(code);
+  // a retired code, or any code after the deadline: full price, and say the code has expired
+  var expired = validCode && ((COHORT.expiredCodes || []).indexOf(code.toUpperCase()) > -1 || (A && now >= new Date(A.deadline)));
+  if (expired) {
+    $$('[data-expired-code]').forEach(function (el) { el.textContent = code.toUpperCase(); });
+    $$('[data-code-expired]').forEach(function (el) { el.hidden = false; });
+  } else if (validCode && A && now < new Date(A.deadline)) {
     COHORT.price = A.price;
     promo = code.toUpperCase();
     $$('[data-tag]').forEach(function (el) { el.textContent = A.label; });
