@@ -1,16 +1,20 @@
-# Quiz takers: from scorecard to course (QUIZ200)
+# Quiz takers: from scorecard to course
 
 **Audience:** new quiz leads from Kit form 10176902 after Nov 23 (from Meta ads, cold email, DMs, the site pop-up), **not** `mwm-buyer` and **not** `masterclass-nov19`.
 **How:** a Kit sequence triggered by the quiz form. It starts the day after `email/quiz-confirmation` (which already sends the result).
-**Price:** $597 with QUIZ200 through Monday, December 14 at 5:30 pm PT.
-**Link:** `https://www.lisakalmin.com/course/?code=QUIZ200&utm_source=kit&utm_medium=email&utm_campaign=mwm-dec&utm_content=quiz-eN`
-**Late leads:** someone who takes the quiz on Dec 11 won't reach email 4 before close. So also send **Quiz 4** as a broadcast to `quiz-lead` on **Sunday, December 13**, and the 2:00 pm "3 hours" last call on Dec 14 (in `email-main-list.md`) with QUIZ200. After December 14, swap this sequence's course emails for the waitlist.
+**Price, in two phases:**
+- **Until Dec 3:** full price, $797. Link `https://www.lisakalmin.com/course/?utm_source=kit&utm_medium=email&utm_campaign=mwm-dec&utm_content=quiz-eN`
+- **From Dec 4:** $597 with MIRACLE200 through Monday, December 14 at 5:30 pm PT. Link `https://www.lisakalmin.com/course/?code=MIRACLE200&utm_source=kit&utm_medium=email&utm_campaign=mwm-dec&utm_content=quiz-eN`
+
+**On the morning of Friday, December 4,** edit emails 2, 3 and 4 in the Kit sequence: replace each **Price block (until Dec 3)** with its **Price block (from Dec 4)**. Then send the **Dec 4 broadcast** below to everyone tagged `quiz-lead` so earlier quiz takers hear about it too.
+
+**Late leads:** someone who takes the quiz on Dec 11 won't reach email 4 before close. So also send **Quiz 4** as a broadcast to `quiz-lead` on **Sunday, December 13**, and the 2:00 pm "3 hours" last call on Dec 14 (in `email-main-list.md`). After December 14, swap this sequence's course emails for the waitlist.
 
 Pattern-specific opening lines use the existing custom field `money_mindset_pattern`.
 
 ---
 
-## Quiz 1 · 1 day after the quiz
+## Quiz 1 · 1 day after the quiz (no price)
 
 **Subject A:** What your pattern is really saying
 **Subject B:** About your {{ subscriber.money_mindset_pattern | capitalize }} result
@@ -36,7 +40,7 @@ Whatever your score, it isn't a verdict. It's a map of the beliefs you were hand
 Every pattern on that scorecard comes back to one thing: a money set point you didn't choose. I teach people to find it, let it go, and set a new one in my live course, **Money Wealth and Miracles**, which begins **Monday, December 14**.
 
 See the course:
-https://www.lisakalmin.com/course/?code=QUIZ200
+https://www.lisakalmin.com/course/
 
 To your abundance!
 Lisa
@@ -64,10 +68,19 @@ Another student, K.Y., closed a $12M deal after joining, and two more just under
 
 Neither of them came in with the "right" pattern. They came in willing to look honestly at their money story, the same thing you just did with the scorecard.
 
-Because you took the scorecard, I'd like you to have **$200 off: $597 instead of $797 with the code QUIZ200**, through Monday, December 14 at 5:30 pm PT, when the group begins.
+**Price block (until Dec 3):**
+
+We begin Monday, December 14. Six live sessions with me, small group, every session recorded.
+
+Join Money Wealth and Miracles:
+https://www.lisakalmin.com/course/
+
+**Price block (from Dec 4):**
+
+Because you took the scorecard, I'd like you to have **$200 off: $597 instead of $797 with the code MIRACLE200**, through Monday, December 14 at 5:30 pm PT, when the group begins.
 
 Join for $597:
-https://www.lisakalmin.com/course/?code=QUIZ200
+https://www.lisakalmin.com/course/?code=MIRACLE200
 
 To your abundance!
 Lisa
@@ -78,7 +91,7 @@ Lisa
 
 **Subject A:** Six evenings with me
 **Subject B:** What Money Wealth and Miracles actually looks like
-**Preview:** The dates, how a session works, and your $597 price.
+**Preview:** The dates, how a session works, and how to join.
 **utm_content:** quiz-e3
 
 Hi {{ subscriber.first_name | default: "there" }},
@@ -95,8 +108,15 @@ Here's what Money Wealth and Miracles looks like from the inside.
 
 You'll finish in February with a new set point, before most people have even remembered their resolutions.
 
-Join for $597 with QUIZ200:
-https://www.lisakalmin.com/course/?code=QUIZ200
+**Price block (until Dec 3):**
+
+Tuition is $797 for all six sessions:
+https://www.lisakalmin.com/course/
+
+**Price block (from Dec 4):**
+
+Join for $597 with MIRACLE200, through Dec 14 at 5:30 pm PT:
+https://www.lisakalmin.com/course/?code=MIRACLE200
 
 To your abundance!
 Lisa
@@ -105,21 +125,54 @@ Lisa
 
 ## Quiz 4 · 6 days after the quiz (and broadcast Sunday, December 13)
 
-**Subject A:** We begin Monday
-**Subject B:** Your $597 ends when we start
+**Subject A:** We begin Monday, December 14
+**Subject B:** Enrollment closes when we start
 **Preview:** Money Wealth and Miracles starts Monday, December 14 at 5:30 pm PT.
 **utm_content:** quiz-e4
 
 Hi {{ subscriber.first_name | default: "there" }},
 
-Money Wealth and Miracles begins **Monday, December 14 at 5:30 pm PT**, and enrollment closes when we start. Your $200 off with QUIZ200 ends then too.
+Money Wealth and Miracles begins **Monday, December 14 at 5:30 pm PT**, and enrollment closes when we start.
 
 Your scorecard showed you a pattern. The course is where you change it, live, with me and a small group who are doing the same work.
 
-Join for $597:
-https://www.lisakalmin.com/course/?code=QUIZ200
+**Price block (until Dec 3):**
+
+Join us:
+https://www.lisakalmin.com/course/
+
+**Price block (from Dec 4; use this one for the Dec 13 broadcast):**
+
+Your $200 off with MIRACLE200 ends when we start. Join for $597:
+https://www.lisakalmin.com/course/?code=MIRACLE200
 
 If you have a question first, just reply. I'll answer it myself.
 
 To your abundance!
 Lisa
+
+---
+
+## Dec 4 broadcast · Friday, December 4, 11:00 am PT
+
+**Audience:** `quiz-lead`, not `mwm-buyer`, not `masterclass-nov19`.
+**Subject A:** $200 off, starting today
+**Subject B:** For the people who took my scorecard
+**Preview:** $597 for Money Wealth and Miracles, through December 14.
+**utm_content:** quiz-dec4
+
+Hi {{ subscriber.first_name | default: "there" }},
+
+You took my Underearning Financial Scorecard, which means you've already done the bravest part: looking honestly at your money story.
+
+Starting today, I'd like you to have **$200 off Money Wealth and Miracles: $597 instead of $797 with the code MIRACLE200**, through the start of Module 1 on Monday, December 14 at 5:30 pm PT.
+
+Six live sessions with me on Zoom, a small group, live coaching every session, and every session recorded.
+
+Join for $597:
+https://www.lisakalmin.com/course/?code=MIRACLE200
+
+To your abundance!
+Lisa
+
+P.S. The $200 off is for paying in full, and it ends when we begin.

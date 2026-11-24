@@ -2,8 +2,8 @@
 
 **Two campaigns:**
 
-1. **Quiz leads** (cold): ads send people to the Underearning Financial Scorecard at `/quiz/`. The email gate captures them into Kit (form 10176902), and `email-quiz-nurture.md` sells the course with QUIZ200.
-2. **Offer retargeting** (warm): people who took the quiz, visited the course page, engaged with Lisa, or are on her lists see the course offer with QUIZ200.
+1. **Quiz leads** (cold): ads send people to the Underearning Financial Scorecard at `/quiz/`. The email gate captures them into Kit (form 10176902), and `email-quiz-nurture.md` sells the course.
+2. **Retargeting** (warm): people who took the quiz, visited the course page, engaged with Lisa, or are on her lists see the course. **Nov 28 to Dec 3 at full price** (ads R2 and R3, no code). **From Fri Dec 4, the $597 offer with MIRACLE200** (ads R1, R3 with its last card swapped, and R4 from Dec 11).
 
 **Dates:** Wed Nov 25 to Mon Dec 14, 5:30 pm PT.
 **Suggested budget:** about **$1,600 total**.
@@ -62,7 +62,9 @@ The site has Google Tag Manager (GTM-PCBSRF9P) but no Meta pixel yet. The quiz a
 
 - **Objective:** Sales, optimize for `Purchase` (or `InitiateCheckout` if there are too few purchases to learn from, which is likely).
 - **Starts:** Sat Nov 28. Budget ramps up in the final week (table above).
-- **Link:** `https://www.lisakalmin.com/course/?code=QUIZ200&utm_source=meta&utm_medium=paid&utm_campaign=mwm-dec-retarget`
+- **Link until Dec 3:** `https://www.lisakalmin.com/course/?utm_source=meta&utm_medium=paid&utm_campaign=mwm-dec-retarget`
+- **Link from Dec 4:** `https://www.lisakalmin.com/course/?code=MIRACLE200&utm_source=meta&utm_medium=paid&utm_campaign=mwm-dec-retarget`
+- **On Dec 4:** pause the full-price ads and turn on the MIRACLE200 ads in the same ad set, so learning carries over.
 
 **Audience (one ad set, combined):**
 
@@ -74,7 +76,7 @@ The site has Google Tag Manager (GTM-PCBSRF9P) but no Meta pixel yet. The quiz a
 
 **Exclude:** course buyers.
 
-Note: the masterclass and main lists get their own codes by email (FLOW200, MIRACLE200). Seeing QUIZ200 in an ad is the same $597, so there is no conflict in price, only in which code they use. That's fine.
+Note: from Dec 4 the ads show MIRACLE200 publicly, so the rest of the main list may see $597 even though their emails say $797. That's acceptable for the final ten days; if Lisa prefers, exclude the uploaded main list from retargeting from Dec 4 and keep only quiz takers, site visitors, engagers and masterclass registrants.
 
 ---
 
@@ -155,26 +157,33 @@ Created by Lisa Kalmin, author of The Problem Is How You See the Problem.
 
 ## 6. Retargeting ads: copy
 
-Link: `https://www.lisakalmin.com/course/?code=QUIZ200&...&utm_content=<ad>`, CTA **Sign up** or **Learn more**.
+Links: the full-price link until Dec 3, the MIRACLE200 link from Dec 4 (section 3), each with `&utm_content=<ad>`. CTA **Sign up** or **Learn more**.
 
-### Ad R1 · "You know your pattern" (Lisa video, script V2)
+| Ad | Runs | Price |
+|---|---|---|
+| R2 Testimonial | Nov 28 to Dec 3 | $797, no code |
+| R3 Carousel | Nov 28 to Dec 14 | $797 until Dec 3, then swap card 5 to MIRACLE200 |
+| R1 Video | Dec 4 to Dec 14 | $597 with MIRACLE200 |
+| R4 Countdown | Dec 11 to Dec 14 | $597 with MIRACLE200 |
+
+### Ad R1 · "You know your pattern" (Lisa video, script V2) · from Dec 4
 
 **Primary text:**
 You've seen your money pattern. Now let's change it.
 
 Money Wealth and Miracles is Lisa Kalmin's live group course: six evenings on Zoom, Dec 14 to Feb 11, with live coaching in every session and a small group of 15 to 30.
 
-$200 off with QUIZ200 until we begin, Monday Dec 14 at 5:30 pm PT.
+$200 off with MIRACLE200 until we begin, Monday Dec 14 at 5:30 pm PT.
 
-**Headline:** $597 with code QUIZ200
+**Headline:** $597 with code MIRACLE200
 **Description:** Live with Lisa · starts Dec 14
 
-### Ad R2 · Testimonial (static)
+### Ad R2 · Testimonial (static) · Nov 28 to Dec 3
 
 **Primary text:**
 "Having direct access to Lisa is immeasurable. I noticed myself a few times asking, why didn't anyone tell me this before?"
 
-Money Wealth and Miracles starts Monday, December 14. Six live sessions with Lisa Kalmin, all recorded. Save $200 with QUIZ200 until we begin.
+Money Wealth and Miracles starts Monday, December 14. Six live sessions with Lisa Kalmin, all recorded, in a small group of 15 to 30.
 
 **Headline:** Why didn't anyone tell me this?
 **Description:** Live course · starts Dec 14
@@ -187,7 +196,7 @@ Cards:
 2. "Live coaching in every session" · your questions, answered in real time
 3. "Weekly breakthrough assignments" · put the shift to work
 4. "A private WhatsApp group" · your Co-Miracle Makers
-5. "$597 with QUIZ200" · until Dec 14 at 5:30 pm PT
+5. Until Dec 3: "Starts Monday, December 14" · groups of 15 to 30. From Dec 4: "$597 with MIRACLE200" · until Dec 14 at 5:30 pm PT
 
 **Primary text:** Start the new year with a new money set point. Money Wealth and Miracles, live with Lisa Kalmin, begins Monday, December 14.
 **Headline:** Money Wealth and Miracles
@@ -197,7 +206,7 @@ Cards:
 **Primary text:**
 We begin Monday, December 14 at 5:30 pm PT, and enrollment closes when we start.
 
-Six live sessions with Lisa Kalmin to rewrite the money story you grew up with. $597 with QUIZ200 until the doors close.
+Six live sessions with Lisa Kalmin to rewrite the money story you grew up with. $597 with MIRACLE200 until the doors close.
 
 **Headline:** Doors close Monday 5:30 pm PT
 **Description:** Last chance for $200 off
@@ -222,12 +231,14 @@ Vertical 9:16, phone on a tripod at eye level, window light, 20 to 35 seconds. A
 > If you took my scorecard, you've seen your money pattern.
 > Seeing it is the first step. Changing it is what we do in Money Wealth and Miracles, my live group course.
 > Six evenings with me on Zoom, starting December 14, in a small group where I coach you directly.
-> Use the code QUIZ200 and save $200 until we begin. I'd love to see you there.
+> The link has everything. I'd love to see you there.
+
+(No code in the script, so the same video can run in both phases; the code goes in the ad's text and headline.)
 
 ### V3 · Retargeting, final days: "We begin Monday" (about 20 s)
 
 > On Monday night, a small group of us will meet for the first time and start rewriting the money stories we were handed.
-> There are still seats, and your $200 off with QUIZ200 ends when we start, Monday at 5:30 Pacific.
+> There are still seats, and your $200 off with MIRACLE200 ends when we start, Monday at 5:30 Pacific.
 > Come join us.
 
 Also cut a 15-second version of V1 for Stories and Reels.
@@ -242,4 +253,4 @@ Also cut a 15-second version of V1 for Stories and Reels.
 | Landing page to lead rate on `/quiz/` | 25%+ | under 15%: test the quiz intro text |
 | Link click-through rate | 1%+ | under 0.7%: new hooks |
 | Retargeting frequency | under 5 a week | over 7: add fresh creative |
-| QUIZ200 sales in Kit | 1 to 2 by Dec 14 | |
+| Sales with `utm_source=meta` | 1 to 2 by Dec 14 | |

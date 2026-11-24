@@ -1,6 +1,6 @@
 # Cold sourced list: 4 plain-text emails by interest
 
-**Goal:** get cold contacts to take the free scorecard (low friction), which drops them into `email-quiz-nurture.md` with QUIZ200. Only the last email names the course. Expect few course sales before Dec 14; the real value is quiz leads for the next cohort.
+**Goal:** get cold contacts to take the free scorecard (low friction), which drops them into `email-quiz-nurture.md`. Only the last email names the course, with MIRACLE200 (so it must go out on or after Friday, Dec 4; from a Nov 30 start, day 10 is Dec 10). Expect few course sales before Dec 14; the real value is quiz leads for the next cohort.
 
 ## Rules before sending anything
 
@@ -102,8 +102,8 @@ I'll leave it here, I don't want to crowd your inbox.
 
 If any of this has been relevant: I'm running a small live group course called Money Wealth and Miracles, six evenings on Zoom with me, starting Monday, December 14. It's for {{segment_word}} who know they're worth more than they're earning and want to change the story underneath.
 
-There's $200 off with the code QUIZ200 until we start:
-https://www.lisakalmin.com/course/?code=QUIZ200&utm_source=cold&utm_campaign=mwm-dec&utm_content={{segment}}
+There's $200 off with the code MIRACLE200 until we start:
+https://www.lisakalmin.com/course/?code=MIRACLE200&utm_source=cold&utm_campaign=mwm-dec&utm_content={{segment}}
 
 Either way, thank you for reading, and I wish you a very abundant new year.
 
@@ -117,5 +117,5 @@ Lisa
 |---|---|
 | "Yes, that's me" / "How did you know?" | "It's so common, and it's so changeable. Take the scorecard (link) and reply with your result, and I'll tell you what I'd focus on first." |
 | Shares a story | Respond to the story personally in 2 to 3 lines, then: "If you'd like to go deeper, this is exactly what we work on in my course starting Dec 14. Happy to tell you more." |
-| "What does it cost?" | "$797, or $597 with QUIZ200 until we start on Dec 14. Six live 90-minute sessions with me, recorded. Here's everything: (link)" |
+| "What does it cost?" | "$797. From Dec 4 it's $597 with MIRACLE200, until we start on Dec 14. Six live 90-minute sessions with me, recorded. Here's everything: (link)" |
 | "Not interested" / "Remove me" | "Of course, I've taken you off. Wishing you a wonderful holiday." Mark as unsubscribed. |

@@ -589,9 +589,10 @@ var COHORT = {
     '2027-02-11T17:30:00-08:00'
   ],
   minutes: 90,
-  // code offer: a link like /course/?code=FLOW200 (or MIRACLE200, QUIZ200, FRIEND200) shows this price and the code,
-  // until the deadline (Pacific time). The code itself is entered at Kit's checkout.
-  attendee: { price: 597, deadline: '2026-12-14T17:30:00-08:00', label: 'Your price' },
+  // code offer: a link like /course/?code=MIRACLE200 shows this price and the code, but only for the codes listed,
+  // from start to deadline (Pacific time). Before start, or with any other code, the page shows full price.
+  // The code itself is checked again at Kit's checkout, so set the same dates on it in Kit.
+  attendee: { price: 597, start: '2026-12-04T00:00:00-08:00', deadline: '2026-12-14T17:30:00-08:00', label: 'Your price', codes: ['MIRACLE200'] },
   // codes that no longer work: a link with one shows full price and an "expired" note instead
   expiredCodes: ['FLOW200']
 };
@@ -601,20 +602,24 @@ var COHORT = {
   var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
   var money = function (n) { return '$' + n.toLocaleString('en-US'); };
   var starts = COHORT.sessions.map(function (s) { return new Date(s); });
-  var first = starts[0], now = new Date(), hasDates = starts.length > 0;
   var q = location.search;
-  // masterclass attendees arrive with ?code=...; honour it until the deadline.
-  // no code in the URL: original price, and the checkout opens without a code
+  // ?at=2026-12-05T10:00:00-08:00 previews the page as of that moment (display only; Kit still checks the code)
+  var at = new URLSearchParams(q).get('at');
+  var first = starts[0], now = at && !isNaN(new Date(at)) ? new Date(at) : new Date(), hasDates = starts.length > 0;
+  // a ?code=... link gets the offer price only for a listed code, between its start and deadline.
+  // no code, or a code that isn't live: original price, and the checkout opens without a code
   var code = new URLSearchParams(q).get('code'), promo = '';
   try { sessionStorage.removeItem('mwm_code'); } catch (x) {}
   var A = COHORT.attendee;
-  var validCode = code && /^[A-Za-z0-9_-]{2,40}$/.test(code);
-  // a retired code, or any code after the deadline: full price, and say the code has expired
-  var expired = validCode && ((COHORT.expiredCodes || []).indexOf(code.toUpperCase()) > -1 || (A && now >= new Date(A.deadline)));
+  var up = code && /^[A-Za-z0-9_-]{2,40}$/.test(code) ? code.toUpperCase() : '';
+  var listed = !!(up && A && (A.codes || []).indexOf(up) > -1);
+  // a retired code, or a listed code after its deadline: full price, and say the code has expired
+  var expired = !!up && ((COHORT.expiredCodes || []).indexOf(up) > -1 || (listed && now >= new Date(A.deadline)));
+  var live = listed && !expired && now >= new Date(A.start) && now < new Date(A.deadline);
   if (expired) {
-    $$('[data-expired-code]').forEach(function (el) { el.textContent = code.toUpperCase(); });
+    $$('[data-expired-code]').forEach(function (el) { el.textContent = up; });
     $$('[data-code-expired]').forEach(function (el) { el.hidden = false; });
-  } else if (validCode && A && now < new Date(A.deadline)) {
+  } else if (live) {
     COHORT.price = A.price;
     promo = code.toUpperCase();
     $$('[data-tag]').forEach(function (el) { el.textContent = A.label; });

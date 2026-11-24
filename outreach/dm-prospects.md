@@ -1,7 +1,7 @@
 # Instagram DMs to people who don't follow Lisa yet
 
 **Goal:** start real conversations with people who fit the course, move them to the scorecard, and invite the warmest. Expect 0 to 1 seats by Dec 14; the conversations and quiz leads pay off for the next cohort too.
-**Code:** FRIEND200, link `https://www.lisakalmin.com/course/?code=FRIEND200&utm_source=instagram&utm_medium=dm&utm_campaign=mwm-dec-prospect`
+**Price:** prospect invites (DM 3) start Dec 4 or later, so they use MIRACLE200: link `https://www.lisakalmin.com/course/?code=MIRACLE200&utm_source=instagram&utm_medium=dm&utm_campaign=mwm-dec-prospect`. If someone is ready earlier, invite them at $797 with the plain course link and tell them about MIRACLE200 on Dec 4.
 
 ## Who goes on the list (aim for 150 to 200)
 
@@ -68,7 +68,7 @@ Use the pattern lines from `dm-followers.md` (DM 3), then:
 
 When yes:
 
-> Here you go, with FRIEND200 already applied: https://www.lisakalmin.com/course/?code=FRIEND200
+> Here you go, with MIRACLE200 already applied: https://www.lisakalmin.com/course/?code=MIRACLE200&utm_source=instagram&utm_medium=dm
 > $597 instead of $797 if you pay in full, through Dec 14 at 5:30 pm PT. Ask me anything!
 
 ---

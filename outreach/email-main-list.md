@@ -218,7 +218,7 @@ When someone looks and doesn't join, it's usually one of three things: the timin
 
 I can't fix the timing (we start next Monday, December 14). But I can help with the other two.
 
-**The money:** for the people who looked this week, I'm opening the same price my masterclass group received. **$597 instead of $797, with the code MIRACLE200**, through the start of Module 1 on Monday at 5:30 pm PT. The link below has it ready for you.
+**The money:** for the people who looked, I'm opening a special price. **$597 instead of $797, with the code MIRACLE200**, through the start of Module 1 on Monday at 5:30 pm PT. The link below has it ready for you.
 
 **Whether it will work for you:** hit reply and tell me what you're hoping to change about money. I'll tell you honestly whether I think this course is the right next step.
 
@@ -285,7 +285,7 @@ I'd love to see you tonight.
 
 ## Last call · Monday, December 14, 2:00 pm PT
 
-**Audience:** `mwm-clicked` and `masterclass-nov19` and `quiz-lead`, not `mwm-buyer`. Use each group's own code and link (send three copies, one per tag, so nobody sees a different price than they were offered).
+**Audience:** `mwm-clicked`, `masterclass-nov19` and `quiz-lead`, not `mwm-buyer`. All three were offered MIRACLE200, so one send covers them. Main list people without `mwm-clicked` don't get this (they had Main 5 at full price).
 
 **Subject:** 3 hours
 **Preview:** We begin at 5:30 pm PT.
@@ -294,8 +294,8 @@ Hi {{ subscriber.first_name | default: "there" }},
 
 Three hours from now, our group meets for the first time.
 
-There's still a seat for you, at $597 with [CODE]:
-[LINK]
+There's still a seat for you, at $597 with MIRACLE200:
+https://www.lisakalmin.com/course/?code=MIRACLE200&utm_source=kit&utm_medium=email&utm_campaign=mwm-dec&utm_content=last-call
 
 See you at 5:30.
 
