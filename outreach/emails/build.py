@@ -573,7 +573,7 @@ dict(id='cold-1', send='Day 1 (from Monday, November 30)', subject_a='quick ques
         'Curious: does that land for you, or is it off base?']),
 dict(id='cold-2', send='Day 3, same thread', subject_a='re: quick question, {{first_name}}', subject_b=None,
   body=['Following up with something useful either way.',
-        "I built a 5-minute scorecard that shows which money pattern you're running: Manifester, Manager, Clueless or Victim. It's free, and you get your result right away.",
+        "I built a 5-minute scorecard that shows which money pattern you're running: Manifester, Manager, Unaware or Resigned. It's free, and you get your result right away.",
         ('link', qz),
         'Most {{segment_word}} who take it tell me the result is uncomfortably accurate.']),
 dict(id='cold-3', send='Day 6', subject_a='the "this far and no further" thing', subject_b=None,

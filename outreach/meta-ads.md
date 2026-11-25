@@ -117,7 +117,7 @@ Each ad uses CTA **Learn more** (or **Take quiz** where offered), headline under
 **Primary text:**
 Many high achievers under-earn without realizing it. They overwork, undercharge, and feel like money should be easier by now.
 
-The Underearning Financial Scorecard shows which of four money patterns you're running: Manifester, Manager, Clueless or Victim. 30 quick statements, about 5 minutes, and your result appears right away.
+The Underearning Financial Scorecard shows which of four money patterns you're running: Manifester, Manager, Unaware or Resigned. 30 quick statements, about 5 minutes, and your result appears right away.
 
 Free, from transformational coach Lisa Kalmin (39 years, 50,000+ people trained).
 

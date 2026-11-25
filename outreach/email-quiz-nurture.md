@@ -30,9 +30,9 @@ You're a Money Manifester. You already believe in your value, and you create val
 {% elsif subscriber.money_mindset_pattern == "manager" %}
 You're a Money Manager. You work at it, and sometimes it works. But even when money is there, the worry is too. That tells me you're managing money from a place of "getting," and what's missing is flow, the feeling that money can come to you, not just be chased.
 {% elsif subscriber.money_mindset_pattern == "clueless" %}
-Your pattern is Money Clueless, and please hear this: that is not a judgment about your intelligence. It means you're working hard and feeling disconnected from what money is doing. That disconnection was learned, which means it can be unlearned.
+Your pattern is Money Unaware, and please hear this: that is not a judgment about your intelligence. It means you're working hard and feeling disconnected from what money is doing. That disconnection was learned, which means it can be unlearned.
 {% elsif subscriber.money_mindset_pattern == "victim" %}
-Your pattern is Money Victim. I know that's hard to read. But the fact that you took the scorecard means some part of you is ready to step out of the loop. The feeling that "the system is rigged" is real, and it's also a way of seeing, which means it can change.
+Your pattern is Money Resigned. I know that's hard to read. But the fact that you took the scorecard means some part of you is ready to step out of the loop. The feeling that "the system is rigged" is real, and it's also a way of seeing, which means it can change.
 {% else %}
 Whatever your score, it isn't a verdict. It's a map of the beliefs you were handed about money.
 {% endif %}

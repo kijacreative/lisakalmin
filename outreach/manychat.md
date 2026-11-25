@@ -41,7 +41,7 @@ Kit tag added through the integration: **`instagram-dm`** (only on the "email it
 
 > Hi {{first_name}}! I'm so glad you asked 💛
 >
-> My Underearning Financial Scorecard shows which money pattern you're running: Manifester, Manager, Clueless or Victim. 30 quick statements, about 5 minutes, and you see your result right away.
+> My Underearning Financial Scorecard shows which money pattern you're running: Manifester, Manager, Unaware or Resigned. 30 quick statements, about 5 minutes, and you see your result right away.
 >
 > [Button: **Send me the scorecard**]
 

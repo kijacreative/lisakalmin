@@ -21,11 +21,11 @@ Money Manager
 You sometimes overcome your obstacles and sometimes don’t. You may worry about money even when you have it, or look at how to “get” more rather than seeing the flow of money as energy. You want to feel confident and joyful about your money.
 {% elsif subscriber.money_mindset_pattern == "clueless" %}
 YOUR MONEY MINDSET PATTERN (170 to 234)
-Money Clueless
+Money Unaware
 You work hard but feel disconnected from money, and you are often disappointed in your finances at the end of the month. You know you are in the way of your financial security, and you want to change.
 {% elsif subscriber.money_mindset_pattern == "victim" %}
 YOUR MONEY MINDSET PATTERN (235 to 300)
-Money Victim
+Money Resigned
 You feel like the system is rigged against you and that you are stuck in a financial loop. You are looking for a way out of scarcity and frustration, and that is exactly where the shift begins.
 {% else %}
 Your result is waiting. If you haven't finished the scorecard yet, it takes about 5 minutes: https://www.lisakalmin.com/quiz/

@@ -69,8 +69,8 @@ Start with their pattern:
 
 - **Manifester:** "That makes total sense. You already believe in your value, so it's usually one last stop that keeps the next level out of reach."
 - **Manager:** "So common! The worry even when the money's there tells me there's a set point to reset."
-- **Clueless:** "Please don't take the name personally 😊 It just means the disconnect was learned, which means it can be unlearned."
-- **Victim:** "I know that one stings. The fact you took it means you're ready to step out of the loop."
+- **Unaware:** "That one just means the disconnect was learned, which means it can be unlearned 😊"
+- **Resigned:** "I know that one can feel heavy. The fact you took it means you're ready to step out of the loop."
 
 Then, **until Dec 3 (full price):**
 

@@ -63,7 +63,7 @@ Hi {{first_name}},
 
 Following up with something useful either way.
 
-I built a 5-minute scorecard that shows which money pattern you're running: Manifester, Manager, Clueless or Victim. It's free, and you get your result right away.
+I built a 5-minute scorecard that shows which money pattern you're running: Manifester, Manager, Unaware or Resigned. It's free, and you get your result right away.
 
 https://www.lisakalmin.com/quiz/?utm_source=cold&utm_campaign=mwm-dec&utm_content={{segment}}
 
