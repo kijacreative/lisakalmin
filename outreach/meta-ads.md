@@ -142,16 +142,18 @@ Take Lisa Kalmin's free Underearning Financial Scorecard and see your pattern in
 **Description:** Free scorecard · 5 minutes
 **Visual:** a simple line chart that rises and falls back to the same level, with "Your money set point" across it.
 
-### Ad L4 · "Worth more" (static quote)
+### Ad L4 · "Worth more" (portrait)
 
 **Primary text:**
-"You know in your heart you are worth more than you are paid."
+Most people are worth more than they let themselves receive. Not because of skill, but because of an old money story that sets the limit.
 
-If that sentence landed, take the free 5-minute scorecard. It shows the money pattern underneath, so you can finally change it.
+The free 5-minute scorecard shows the money pattern underneath, so you can finally change it.
 
-**Headline:** Worth more than you're paid?
+**Headline:** What's your money pattern?
 **Description:** Free money mindset scorecard
-**Visual:** the quote in large serif type on cream, Lisa's small portrait and name in the corner.
+**Visual:** Lisa's portrait (yellow wrap) above the line "Most people are worth more than they let themselves receive." in large type on forest green.
+
+*Changed from the first draft:* "You know in your heart you are worth more than you are paid" and the headline "Worth more than you're paid?" tell the viewer something about their own pay, which Meta's personal attributes policy rejects. The new line talks about people in general.
 
 ### Ad L5 · "Not a budgeting quiz"
 
@@ -166,6 +168,20 @@ Created by Lisa Kalmin, author of The Problem Is How You See the Problem.
 **Description:** Free · 5 minutes · instant result
 
 ---
+
+## 5b. Quiz ad images (ready to upload)
+
+Designed in Lisa's site brand and rendered at Meta's sizes in `outreach/ads/png/`. The source pages are in `outreach/ads/src/`. To change a word, edit the HTML and re-render it with headless Chrome at the size below. Stories versions keep words out of the top 300 px and bottom 400 px, where Instagram draws its own controls.
+
+| Ad | Feed, 4:5 (1080x1350) | Stories and Reels, 9:16 (1080x1920) |
+|---|---|---|
+| L1 "Which one is yours?" | `patterns-feed.png` | `patterns-story.png` |
+| L1 carousel, 6 cards (1080x1080) | `carousel-1.png` to `carousel-6.png` | (use `patterns-story.png`) |
+| L3 "A great month. A slow one. Again." | `setpoint-feed.png` | `setpoint-story.png` |
+| L4 Portrait | `quote-feed.png` | `quote-story.png` |
+| L5 "Not a budgeting quiz" | `notbudget-feed.png` | `notbudget-story.png` |
+
+L2 is Lisa's own video (script V1), so it has no designed image. In Ads Manager, upload both sizes to each ad and use **Customize placements** so Stories and Reels get the 9:16 image.
 
 ## 6. Retargeting ads: copy
 
