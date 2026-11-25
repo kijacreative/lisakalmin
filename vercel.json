@@ -15,6 +15,15 @@
           "value": "attachment; filename=\"lisa-kalmin-masterclass.ics\""
         }
       ]
+    },
+    {
+      "source": "/review/(.*)",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow, noarchive"
+        }
+      ]
     }
   ],
   "trailingSlash": true,
