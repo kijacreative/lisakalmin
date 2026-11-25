@@ -1,0 +1,35 @@
+Subject A: I noticed you looked
+
+Subject B: A note just for you, {{ subscriber.first_name | default: "friend" }}
+
+Preview text: You took a look at Money Wealth and Miracles. Here's something to help.
+
+Send: Tuesday, December 8, 10:00 am PT
+
+Audience: tag mwm-clicked, not mwm-buyer (broadcast to the tag at send time)
+
+------------------------------------------------------------
+
+Hi {{ subscriber.first_name | default: "there" }},
+
+I noticed you took a look at Money Wealth and Miracles, and I wanted to write to you directly.
+
+When someone looks and doesn't join, it's usually one of three things: the timing, the money, or a quiet question about whether this will really work for them.
+
+I can't fix the timing (we start next Monday, December 14). But I can help with the other two.
+
+The money: for the people who looked, I'm opening a special price. $597 instead of $797, with the code MIRACLE200, through the start of Module 1 on Monday at 5:30 pm PT. The button below has it ready for you.
+
+Whether it will work for you: hit reply and tell me what you're hoping to change about money. I'll tell you honestly whether I think this course is the right next step.
+
+Join for $597:
+https://www.lisakalmin.com/course/?code=MIRACLE200&utm_source=kit&utm_medium=email&utm_campaign=mwm-dec&utm_content=clk-e1
+
+To your abundance!
+Lisa
+
+Lisa Kalmin
+Transformational Mindset Wizard
+Author of "The Problem Is How You See the Problem"
+
+P.S. The $200 off is for paying in full, and it ends when we begin, Monday, December 14 at 5:30 pm PT.

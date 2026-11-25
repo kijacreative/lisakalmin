@@ -1,0 +1,46 @@
+Subject A: The money story you didn't choose
+
+Subject B: Where did you learn what money means?
+
+Preview text: It was handed to you before you could say no. You can rewrite it.
+
+Send: Tuesday, December 1, 9:00 am PT
+
+Audience: full Kit list, excluding masterclass-nov19, mwm-buyer and new quiz leads
+
+------------------------------------------------------------
+
+Hi {{ subscriber.first_name | default: "there" }},
+
+Quick question. When you were growing up, what did money sound like in your house?
+
+For some of us it was silence. For some it was arguing at the kitchen table. For some it was "we can't afford that," said so often it became a fact about who we were.
+
+Here is what I have seen in 39 years of coaching: that early money story doesn't stay in childhood. It becomes a set point. You can work harder, earn more, learn every strategy, and still find money drifting back to the same level, because the story underneath hasn't changed.
+
+That's not a character flaw. It's a way of seeing. And the problem is how you see the problem: when the way you see money shifts, what you do with it shifts too.
+
+That is exactly what we do together in Money Wealth and Miracles, my live six-session course that begins Monday, December 14. Over six evenings on Zoom, in a small group, you will:
+
+1. Find the beliefs that have been quietly running your money, and where they came from.
+2. See money as an exchange of energy and value, not just numbers to chase.
+3. Set a new set point that can hold more wealth, so it doesn't leak back out.
+
+I keep the group small, 15 to 30 people, so I can coach you directly.
+
+MONEY WEALTH AND MIRACLES
+Begins Monday, December 14
+Six live sessions on Zoom, 5:30 to 7:00 pm PT
+Every session recorded, $797
+
+See the course and the dates:
+https://www.lisakalmin.com/course/?utm_source=kit&utm_medium=email&utm_campaign=mwm-dec&utm_content=main-e1
+
+To your abundance!
+Lisa
+
+Lisa Kalmin
+Transformational Mindset Wizard
+Author of "The Problem Is How You See the Problem"
+
+P.S. Hit reply and tell me one sentence your family used to say about money. I read every reply, and you may be surprised what comes up just writing it down.

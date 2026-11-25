@@ -1,0 +1,22 @@
+Subject: quick question, {{first_name}}
+Subject B: {{segment_word}} and money
+Send: Day 1 (from Monday, November 30)
+Tool: cold-email tool on the separate domain, never Kit
+------------------------------------------------------------
+
+Hi {{first_name}},
+
+{{hook}}
+
+I've coached people on their relationship with money for 39 years, and the pattern is almost never a lack of skill. It's a set point, an old money story that quietly decides how much is "enough."
+
+Curious: does that land for you, or is it off base?
+
+Lisa
+
+--
+Lisa Kalmin
+Transformational mindset coach · Author, "The Problem Is How You See the Problem"
+Costa Mesa, CA
+
+[postal address] · Not for you? Reply "no thanks" and I won't write again.

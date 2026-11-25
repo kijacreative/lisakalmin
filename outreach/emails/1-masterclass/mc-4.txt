@@ -1,0 +1,39 @@
+Subject A: Starting today: $200 off, for you
+
+Subject B: A gift for the people who came to class
+
+Preview text: $597 for Money Wealth and Miracles, through the day we begin.
+
+Send: Friday, December 4, 9:00 am PT (MIRACLE200 opens)
+
+Audience: tag masterclass-nov19, not mwm-buyer
+
+------------------------------------------------------------
+
+Hi {{ subscriber.first_name | default: "there" }},
+
+We begin in ten days, and I want the people who came to Opening the Flow of Money to be in that room.
+
+So starting today, you can join Money Wealth and Miracles for $597 instead of $797, with the code MIRACLE200, through the start of Module 1 on Monday, December 14 at 5:30 pm PT. It ends when we begin.
+
+A THANK-YOU FOR COMING TO CLASS
+$597 (regularly $797)
+Paid in full, with the code MIRACLE200
+Through Monday, December 14 at 5:30 pm PT
+Code: MIRACLE200
+
+Join for $597:
+https://www.lisakalmin.com/course/?code=MIRACLE200&utm_source=kit&utm_medium=email&utm_campaign=mwm-dec&utm_content=mc-e4
+
+Some of you are thinking, "I got so much from the masterclass, I can take it from here on my own." You might! But a stop is hard to see from the inside. It feels like the truth, not like a belief.
+
+That's why I teach this live, in a small group. When I coach someone in the room, I can hear the stop in their words before they can. And when you watch it happen for someone else, you suddenly recognize your own.
+
+To your abundant flow!
+Lisa
+
+Lisa Kalmin
+Transformational Mindset Wizard
+Author of "The Problem Is How You See the Problem"
+
+P.S. The $200 off is for paying in full, and the button above applies MIRACLE200 for you.

@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="x-apple-disable-message-reformatting">
-<meta name="color-scheme" content="light">
-<meta name="supported-color-schemes" content="light">
+<meta name="color-scheme" content="light dark">
+<meta name="supported-color-schemes" content="light dark">
 <title>Lisa Kalmin</title>
 <!--
   Kit custom email template for Lisa Kalmin (Kit > Send > Email Templates > New > HTML).
@@ -51,6 +51,12 @@
   .content td[class*="button"],.content table[class*="button"] td{background:#A04E5C!important;border-radius:999px}
 
   .foot a{color:#56635B;text-decoration:underline}
+  @media (prefers-color-scheme:dark){
+    .logo-l{display:none!important}
+    .logo-d{display:block!important;max-height:none!important;overflow:visible!important}
+  }
+  [data-ogsc] .logo-l{display:none!important}
+  [data-ogsc] .logo-d{display:block!important;max-height:none!important;overflow:visible!important}
   @media (max-width:620px){
     .container{width:100%!important}
     .px{padding-left:22px!important;padding-right:22px!important}
@@ -68,7 +74,10 @@
 
 <!-- logo -->
 <tr><td class="px" style="padding:8px 40px 20px;">
-<a href="https://www.lisakalmin.com/" style="text-decoration:none;"><img src="https://www.lisakalmin.com/email/logo-email.png" width="180" height="30" alt="Lisa Kalmin" style="display:block;width:180px;height:auto;font-family:'Jost',Helvetica,Arial,sans-serif;font-size:22px;font-weight:700;letter-spacing:1px;color:#2F3B33;"></a>
+<!-- the oat chip blends into the page in light mode and stays a readable cream label when Gmail or Outlook
+     force a dark background; Apple Mail and Outlook.com swap in the light logo through the dark-mode styles -->
+<a href="https://www.lisakalmin.com/" style="text-decoration:none;"><img class="logo-l" src="https://www.lisakalmin.com/email/logo-email-chip.png" width="208" height="52" alt="Lisa Kalmin" style="display:block;width:208px;height:auto;margin-left:-14px;font-family:'Jost',Helvetica,Arial,sans-serif;font-size:22px;font-weight:700;letter-spacing:1px;color:#2F3B33;">
+<!--[if !mso]><!--><div class="logo-d" style="display:none;max-height:0;overflow:hidden;mso-hide:all;padding:11px 0;"><img src="https://www.lisakalmin.com/email/logo-email-dark.png" width="180" height="30" alt="Lisa Kalmin" style="display:block;width:180px;height:auto;"></div><!--<![endif]--></a>
 </td></tr>
 
 <!-- message: edited in Kit -->

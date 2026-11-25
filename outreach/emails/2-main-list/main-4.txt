@@ -1,0 +1,44 @@
+Subject A: "I'll do it when I have more money"
+
+Subject B: The most common money stop I hear
+
+Preview text: It sounds like common sense. It's actually the stop.
+
+Send: Wednesday, December 9, 9:00 am PT
+
+Audience: full Kit list, excluding masterclass-nov19, mwm-buyer and new quiz leads, and from Dec 7 also excluding mwm-clicked
+
+------------------------------------------------------------
+
+Hi {{ subscriber.first_name | default: "there" }},
+
+The most common thing I hear before someone joins a course like this is: "I'll do it when I have more money."
+
+It sounds like common sense. And I want to be gentle here, because sometimes it's true, and you should always take care of your basic needs first.
+
+But often it is the stop itself, speaking. It's the same voice that says "when I'm more established, I'll raise my rates," and "when things calm down, I'll look at my finances." The "when" keeps moving, and the set point stays where it is.
+
+Here's another way to see it. The people who generate the most change in my courses aren't the ones who had the most money when they started. They're the ones who decided that their relationship with money was worth investing in, now.
+
+Money Wealth and Miracles begins Monday, December 14 at 5:30 pm PT. Enrollment closes when Module 1 starts.
+
+If this is your year to stop waiting for "when," I would love to have you in the room.
+
+MONEY WEALTH AND MIRACLES
+Begins Monday, December 14
+Six live sessions on Zoom, 5:30 to 7:00 pm PT
+Every session recorded, $797
+
+Join us:
+https://www.lisakalmin.com/course/?utm_source=kit&utm_medium=email&utm_campaign=mwm-dec&utm_content=main-e4
+
+{{ message_content }}
+
+To your abundance!
+Lisa
+
+Lisa Kalmin
+Transformational Mindset Wizard
+Author of "The Problem Is How You See the Problem"
+
+P.S. Have a question about whether it's right for you? Just reply. I answer every one myself.

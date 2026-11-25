@@ -1,0 +1,29 @@
+Subject A: Tonight we begin (your $597 ends at 5:30)
+
+Subject B: Last few hours
+
+Preview text: Module 1 is tonight at 5:30 pm PT.
+
+Send: Monday, December 14, 8:00 am PT
+
+Audience: tag mwm-clicked, not mwm-buyer
+
+------------------------------------------------------------
+
+Hi {{ subscriber.first_name | default: "there" }},
+
+Tonight at 5:30 pm PT we begin Money Wealth and Miracles, and your $597 price with MIRACLE200 ends when we start.
+
+If something in you has kept clicking on this all week, I'd listen to it.
+
+Join for $597 before 5:30 pm PT:
+https://www.lisakalmin.com/course/?code=MIRACLE200&utm_source=kit&utm_medium=email&utm_campaign=mwm-dec&utm_content=clk-e3
+
+I'd love to see you tonight.
+
+To your abundance!
+Lisa
+
+Lisa Kalmin
+Transformational Mindset Wizard
+Author of "The Problem Is How You See the Problem"

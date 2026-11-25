@@ -1,0 +1,42 @@
+Subject A: $25,000 and a $12M deal (and what actually changed)
+
+Subject B: What happened after they found their stop
+
+Preview text: Two students, in their own words.
+
+Send: Tuesday, December 1, 9:00 am PT
+
+Audience: tag masterclass-nov19, not mwm-buyer
+
+------------------------------------------------------------
+
+Hi {{ subscriber.first_name | default: "there" }},
+
+I shared these stories in class. I want to tell you what was underneath them.
+
+Megan, Head of Design at a creative agency, generated over $25,000 on top of her normal income before the course had even ended. K.Y. closed a $12M deal after joining, and two more just under $1M.
+
+(Results vary, and none of this is a promise of income.)
+
+Neither of them learned a secret strategy. What changes in this course is what you can see. When you can finally see the stop that has been setting your ceiling, you act differently, and money follows the action.
+
+[LISA: one or two lines here on what you saw shift for Megan or K.Y., in your words.]
+
+That's the whole idea behind my book, and the course: the problem is how you see the problem.
+
+We start in two weeks, Monday, December 14 at 5:30 pm PT. Six live sessions, each one recorded.
+
+MONEY WEALTH AND MIRACLES
+Begins Monday, December 14
+Six live sessions on Zoom, 5:30 to 7:00 pm PT
+Every session recorded, $797
+
+Join Money Wealth and Miracles:
+https://www.lisakalmin.com/course/?utm_source=kit&utm_medium=email&utm_campaign=mwm-dec&utm_content=mc-e3
+
+To your abundant flow!
+Lisa
+
+Lisa Kalmin
+Transformational Mindset Wizard
+Author of "The Problem Is How You See the Problem"

@@ -1,0 +1,36 @@
+Subject A: What happens after you find the stop
+
+Subject B: The part we didn't have time for
+
+Preview text: Finding your stop takes 90 minutes. Letting it go takes a little longer.
+
+Send: Tuesday, November 24, 9:00 am PT
+
+Audience: tag masterclass-nov19, not mwm-buyer
+
+------------------------------------------------------------
+
+Hi {{ subscriber.first_name | default: "there" }},
+
+{% if subscriber.tags contains "masterclass-attended" %}Thank you for being with me last Thursday. In 90 minutes, a lot of you found the place where your money story quietly says "this far and no further." I watched it happen on screen after screen.{% else %}I missed you last Thursday! If you haven't watched it yet, the replay is the best way to see how I work: [REPLAY LINK] Passcode: [PASSCODE]{% endif %}
+
+Here's what I've learned in 39 years of doing this work: finding a stop is the beginning. A stop has been there a long time, and it comes back when life gets busy, when a big invoice goes out, when the holidays hit. Letting it go, and setting a new set point that can actually hold more, takes practice and support.
+
+That's what Money Wealth and Miracles is for. Six live sessions with me on Zoom, starting Monday, December 14, in a small group where I coach you directly, with a breakthrough assignment between every session.
+
+MONEY WEALTH AND MIRACLES
+Begins Monday, December 14
+Six live sessions on Zoom, 5:30 to 7:00 pm PT
+Every session recorded, $797
+
+See the course and the dates:
+https://www.lisakalmin.com/course/?utm_source=kit&utm_medium=email&utm_campaign=mwm-dec&utm_content=mc-e1
+
+To your abundant flow!
+Lisa
+
+Lisa Kalmin
+Transformational Mindset Wizard
+Author of "The Problem Is How You See the Problem"
+
+P.S. Have a question about whether it's right for you? Just reply. I answer every one myself.

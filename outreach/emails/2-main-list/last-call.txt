@@ -1,0 +1,29 @@
+Subject A: 3 hours
+
+Subject B: We begin at 5:30
+
+Preview text: We begin at 5:30 pm PT.
+
+Send: Monday, December 14, 2:00 pm PT
+
+Audience: tags mwm-clicked, masterclass-nov19 and quiz-lead, not mwm-buyer (all were offered MIRACLE200)
+
+------------------------------------------------------------
+
+Hi {{ subscriber.first_name | default: "there" }},
+
+Three hours from now, our group meets for the first time.
+
+There's still a seat for you, at $597 with MIRACLE200.
+
+Take my seat:
+https://www.lisakalmin.com/course/?code=MIRACLE200&utm_source=kit&utm_medium=email&utm_campaign=mwm-dec&utm_content=last-call
+
+See you at 5:30.
+
+To your abundance!
+Lisa
+
+Lisa Kalmin
+Transformational Mindset Wizard
+Author of "The Problem Is How You See the Problem"

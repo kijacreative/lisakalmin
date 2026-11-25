@@ -1,0 +1,46 @@
+Subject A: "Why didn't anyone tell me this before?"
+
+Subject B: What happened for Megan (and $25,000)
+
+Preview text: What people say after the course, in their own words.
+
+Send: Thursday, December 3, 9:00 am PT
+
+Audience: full Kit list, excluding masterclass-nov19, mwm-buyer and new quiz leads
+
+------------------------------------------------------------
+
+Hi {{ subscriber.first_name | default: "there" }},
+
+I want to share something one of my students wrote, because she says it better than I can.
+
+Megan is Head of Design at a creative agency. She joined Money Wealth and Miracles wanting a better relationship with money. Here is what she told me:
+
+"She drops personal coaching knowledge as well as practical knowledge that I felt like I missed in high school and college. Since starting the program I have generated over $25,000.00 on top of my normal income, and the program isn't even over!"
+Megan, Head of Design
+
+Another student, K.Y., closed a $12M deal after joining, and two more just under $1M.
+
+(Results vary, and none of this is a promise of income. What I can promise is that you will see your money story clearly, and you'll have the tools and the support to change it.)
+
+What made the difference for them wasn't a new budgeting trick. It was seeing, maybe for the first time, the place where they had been quietly saying "this far and no further." Once you can see that stop, you can let it go.
+
+"Having direct access to Lisa is immeasurable. I noticed myself a few times asking, why didn't anyone tell me this before?"
+A Money Wealth and Miracles student
+
+We begin Monday, December 14, at 5:30 pm PT. Six live sessions, 90 minutes each, every one recorded.
+
+MONEY WEALTH AND MIRACLES
+Begins Monday, December 14
+Six live sessions on Zoom, 5:30 to 7:00 pm PT
+Every session recorded, $797
+
+Join Money Wealth and Miracles:
+https://www.lisakalmin.com/course/?utm_source=kit&utm_medium=email&utm_campaign=mwm-dec&utm_content=main-e2
+
+To your abundance!
+Lisa
+
+Lisa Kalmin
+Transformational Mindset Wizard
+Author of "The Problem Is How You See the Problem"

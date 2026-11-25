@@ -1,0 +1,43 @@
+Subject A: Your questions, answered
+
+Subject B: "Is this right for me?"
+
+Preview text: The four questions I'm asked most, plus your $597 price.
+
+Send: Friday, December 11, 9:00 am PT
+
+Audience: tag mwm-clicked, not mwm-buyer
+
+------------------------------------------------------------
+
+Hi {{ subscriber.first_name | default: "there" }},
+
+Here are the questions I've been answering this week, in case one of them is yours.
+
+"WHAT IF I MISS A SESSION?"
+
+Every session is recorded, and you get the replay. Come live when you can, because that's where the coaching happens.
+
+"IS THIS ABOUT BUDGETING OR INVESTING?"
+
+No. This isn't stock tips or a spreadsheet. It's the layer underneath: what you believe about money, where that came from, and how it shapes what you charge, earn, keep and receive.
+
+"I'VE DONE MONEY WORK BEFORE. IS THIS DIFFERENT?"
+
+Most people in the room have. What's different is live coaching in a small group. I see your stop in real time, and we work it right there.
+
+"CAN I AFFORD IT RIGHT NOW?"
+
+Only you know that, and please take care of your basics. If it's a stretch that feels exciting rather than frightening, that is often the exact edge where the set point moves.
+
+Your price is still $597 with MIRACLE200, through Monday, December 14 at 5:30 pm PT.
+
+Join for $597:
+https://www.lisakalmin.com/course/?code=MIRACLE200&utm_source=kit&utm_medium=email&utm_campaign=mwm-dec&utm_content=clk-e2
+
+To your abundance!
+Lisa
+
+Lisa Kalmin
+Transformational Mindset Wizard
+Author of "The Problem Is How You See the Problem"

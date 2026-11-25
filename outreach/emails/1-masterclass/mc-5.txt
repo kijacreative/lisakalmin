@@ -1,0 +1,39 @@
+Subject A: Bring a pal (and both save $200)
+
+Subject B: Six days, and a seat for your friend
+
+Preview text: It's more fun with someone you love in the room.
+
+Send: Tuesday, December 8, 9:00 am PT
+
+Audience: tag masterclass-nov19, not mwm-buyer
+
+------------------------------------------------------------
+
+Hi {{ subscriber.first_name | default: "there" }},
+
+We begin in six days.
+
+One thing I love about this group is how often people come in pairs: a business partner, a sister, a best friend, a spouse. When you shift your money story alongside someone you see every day, it sticks.
+
+So if someone came to mind while you were in class, invite them. MIRACLE200 works for them too: $597 each, through Monday at 5:30 pm PT.
+
+FOR YOU AND A FRIEND
+$597 (regularly $797)
+$597 each, paid in full, with MIRACLE200
+Through Monday, December 14 at 5:30 pm PT
+Code: MIRACLE200
+
+Join for $597:
+https://www.lisakalmin.com/course/?code=MIRACLE200&utm_source=kit&utm_medium=email&utm_campaign=mwm-dec&utm_content=mc-e5
+
+Forward this email, or send them this link: lisakalmin.com/course (https://www.lisakalmin.com/course/?code=MIRACLE200&utm_source=kit&utm_medium=email&utm_campaign=mwm-dec&utm_content=mc-e5-friend)
+
+{{ message_content }}
+
+To your abundant flow!
+Lisa
+
+Lisa Kalmin
+Transformational Mindset Wizard
+Author of "The Problem Is How You See the Problem"
