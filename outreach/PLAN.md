@@ -76,7 +76,7 @@ With only one seat of cushion, the Q&A and 15-minute calls in section 6 are **pl
 **Lists for Meta, with booked people removed.** Three Kit segments are exported and uploaded as Meta custom audiences (details and refresh days in `meta-ads.md`, section 3):
 
 - **L1 Booked:** tag `mwm-buyer`. Excluded from every ad. Refreshed every morning.
-- **L2 Warm, not booked:** `masterclass-nov19`, `quiz-lead` or `mwm-clicked`, and not `mwm-buyer`. Retargeted in both phases.
+- **L2 Warm, not booked:** `masterclass-nov19`, `quiz-lead`, `instagram-dm` or `mwm-clicked`, and not `mwm-buyer`. Retargeted in both phases.
 - **L3 Main list, full price only:** everyone else, not `mwm-buyer`. Retargeted at full price until Dec 3, then **excluded** from the $597 ads, so the main list never sees MIRACLE200 in an ad.
 
 **Exclude Canada and the EU from cold email.** Canada's anti-spam law (CASL) and the GDPR require consent first.
@@ -124,7 +124,7 @@ Pacific time. Main list gets a quiet Thanksgiving week after the masterclass pus
 4. **Meta pixel and Conversions API** through GTM (GTM-PCBSRF9P), with a `Lead` tag triggered by the `quiz_lead` dataLayer event the quiz now sends and a `Purchase` event on Kit's purchase (Kit's own Meta pixel setting on the product, or the thank-you redirect). Details in `meta-ads.md`.
 5. **Consent bar:** the site defaults ad cookies to denied for every visitor until they click Accept. For US visitors that throws away most pixel data and makes ads expensive. Consider granting by default in the US and keeping the opt-in for the EU, UK and Canada.
 6. **Cold email:** a separate sending domain and inbox in a cold-email tool (Instantly, Smartlead or similar), **never Kit** (Kit's terms ban purchased or scraped lists, and it would hurt the main list's deliverability). See `email-cold.md`.
-7. **ManyChat** (optional, recommended) for "DM me MONEY" keyword replies on Instagram, so story replies get the quiz link instantly.
+7. **ManyChat** for the MONEY (scorecard) and MIRACLE (course) keyword replies on Instagram. Full setup, copy and tests: `manychat.md`. Live before the Nov 25 story.
 8. **On Dec 4:** swap the price block in quiz nurture emails 2 to 4 (`email-quiz-nurture.md`), and switch retargeting to the $597 ads (`meta-ads.md`).
 
 ---
