@@ -5,7 +5,7 @@
 1. **Quiz leads** (cold): ads send people to the Underearning Financial Scorecard at `/quiz/`. The email gate captures them into Kit (form 10176902), and `email-quiz-nurture.md` sells the course.
 2. **Retargeting** (warm): people who took the quiz, visited the course page, engaged with Lisa, or are on her lists see the course. **Nov 28 to Dec 3 at full price** (ads R2 and R3, no code). **From Fri Dec 4, the $597 offer with MIRACLE200** (ads R1, R3 with its last card swapped, and R4 from Dec 11).
 
-**Plus, inside Campaign 1: the free class ad set (ads M1 to M3, section 5c).** From Fri Nov 27 to Thu Dec 3 at 3:00 pm PT, ads invite cold audiences to Lisa's free masterclass on Thursday, December 3. Registering puts them in Kit (form 10115136, tag `masterclass-dec3`), where Series 4 sells the course.
+**Plus, inside Campaign 1: the free class ad set (ads M1 to M3, section 5c).** From Fri Nov 27 to Thu Dec 3 at 3:00 pm PT, ads invite cold audiences to Lisa's free masterclass on Thursday, December 3. Registering puts them in Kit (form 10243223, tag `masterclass-dec3`), where Series 4 sells the course.
 
 **Dates:** Wed Nov 25 to Mon Dec 14, 5:30 pm PT.
 **Suggested budget:** about **$1,600 total**.

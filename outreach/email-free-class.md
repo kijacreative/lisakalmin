@@ -8,10 +8,11 @@ The finished emails are in `outreach/emails/4-free-class-dec3/` (Kit HTML and pl
 ## Kit setup (before the first invite on Fri Nov 27)
 
 1. **Tag:** create `masterclass-dec3`.
-2. **Form 10115136** (the one on `/masterclass/`) is the same form as the Nov 19 class. In Kit, go to Automations > Rules:
-   - **Turn off** the rule that adds `masterclass-nov19` on this form, so Dec 3 registrants don't get Series 1 from the start.
-   - **Add** a rule: subscribes to form 10115136 > add tag `masterclass-dec3`.
-3. **Confirmation email:** replace the form's incoming/confirmation email (or the first email of its sequence) with `reg-0.html`. The old `email/confirmation.html` still has the Nov 19 date and Zoom link.
+2. **Form 10243223** (uid `0ce5f9fb73`) is the new form on `/masterclass/`, separate from the Nov 19 form (10115136). In Kit:
+   - **Tag:** Automations > Rules: subscribes to form 10243223 > add tag `masterclass-dec3`. Make sure this form doesn't also add `masterclass-nov19`.
+   - **Redirect:** in the form's settings, set "after subscribing" to `https://www.lisakalmin.com/masterclass/thank-you/`. The page normally sends people there itself; Kit's redirect is the fallback if that fails.
+   - **Incentive email:** if the form has double opt-in on, turn it off, or people won't be subscribed (or tagged) until they click a confirm link.
+3. **Confirmation email:** make `reg-0.html` the first email for this form (a one-email sequence or automation on the `masterclass-dec3` tag, sent right away). The old `email/confirmation.html` still has the Nov 19 date and Zoom link.
 4. **Zoom:** create the Dec 3 meeting. Put its link in `reg-0`, `reg-1` and `reg-2` (`[ZOOM LINK]`), and in `masterclass/event.js` (`zoomUrl`) so the calendar buttons carry it.
 5. **MIRACLE200:** set the code's start in Kit to **Thursday, December 3 at 5:30 pm PT** (it was Dec 4, 12:00 am), so Lisa can share it at the end of class. The course page already shows $597 from that moment.
 6. **After class:** tag live attendees `masterclass-dec3-attended` from Zoom's attendance report, before `reg-3` goes out at 7:15 pm. Add the replay link to `reg-3` and `reg-4` (`[REPLAY LINK]`).
