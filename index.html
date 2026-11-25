@@ -236,7 +236,7 @@ h1,h2{font-family:var(--display);font-weight:800;letter-spacing:-.02em;margin:0;
 }
 @media (prefers-reduced-motion:reduce){.bar,.logo,.menu a,.menu a::after,.burger span,.sheet{transition:none}}
 
-/* ===== promo banner: the free masterclass, until class ends ===== */
+/* ===== promo banner: the Money Wealth and Miracles course, with a countdown to Module 1 ===== */
 :root{--promo:0px}
 .has-promo{--promo:calc(46px + env(safe-area-inset-top,0px))}
 .promo{position:fixed;left:0;right:0;top:0;z-index:12;height:var(--promo);padding:env(safe-area-inset-top,0px) 56px 0;display:flex;align-items:center;justify-content:center;background:var(--rose);color:var(--oat);box-shadow:0 1px 0 rgba(20,27,22,.25)}
@@ -244,22 +244,30 @@ h1,h2{font-family:var(--display);font-weight:800;letter-spacing:-.02em;margin:0;
 .promo .pk{font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--rose-l)}
 .promo .pt{overflow:hidden;text-overflow:ellipsis}
 .promo .pm,.promo .bs{display:none}
+.promo .cd{display:inline-flex;align-items:baseline;gap:5px;font-variant-numeric:tabular-nums}
+.promo .cd span{display:inline-flex;align-items:baseline;gap:1px;padding:4px 7px;border-radius:6px;background:rgba(20,27,22,.22);font-weight:700;font-size:15px}
+.promo .cd i{font-style:normal;font-weight:400;font-size:11px;opacity:.8}
 .promo b{font-weight:700;padding:6px 14px;border-radius:999px;background:var(--oat);color:var(--rose-h);transition:background .2s}
 .promo a:hover b{background:#fff}
 .promo button{position:absolute;right:10px;bottom:5px;width:36px;height:36px;border:0;border-radius:50%;background:transparent;color:var(--oat);font:400 24px/1 var(--body);cursor:pointer}
 .promo button:hover{background:rgba(248,244,236,.16)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .has-promo .bar{top:var(--promo);padding-top:16px}
 .has-promo.scrolled .bar{padding-top:10px}
 .has-promo .step.hero{padding-top:calc(clamp(88px,12vh,128px) + 46px)}
 .has-promo .sheet{padding-top:calc(96px + var(--promo))}
 .has-promo.menu-open .promo{display:none}
+@media (max-width:1100px){.promo .pk{display:none}}
 @media (max-width:760px){
   .promo{padding-left:14px;padding-right:48px;justify-content:flex-start}
-  .promo .pk,.promo .pt,.promo .bl{display:none}
+  .promo .pt,.promo .bl,.promo .cd .s{display:none}
   .promo .pm,.promo .bs{display:inline}
-  .promo a{justify-content:flex-start;gap:10px;font-size:14px;max-width:100%}
+  .promo a{justify-content:flex-start;gap:8px;font-size:14px;max-width:100%}
+  .promo .cd{gap:3px}
+  .promo .cd span{padding:3px 5px;font-size:13px}
   .promo b{padding:6px 12px}
 }
+@media (max-width:370px){.promo .pm{display:none}}
 </style>
 </head>
 <body>
@@ -270,9 +278,9 @@ h1,h2{font-family:var(--display);font-weight:800;letter-spacing:-.02em;margin:0;
 <div class="vignette" aria-hidden="true"></div>
 <div class="grain" aria-hidden="true"></div>
 
-<div class="promo" id="promo" role="region" aria-label="Free masterclass" hidden>
-<a href="masterclass/"><span class="pk">Free live masterclass</span><span class="pt">Opening the Flow of Money · Thursday, Nov 19, 5:30pm PT on Zoom</span><span class="pm">Free class · Thu, Nov 19</span><b><span class="bl">Save my free seat →</span><span class="bs">Save my seat →</span></b></a>
-<button type="button" id="promoX" aria-label="Dismiss the masterclass banner">×</button>
+<div class="promo" id="promo" role="region" aria-label="Money Wealth and Miracles course" hidden>
+<a href="course/?utm_source=site&amp;utm_medium=banner&amp;utm_campaign=mwm-dec"><span class="pk">Live course</span><span class="pt">Money Wealth and Miracles · starts Mon, Dec 14, 5:30pm PT</span><span class="pm">Starts in</span><span class="cd" id="promoCd" aria-hidden="true"><span><span data-u="d">00</span><i>d</i></span><span><span data-u="h">00</span><i>h</i></span><span><span data-u="m">00</span><i>m</i></span><span class="s"><span data-u="s">00</span><i>s</i></span></span><span class="sr">Money Wealth and Miracles starts Monday, December 14 at 5:30pm Pacific.</span><b><span class="bl">See the course →</span><span class="bs">Join →</span></b></a>
+<button type="button" id="promoX" aria-label="Dismiss the course banner">×</button>
 </div>
 <header class="bar" id="bar">
 <a class="brand" href="#top" aria-label="Lisa Kalmin, Breakthrough Coach, back to the top"><span class="logo" role="img" aria-label="Lisa Kalmin, Breakthrough Coach"></span></a>
@@ -594,13 +602,20 @@ h1,h2{font-family:var(--display);font-weight:800;letter-spacing:-.02em;margin:0;
   var root = document.documentElement, burger = document.getElementById('burger'), sheet = document.getElementById('sheet');
   var links = Array.prototype.slice.call(document.querySelectorAll('.menu a, .sheet nav a'));
   var ids = ['course', 'coaching', 'speaking', 'book', 'media', 'community', 'about'];
-  // promo banner: shown until the masterclass ends, unless dismissed this visit
-  var promo = document.getElementById('promo'), promoOff = null;
-  try { promoOff = sessionStorage.getItem('promo-off'); } catch (e) {}
-  if (promo && !promoOff && Date.now() < Date.parse('2026-11-19T19:00:00-08:00')) { promo.hidden = false; root.classList.add('has-promo'); }
+  // promo banner: counts down to Module 1 of the course, and goes away when it starts or is dismissed this visit
+  var promo = document.getElementById('promo'), promoOff = null, promoEnd = Date.parse('2026-12-14T17:30:00-08:00'), promoT = 0;
+  try { promoOff = sessionStorage.getItem('promo-off-mwm'); } catch (e) {}
+  function promoHide() { promo.hidden = true; root.classList.remove('has-promo'); clearInterval(promoT); }
+  function promoTick() {
+    var left = promoEnd - Date.now();
+    if (left <= 0) { promoHide(); return; }
+    var t = Math.floor(left / 1000), v = { d: Math.floor(t / 86400), h: Math.floor(t / 3600) % 24, m: Math.floor(t / 60) % 60, s: t % 60 };
+    Array.prototype.forEach.call(promo.querySelectorAll('[data-u]'), function (el) { var n = v[el.getAttribute('data-u')]; el.textContent = n < 10 ? '0' + n : String(n); });
+  }
+  if (promo && !promoOff && Date.now() < promoEnd) { promo.hidden = false; root.classList.add('has-promo'); promoTick(); promoT = setInterval(promoTick, 1000); }
   document.getElementById('promoX').addEventListener('click', function () {
-    promo.hidden = true; root.classList.remove('has-promo');
-    try { sessionStorage.setItem('promo-off', '1'); } catch (e) {}
+    promoHide();
+    try { sessionStorage.setItem('promo-off-mwm', '1'); } catch (e) {}
   });
   var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
   function spy() {
@@ -1032,6 +1047,6 @@ if (renderer) {
   setTimeout(() => canvas.classList.add('on'), 250);
 }
 </script>
-<script src="/assets/extras.js?v=1" defer></script>
+<script src="/assets/extras.js?v=2" defer></script>
 </body>
 </html>
