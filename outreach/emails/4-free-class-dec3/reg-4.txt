@@ -1,0 +1,40 @@
+Subject A: What happens after you find the stop
+
+Subject B: The part we didn't have time for
+
+Preview text: A stop comes back when life gets busy. Here is how to keep it gone.
+
+Send: Saturday, December 5, 10:00 am PT
+
+Audience: tag masterclass-dec3, not mwm-buyer
+
+------------------------------------------------------------
+
+Hi {{ subscriber.first_name | default: "there" }},
+
+It's been two days since class. Can I ask you something? Has the stop come back yet?
+
+For most people it does, often the first time a big bill arrives or an invoice goes out. That's not failure. A stop has been there a long time, and one evening can show it to you, but it takes repetition to set a new set point that holds.
+
+That's why I teach Money Wealth and Miracles live, over six sessions. When I coach someone in the room, I can hear the stop in their words before they can. And when you watch it happen for someone else, you suddenly recognize your own.
+
+"Having direct access to Lisa is immeasurable. I noticed myself a few times asking, why didn't anyone tell me this before?"
+A Money Wealth and Miracles student
+
+YOUR ATTENDEE PRICE
+$597 (regularly $797)
+Paid in full, with the code MIRACLE200
+Through Monday, December 14 at 5:30 pm PT
+Code: MIRACLE200
+
+Join for $597:
+https://www.lisakalmin.com/course/?code=MIRACLE200&utm_source=kit&utm_medium=email&utm_campaign=mwm-dec&utm_content=dec3-r4
+
+To your abundant flow!
+Lisa
+
+Lisa Kalmin
+Transformational Mindset Wizard
+Author of "The Problem Is How You See the Problem"
+
+P.S. Missed class? The replay is still up for one more day: [REPLAY LINK]

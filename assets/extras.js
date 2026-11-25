@@ -1,6 +1,9 @@
 /* Cookie bar and quiz pop-up, shared by every page.
    - Cookie bar: shows until the visitor chooses. "Accept" turns on analytics cookies through
      Google consent mode (the defaults are set in each page's <head>). Stored in localStorage lk_consent.
+   - Class pop-up: until the free masterclass starts (CLASS.start), the pop-up invites people to it
+     instead of the quiz. Closing it hides it until the class (localStorage lk_classpop_off). Anyone who
+     has registered (the thank-you page sets lk_class_reg) never sees it. After the class, the quiz is back.
    - Quiz pop-up: opens the first time the visitor scrolls. Closing it, or finishing the quiz,
      hides it for 30 days (localStorage lk_quizpop_until). Clicking through to the quiz hides it
      for the rest of the visit. Never on the quiz or masterclass pages, never for masterclass
@@ -13,6 +16,10 @@
     sget: function (k) { try { return sessionStorage.getItem(k); } catch (e) { return null; } },
     sset: function (k, v) { try { sessionStorage.setItem(k, v); } catch (e) {} }
   };
+  // the free masterclass the pop-up promotes until it starts; change for the next class
+  var CLASS = { id: '2026-12-03', start: Date.parse('2026-12-03T17:30:00-08:00'),
+    when: 'Thursday, December 3 · 5:30 to 7:00 pm PT · Live on Zoom',
+    url: '/masterclass/?utm_source=site&utm_medium=popup&utm_campaign=mwm-dec' };
   // the quiz page calls this when a result is shown
   window.lkQuizDone = function () { store.set('lk_quizpop_until', String(Date.now() + 30 * DAY)); };
 
@@ -32,6 +39,7 @@
     '.lkq.on .box{transform:none}' +
     ".lkq .k{margin:0 0 12px;font:500 12px/1.4 'Jost',system-ui,sans-serif;letter-spacing:.3em;text-transform:uppercase;color:#A04E5C}" +
     ".lkq h2{margin:0 0 14px;font-family:'Plus Jakarta Sans','Jost',system-ui,sans-serif;font-weight:800;font-size:clamp(26px,4vw,32px);line-height:1.12;letter-spacing:-.01em;color:#2F3B33}" +
+    ".lkq .w{margin:-8px 0 24px;padding:12px 16px;border-radius:12px;background:#F1DCDF;color:#2F3B33;font:500 16px/1.4 'Jost',system-ui,sans-serif}" +
     ".lkq .t{margin:0 0 24px;color:#56635B;font:400 17px/1.55 'Jost',system-ui,sans-serif}" +
     ".lkq .go{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:54px;padding:14px 24px;border-radius:999px;background:#A04E5C;color:#fff;font:700 18px/1.2 'Jost',system-ui,sans-serif;text-decoration:none;box-sizing:border-box}" +
     '.lkq .go:hover{background:#873F4C}' +
@@ -65,17 +73,28 @@
       });
     }
 
-    /* ---------- quiz pop-up ---------- */
+    /* ---------- pop-up: the free class until it starts, then the quiz ---------- */
     var path = location.pathname;
+    if (/^\/masterclass\/thank-you(\/|$)/.test(path)) store.set('lk_class_reg', CLASS.id);
     if (/^\/(quiz|masterclass)(\/|$)/.test(path)) return;
     if (/^\/course(\/|$)/.test(path) && new URLSearchParams(location.search).get('code')) return;
-    if (Number(store.get('lk_quizpop_until') || 0) > Date.now()) return;
+    var isClass = Date.now() < CLASS.start && store.get('lk_class_reg') !== CLASS.id;
+    if (isClass && store.get('lk_classpop_off') === CLASS.id) return;
+    if (!isClass && Number(store.get('lk_quizpop_until') || 0) > Date.now()) return;
     if (store.sget('lk_quizpop_session')) return;
 
     var pop = document.createElement('div');
     pop.className = 'lkq'; pop.hidden = true;
     pop.setAttribute('role', 'dialog'); pop.setAttribute('aria-modal', 'true'); pop.setAttribute('aria-labelledby', 'lkq-h');
-    pop.innerHTML = '<div class="box">' +
+    pop.innerHTML = isClass ? '<div class="box">' +
+      '<button class="x" type="button" data-qclose aria-label="Close">×</button>' +
+      '<p class="k">Free live masterclass with Lisa</p>' +
+      '<h2 id="lkq-h">Opening the Flow of Money: Letting Go of Your Stops</h2>' +
+      '<p class="t">In 90 minutes, find the hidden stops in your relationship with money and set a new money set point. Live with Lisa, and free.</p>' +
+      '<p class="w">' + CLASS.when + '</p>' +
+      '<a class="go" href="' + CLASS.url + '">Save my free seat <span aria-hidden="true">→</span></a>' +
+      '<button class="no" type="button" data-qclose>No thanks</button>' +
+      '</div>' : '<div class="box">' +
       '<button class="x" type="button" data-qclose aria-label="Close">×</button>' +
       '<p class="k">Free money mindset quiz · 5 minutes</p>' +
       '<h2 id="lkq-h">Are you under-earning without realizing it?</h2>' +
@@ -86,7 +105,7 @@
     document.body.appendChild(pop);
 
     var done = false, last = null;
-    function snooze() { store.set('lk_quizpop_until', String(Date.now() + 30 * DAY)); }
+    function snooze() { if (isClass) store.set('lk_classpop_off', CLASS.id); else store.set('lk_quizpop_until', String(Date.now() + 30 * DAY)); }
     function open() {
       if (done) return; done = true; cleanup();
       store.sset('lk_quizpop_session', '1');

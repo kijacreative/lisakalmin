@@ -1,0 +1,27 @@
+Subject A: We start in one hour
+
+Subject B: Your Zoom link (5:30 pm PT)
+
+Preview text: Here is your link. Doors open at 5:25.
+
+Send: Thursday, December 3, 4:30 pm PT
+
+Audience: tag masterclass-dec3, not mwm-buyer
+
+------------------------------------------------------------
+
+Hi {{ subscriber.first_name | default: "there" }},
+
+We start in one hour. Grab your journal, and come a few minutes early so you're settled.
+
+Join on Zoom at 5:30 pm PT:
+[ZOOM LINK]
+
+Stay until the end: that's when I share the attendee price for Money Wealth and Miracles. See you soon!
+
+To your abundant flow!
+Lisa
+
+Lisa Kalmin
+Transformational Mindset Wizard
+Author of "The Problem Is How You See the Problem"

@@ -1,0 +1,41 @@
+Subject A: Your attendee price (and the replay)
+
+Subject B: $200 off, as promised
+
+Preview text: $597 for Money Wealth and Miracles, through the day we begin.
+
+Send: Thursday, December 3, 7:15 pm PT (right after class)
+
+Audience: tag masterclass-dec3, not mwm-buyer
+
+------------------------------------------------------------
+
+Hi {{ subscriber.first_name | default: "there" }},
+
+{% if subscriber.tags contains "masterclass-dec3-attended" %}Thank you for tonight. I watched so many of you find your stop on screen, and I hope you felt how much lighter money gets the moment you can see it.
+
+As promised, here is your attendee price for Money Wealth and Miracles:{% else %}I missed you tonight! The replay is here for a few days: [REPLAY LINK]
+
+Watch it this week, and the attendee price for Money Wealth and Miracles is yours too:{% endif %}
+
+YOUR ATTENDEE PRICE
+$597 (regularly $797)
+Paid in full, with the code MIRACLE200
+Through Monday, December 14 at 5:30 pm PT
+Code: MIRACLE200
+
+Join for $597:
+https://www.lisakalmin.com/course/?code=MIRACLE200&utm_source=kit&utm_medium=email&utm_campaign=mwm-dec&utm_content=dec3-r3
+
+Finding a stop is the beginning. Letting it go, and holding a new set point when life gets busy, takes practice and support. That is what the six sessions are for: live coaching with me, a breakthrough assignment between every session, and a small group cheering you on.
+
+We begin Monday, December 14 at 5:30 pm PT. The $597 price ends when we start.
+
+To your abundant flow!
+Lisa
+
+Lisa Kalmin
+Transformational Mindset Wizard
+Author of "The Problem Is How You See the Problem"
+
+P.S. Not sure it's right for you? Just reply. I answer every message myself.

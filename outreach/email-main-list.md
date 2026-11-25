@@ -53,7 +53,7 @@ P.S. Hit reply and tell me one sentence your family used to say about money. I r
 
 ---
 
-## Main 2 · Thursday, December 3, 9:00 am PT
+## Main 2 · Saturday, December 5, 10:00 am PT (moved from Dec 3, the free class day)
 
 **Subject A:** "Why didn't anyone tell me this before?"
 **Subject B:** What happened for Megan (and $25,000)

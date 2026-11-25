@@ -67,6 +67,7 @@ def QUOTE(text, who): return ('quote', text, who)
 def LISA(note): return ('lisa', note)
 def SLOT(note): return ('slot', note)          # {{ message_content }}: optional block typed in Kit
 def COURSE_CARD(url, label='See the course and the dates'): return ('course', url, label)
+def CLASS_CARD(url, label='Save my free seat'): return ('class', url, label)
 def CODE_CARD(url, label='Join for $597', eyebrow='Your thank-you price', who=None): return ('code', url, label, eyebrow, who)
 
 GREET = 'Hi {{ subscriber.first_name | default: "there" }},'
@@ -127,6 +128,14 @@ def block_html(b):
             + f'<p class="s" style="margin:0 0 4px;font-size:17px;line-height:26px;">Six live sessions on Zoom · 5:30 to 7:00 pm PT</p>'
             + f'<p class="s" style="margin:0 0 22px;font-size:17px;line-height:26px;">Every session recorded · $797</p>'
             + button(label, url))
+    if k == 'class':
+        _, url, label = b
+        return card(eyebrow('Free live masterclass')
+            + f'<p class="h h1" style="margin:0 0 14px;font-family:{HEAD};font-weight:800;font-size:28px;line-height:34px;letter-spacing:-0.5px;color:{C["forest"]};">Opening the Flow of Money: Letting Go of Your Stops</p>'
+            + f'<p class="s" style="margin:0 0 4px;font-size:17px;line-height:26px;"><strong>Thursday, December 3</strong></p>'
+            + f'<p class="s" style="margin:0 0 4px;font-size:17px;line-height:26px;">5:30 to 7:00 pm PT · Live on Zoom</p>'
+            + f'<p class="s" style="margin:0 0 22px;font-size:17px;line-height:26px;">Free · 90 minutes with Lisa</p>'
+            + button(label, url))
     if k == 'code':
         _, url, label, eb, who = b
         sub = who or 'Paid in full, with the code MIRACLE200'
@@ -156,6 +165,9 @@ def block_text(b):
     if k == 'course':
         return ('MONEY WEALTH AND MIRACLES\nBegins Monday, December 14\nSix live sessions on Zoom, 5:30 to 7:00 pm PT\n'
                 f'Every session recorded, $797\n\n{b[2]}:\n{b[1]}')
+    if k == 'class':
+        return ('FREE LIVE MASTERCLASS\nOpening the Flow of Money: Letting Go of Your Stops\nThursday, December 3\n'
+                f'5:30 to 7:00 pm PT, live on Zoom\nFree, 90 minutes with Lisa\n\n{b[2]}:\n{b[1]}')
     if k == 'code':
         return (f'{b[3].upper()}\n$597 (regularly $797)\n{plain(b[4] or "Paid in full, with the code MIRACLE200")}\n'
                 f'Through Monday, December 14 at 5:30 pm PT\nCode: MIRACLE200\n\n{b[2]}:\n{b[1]}')
@@ -404,10 +416,13 @@ dict(id='mc-7', send='Monday, December 14, 8:00 am PT', price='$597 with MIRACLE
   ]),
 ]
 for e in series1: e.update(series=S1, audience=A1, sign=FLOW)
+# Dec 3 class registrants finish Series 4 on Dec 5, then get the same last three emails
+for e in series1:
+    if e['id'] in ('mc-5', 'mc-6', 'mc-7'): e['audience'] = 'tag masterclass-nov19 or masterclass-dec3, not mwm-buyer'
 
 # ---------------------------------------------------------------- Series 2: full email list
 S2 = 'Series 2 · Full email list'
-A2 = 'full Kit list, excluding masterclass-nov19, mwm-buyer and new quiz leads'
+A2 = 'full Kit list, excluding masterclass-nov19, masterclass-dec3, mwm-buyer and new quiz leads'
 A2b = A2 + ', and from Dec 7 also excluding mwm-clicked'
 ABUND = 'To your abundance!'
 mn = lambda n: utm(f'main-e{n}')
@@ -430,9 +445,10 @@ dict(id='main-1', send='Tuesday, December 1, 9:00 am PT', audience=A2, note=CLIC
     P('I keep the group small, 15 to 30 people, so I can coach you directly.'),
     COURSE_CARD(mn(1)),
   ],
-  ps=[P('**P.S.** Hit reply and tell me one sentence your family used to say about money. I read every reply, and you may be surprised what comes up just writing it down.')]),
+  ps=[P('**P.S.** Not ready for six weeks? Start with one evening. This Thursday, **December 3, at 5:30 pm PT**, I\'m teaching a free 90-minute masterclass, Opening the Flow of Money. [Save your free seat](' + SITE + '/masterclass/?utm_source=kit&utm_medium=email&utm_campaign=mwm-dec3&utm_content=main-e1-ps' + ')'),
+      P('And hit reply to tell me one sentence your family used to say about money. I read every reply.')]),
 
-dict(id='main-2', send='Thursday, December 3, 9:00 am PT', audience=A2, note=CLICK,
+dict(id='main-2', send='Saturday, December 5, 10:00 am PT (moved from Dec 3, the class day)', audience=A2, note=CLICK,
   subject_a='"Why didn\'t anyone tell me this before?"', subject_b='What happened for Megan (and $25,000)',
   preview='What people say after the course, in their own words.',
   body=[
@@ -607,12 +623,151 @@ def cold_html(e):
 </body></html>
 """
 
+# ---------------------------------------------------------------- Series 4: the free class on Dec 3
+S4 = 'Series 4 · Free masterclass, Thursday Dec 3'
+A4i = 'full Kit list, excluding masterclass-dec3 (already registered), mwm-buyer and new quiz leads'
+A4r = 'tag masterclass-dec3, not mwm-buyer'
+mcl = lambda c: f'{SITE}/masterclass/?utm_source=kit&utm_medium=email&utm_campaign=mwm-dec3&utm_content={c}'
+r4 = lambda n: utm(f'dec3-r{n}')
+r4c = lambda n: utm(f'dec3-r{n}', code=True)
+GCAL = ('https://calendar.google.com/calendar/render?action=TEMPLATE&text=Opening+the+Flow+of+Money+with+Lisa+Kalmin'
+        '&dates=20261204T013000Z/20261204T030000Z&details=Your+Zoom+link+is+in+your+confirmation+email.+Bring+a+journal+and+a+pen.')
+ICS = SITE + '/masterclass/masterclass.ics'
+INV = 'Invite. Kit broadcast. Exclude anyone tagged masterclass-dec3 at send time, so people who registered stop getting invites.'
+REG = 'Registrants. Kit broadcast to the tag (or the Dec 3 sequence). Replace [ZOOM LINK] / [REPLAY LINK] before scheduling.'
+
+series4 = [
+# ---- invites to the main list
+dict(id='inv-1', send='Friday, November 27, 10:00 am PT', audience=A4i, note=INV,
+  subject_a="You're invited: a free evening with me", subject_b='Where does your money stop?',
+  preview='Thursday, December 3, 5:30 pm PT. 90 minutes, live, free.',
+  body=[
+    P("I'm opening my virtual classroom for one evening, and I'd love for you to come."),
+    P('On **Thursday, December 3, at 5:30 pm PT**, I\'m teaching a free live masterclass on Zoom: **Opening the Flow of Money: Letting Go of Your Stops.**'),
+    P('Here\'s the idea. Most of us have a place in our money story that quietly says "this far and no further." It might sound like "there\'s never quite enough," or a pause before you name your price, or money that comes in and goes right back out. That place is a stop, and once you can see it, you can let it go.'),
+    P('In 90 minutes together, you will:'),
+    UL('Find your hidden money stops, and where they started',
+       'See money as energy you can attract, not just numbers you chase',
+       "Set a new income set point that doesn't depend on the news",
+       'Leave with 4 actions you can take the same day'),
+    CLASS_CARD(mcl('inv-1')),
+  ],
+  ps=[P("**P.S.** Been to one of my classes before? Come again. Every class uncovers a new layer, and the stop you meet this time may not be the one you met last time.")]),
+
+dict(id='inv-2', send='Monday, November 30, 9:00 am PT', audience=A4i, note=INV,
+  subject_a='"There\'s never quite enough"', subject_b='The pause before you name your price',
+  preview='Four money stops. Which one sounds like you?',
+  body=[
+    P('Which of these sounds most like you?'),
+    OL("There's never quite enough, no matter how much comes in.",
+       'You undercharge, or give it away.',
+       'Money feels stressful, so you avoid looking.',
+       'Money comes in, then goes right back out.'),
+    P("None of these means something is wrong with you. Each one is a stop: a belief you picked up long ago that sets a ceiling on how much money feels safe to have."),
+    P('Here is what I have seen in 39 years of coaching more than 50,000 people: you can work harder, earn more, learn every strategy, and money still drifts back to the same level until the stop underneath it is seen.'),
+    P("This Thursday, I'll help you find yours, live, in a free 90-minute masterclass. Bring a journal. You'll want to write down what comes up."),
+    CLASS_CARD(mcl('inv-2')),
+  ],
+  ps=[P('**P.S.** Reply with the number that sounds most like you. I read every reply, and it helps me shape the class.')]),
+
+dict(id='inv-3', send='Wednesday, December 2, 9:00 am PT', audience=A4i, note=INV,
+  subject_a='Tomorrow night, 5:30 pm PT', subject_b='Save your seat for tomorrow',
+  preview='A free live masterclass with me. 90 minutes on Zoom.',
+  body=[
+    P('Tomorrow evening I\'m teaching **Opening the Flow of Money**, free and live on Zoom, and there\'s still room for you.'),
+    QUOTE('Lisa is one of the most effective people I know at coaching.', '**Nicole Kalil**, Founder and CEO, WomanWhisperer'),
+    P("Come as you are. You don't need to prepare anything except a journal and 90 minutes for yourself. I'll take you through the exercises live, and you can ask me your questions directly."),
+    CLASS_CARD(mcl('inv-3')),
+  ]),
+
+dict(id='inv-4', send='Thursday, December 3, 2:00 pm PT', audience=A4i, note=INV,
+  subject_a='Today at 5:30 pm PT', subject_b='We start in a few hours',
+  preview='The free masterclass is tonight. Your seat is still open.',
+  body=[
+    P('Quick note: **Opening the Flow of Money** is tonight at **5:30 pm PT**, live on Zoom.'),
+    P("If money has felt tighter than it should this year, give yourself these 90 minutes. Register now and your Zoom link arrives by email right away."),
+    CLASS_CARD(mcl('inv-4'), 'Save my seat for tonight'),
+    P('See you there.'),
+  ]),
+
+# ---- after sign-up: every email points toward Money Wealth and Miracles
+dict(id='reg-0', send='Right away, when someone registers (the first email of the Dec 3 sequence, or the form\'s confirmation)', audience=A4r, note=REG,
+  subject_a="You're in! Your Zoom link for Thursday", subject_b='Your seat is saved (Dec 3, 5:30 pm PT)',
+  preview='Save this email. Your link and calendar buttons are inside.',
+  body=[
+    P("You're in! I'm so glad you're coming."),
+    H('Opening the Flow of Money'),
+    P('**Thursday, December 3**, 5:30 to 7:00 pm PT, live on Zoom.'),
+    BTN('Join on Zoom', '[ZOOM LINK]'),
+    P('Star this email so the link is easy to find, and add the class to your calendar: [Google Calendar](' + GCAL + ') or [Apple / Outlook](' + ICS + ').'),
+    P('Bring a journal and a pen. You\'ll want to write down what comes up.'),
+    H('Where this can lead'),
+    P('The masterclass opens the door. **Money Wealth and Miracles** is where you walk through it: six live sessions with me, starting **Monday, December 14**, where you rewrite the money story you grew up with in a small group.'),
+    P("**Stay to the end on Thursday:** I'll share a $200 attendee price for the course, just for the people in class."),
+    COURSE_CARD(r4(0), "See what's inside the course"),
+  ],
+  ps=[P("**P.S.** Hit reply and tell me which money stop sounds most like you. I'll shape the class around the people in the room.")]),
+
+dict(id='reg-1', send='Wednesday, December 2, 9:00 am PT', audience=A4r, note=REG,
+  subject_a='Tomorrow: what to bring', subject_b='See you tomorrow at 5:30 pm PT',
+  preview='A journal, a pen, and one question.',
+  body=[
+    P("We meet tomorrow, **Thursday at 5:30 pm PT**, and I'm already looking forward to it."),
+    P('To get the most from our 90 minutes:'),
+    OL('**Bring a journal and a pen.** The exercises work best on paper.',
+       '**Find a quiet spot** where you can talk out loud if I call on you.',
+       '**Bring one money question** you\'ve never quite been able to answer.'),
+    BTN('Your Zoom link', '[ZOOM LINK]'),
+    P('One more thing. Here is what Megan, a Head of Design, wrote after she went from this class into Money Wealth and Miracles:'),
+    QUOTE("She drops personal coaching knowledge as well as practical knowledge that I felt like I missed in high school and college.", '**Megan**, Head of Design'),
+    P("I'll tell you more about the course at the end of class, along with a thank-you price for the people who are there."),
+  ]),
+
+dict(id='reg-2', send='Thursday, December 3, 4:30 pm PT', audience=A4r, note=REG,
+  subject_a='We start in one hour', subject_b='Your Zoom link (5:30 pm PT)',
+  preview='Here is your link. Doors open at 5:25.',
+  body=[
+    P('We start in one hour. Grab your journal, and come a few minutes early so you\'re settled.'),
+    BTN('Join on Zoom at 5:30 pm PT', '[ZOOM LINK]'),
+    P("Stay until the end: that's when I share the attendee price for Money Wealth and Miracles. See you soon!"),
+  ]),
+
+dict(id='reg-3', send='Thursday, December 3, 7:15 pm PT (right after class)', audience=A4r,
+  note=REG + ' Tag live attendees masterclass-dec3-attended from the Zoom attendance report before sending. MIRACLE200 must already work in Kit (set its start to Dec 3, 5:30 pm PT).',
+  subject_a='Your attendee price (and the replay)', subject_b='$200 off, as promised',
+  preview='$597 for Money Wealth and Miracles, through the day we begin.',
+  body=[
+    COND('masterclass-dec3-attended',
+      [P('Thank you for tonight. I watched so many of you find your stop on screen, and I hope you felt how much lighter money gets the moment you can see it.'),
+       P('As promised, here is your attendee price for **Money Wealth and Miracles**:')],
+      [P("I missed you tonight! The replay is here for a few days: **[REPLAY LINK]**"),
+       P('Watch it this week, and the attendee price for **Money Wealth and Miracles** is yours too:')]),
+    CODE_CARD(r4c(3), eyebrow='Your attendee price'),
+    P('Finding a stop is the beginning. Letting it go, and holding a new set point when life gets busy, takes practice and support. That is what the six sessions are for: live coaching with me, a breakthrough assignment between every session, and a small group cheering you on.'),
+    P('We begin **Monday, December 14 at 5:30 pm PT**. The $597 price ends when we start.'),
+  ],
+  ps=[P('**P.S.** Not sure it\'s right for you? Just reply. I answer every message myself.')]),
+
+dict(id='reg-4', send='Saturday, December 5, 10:00 am PT', audience=A4r, note=REG,
+  subject_a='What happens after you find the stop', subject_b='The part we didn\'t have time for',
+  preview='A stop comes back when life gets busy. Here is how to keep it gone.',
+  body=[
+    P("It's been two days since class. Can I ask you something? Has the stop come back yet?"),
+    P('For most people it does, often the first time a big bill arrives or an invoice goes out. That\'s not failure. A stop has been there a long time, and one evening can show it to you, but it takes repetition to set a new set point that holds.'),
+    P("That's why I teach Money Wealth and Miracles live, over six sessions. When I coach someone in the room, I can hear the stop in their words before they can. And when you watch it happen for someone else, you suddenly recognize your own."),
+    QUOTE("Having direct access to Lisa is immeasurable. I noticed myself a few times asking, why didn't anyone tell me this before?", 'A Money Wealth and Miracles student'),
+    CODE_CARD(r4c(4), eyebrow='Your attendee price'),
+  ],
+  ps=[P("**P.S.** Missed class? The replay is still up for one more day: **[REPLAY LINK]**")]),
+]
+for e in series4: e.update(series=S4, sign=FLOW)
+
 # ---------------------------------------------------------------- write
 def write(path, s):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, 'w') as f: f.write(s)
 
-folders = {'1-masterclass': series1, '2-main-list': series2}
+folders = {'1-masterclass': series1, '2-main-list': series2, '4-free-class-dec3': series4}
 for folder, emails in folders.items():
     for e in emails:
         write(f'{OUT}/{folder}/{e["id"]}.html', page(e))
@@ -625,7 +780,8 @@ for e in series3:
 cards = []
 for folder, title, emails in [('1-masterclass', 'Series 1 · Masterclass sign-ups', series1),
                               ('2-main-list', 'Series 2 · Full email list', series2),
-                              ('3-sourced', 'Series 3 · Sourced list (plain text)', series3)]:
+                              ('3-sourced', 'Series 3 · Sourced list (plain text)', series3),
+                              ('4-free-class-dec3', 'Series 4 · Free masterclass, Thursday Dec 3', series4)]:
     cards.append(f'<h2>{title}</h2>')
     for e in emails:
         cards.append(f'<p class="meta"><b>{e["id"]}</b> · {html.escape(e["send"])} · {html.escape(plain(e["subject_a"]))}</p>'

@@ -1,0 +1,36 @@
+Subject A: Tomorrow night, 5:30 pm PT
+
+Subject B: Save your seat for tomorrow
+
+Preview text: A free live masterclass with me. 90 minutes on Zoom.
+
+Send: Wednesday, December 2, 9:00 am PT
+
+Audience: full Kit list, excluding masterclass-dec3 (already registered), mwm-buyer and new quiz leads
+
+------------------------------------------------------------
+
+Hi {{ subscriber.first_name | default: "there" }},
+
+Tomorrow evening I'm teaching Opening the Flow of Money, free and live on Zoom, and there's still room for you.
+
+"Lisa is one of the most effective people I know at coaching."
+Nicole Kalil, Founder and CEO, WomanWhisperer
+
+Come as you are. You don't need to prepare anything except a journal and 90 minutes for yourself. I'll take you through the exercises live, and you can ask me your questions directly.
+
+FREE LIVE MASTERCLASS
+Opening the Flow of Money: Letting Go of Your Stops
+Thursday, December 3
+5:30 to 7:00 pm PT, live on Zoom
+Free, 90 minutes with Lisa
+
+Save my free seat:
+https://www.lisakalmin.com/masterclass/?utm_source=kit&utm_medium=email&utm_campaign=mwm-dec3&utm_content=inv-3
+
+To your abundant flow!
+Lisa
+
+Lisa Kalmin
+Transformational Mindset Wizard
+Author of "The Problem Is How You See the Problem"

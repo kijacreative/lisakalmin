@@ -1,0 +1,35 @@
+Subject A: Today at 5:30 pm PT
+
+Subject B: We start in a few hours
+
+Preview text: The free masterclass is tonight. Your seat is still open.
+
+Send: Thursday, December 3, 2:00 pm PT
+
+Audience: full Kit list, excluding masterclass-dec3 (already registered), mwm-buyer and new quiz leads
+
+------------------------------------------------------------
+
+Hi {{ subscriber.first_name | default: "there" }},
+
+Quick note: Opening the Flow of Money is tonight at 5:30 pm PT, live on Zoom.
+
+If money has felt tighter than it should this year, give yourself these 90 minutes. Register now and your Zoom link arrives by email right away.
+
+FREE LIVE MASTERCLASS
+Opening the Flow of Money: Letting Go of Your Stops
+Thursday, December 3
+5:30 to 7:00 pm PT, live on Zoom
+Free, 90 minutes with Lisa
+
+Save my seat for tonight:
+https://www.lisakalmin.com/masterclass/?utm_source=kit&utm_medium=email&utm_campaign=mwm-dec3&utm_content=inv-4
+
+See you there.
+
+To your abundant flow!
+Lisa
+
+Lisa Kalmin
+Transformational Mindset Wizard
+Author of "The Problem Is How You See the Problem"

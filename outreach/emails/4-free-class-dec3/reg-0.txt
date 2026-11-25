@@ -1,0 +1,49 @@
+Subject A: You're in! Your Zoom link for Thursday
+
+Subject B: Your seat is saved (Dec 3, 5:30 pm PT)
+
+Preview text: Save this email. Your link and calendar buttons are inside.
+
+Send: Right away, when someone registers (the first email of the Dec 3 sequence, or the form's confirmation)
+
+Audience: tag masterclass-dec3, not mwm-buyer
+
+------------------------------------------------------------
+
+Hi {{ subscriber.first_name | default: "there" }},
+
+You're in! I'm so glad you're coming.
+
+OPENING THE FLOW OF MONEY
+
+Thursday, December 3, 5:30 to 7:00 pm PT, live on Zoom.
+
+Join on Zoom:
+[ZOOM LINK]
+
+Star this email so the link is easy to find, and add the class to your calendar: Google Calendar (https://calendar.google.com/calendar/render?action=TEMPLATE&text=Opening+the+Flow+of+Money+with+Lisa+Kalmin&dates=20261204T013000Z/20261204T030000Z&details=Your+Zoom+link+is+in+your+confirmation+email.+Bring+a+journal+and+a+pen.) or Apple / Outlook (https://www.lisakalmin.com/masterclass/masterclass.ics).
+
+Bring a journal and a pen. You'll want to write down what comes up.
+
+WHERE THIS CAN LEAD
+
+The masterclass opens the door. Money Wealth and Miracles is where you walk through it: six live sessions with me, starting Monday, December 14, where you rewrite the money story you grew up with in a small group.
+
+Stay to the end on Thursday: I'll share a $200 attendee price for the course, just for the people in class.
+
+MONEY WEALTH AND MIRACLES
+Begins Monday, December 14
+Six live sessions on Zoom, 5:30 to 7:00 pm PT
+Every session recorded, $797
+
+See what's inside the course:
+https://www.lisakalmin.com/course/?utm_source=kit&utm_medium=email&utm_campaign=mwm-dec&utm_content=dec3-r0
+
+To your abundant flow!
+Lisa
+
+Lisa Kalmin
+Transformational Mindset Wizard
+Author of "The Problem Is How You See the Problem"
+
+P.S. Hit reply and tell me which money stop sounds most like you. I'll shape the class around the people in the room.

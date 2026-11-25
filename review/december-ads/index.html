@@ -90,7 +90,7 @@ button.cp.done{background:var(--accent-soft);border-color:transparent;color:var(
 <body>
 <div class="wrap">
   <header>
-    <p class="eyebrow">Money Wealth and Miracles · Meta ads · Nov 25 to Dec 14</p>
+    <p class="eyebrow">Money Wealth and Miracles · Meta ads · Nov 25 to Dec 14 · updated Nov 25</p>
     <h1>Miracles Ad Library</h1>
     <p class="lede">Every Meta ad for the December launch, with its image or video script and the words that run with it, for your review. Each ad runs in two sizes: the feed (4:5) and Stories and Reels (9:16). Reply to us with any line you'd like changed.</p>
   </header>
@@ -99,6 +99,11 @@ button.cp.done{background:var(--accent-soft);border-color:transparent;color:var(
   <section class="group" id="quiz">
     <div class="group-head"><h2>Quiz lead ads</h2><p>Cold audiences, sent to the free scorecard. Objective Leads, optimized for the quiz Lead event. Call to action: Learn more.</p></div>
     <div id="quizAds" class="group"></div>
+  </section>
+
+  <section class="group" id="class">
+    <div class="group-head"><h2>Free class ads</h2><p>Cold audiences, sent to the free masterclass on Thursday, December 3, to collect new email addresses. They run beside the quiz ads from Nov 27 to Dec 3 at 3 pm PT. Optimized for the class Lead event. Call to action: Sign up.</p></div>
+    <div id="classAds" class="group"></div>
   </section>
 
   <section class="group" id="retarget">
@@ -111,6 +116,23 @@ button.cp.done{background:var(--accent-soft);border-color:transparent;color:var(
 var Q = 'https://www.lisakalmin.com/quiz/?utm_source=meta&utm_medium=paid&utm_campaign=mwm-dec-quiz&utm_content=';
 var FULL = 'https://www.lisakalmin.com/course/?utm_source=meta&utm_medium=paid&utm_campaign=mwm-dec-retarget&utm_content=';
 var CODE = 'https://www.lisakalmin.com/course/?code=MIRACLE200&utm_source=meta&utm_medium=paid&utm_campaign=mwm-dec-retarget&utm_content=';
+
+var MC = 'https://www.lisakalmin.com/masterclass/?utm_source=meta&utm_medium=paid&utm_campaign=mwm-dec3&utm_content=';
+var CLASS = [
+ {code:'M1', name:'Money is still flowing', tags:['Static, portrait','Nov 27 to Dec 3'], price:'Free class',
+  shots:[['img/class-invite-feed.jpg','Feed 4:5'],['img/class-invite-story.jpg','Stories and Reels 9:16']],
+  primary:"The economy isn't what limits most people's income. Their relationship with money is, and the quiet \u201cstops\u201d inside it.\n\nJoin Lisa Kalmin for a free 90-minute live masterclass, Opening the Flow of Money, on Thursday, December 3, at 5:30 pm PT on Zoom. Find your stops, see where they started, and leave with a new money set point and 4 actions for the same day.\n\n39 years of coaching. 50,000+ people trained. Free to attend.",
+  headline:'Free live class with Lisa, Dec 3', desc:'90 minutes on Zoom · free', cta:'Sign up', link:MC+'m1-invite'},
+ {code:'M2', name:'Four quiet money stops', tags:['Static','Nov 27 to Dec 3'], price:'Free class',
+  shots:[['img/class-stops-feed.jpg','Feed 4:5'],['img/class-stops-story.jpg','Stories and Reels 9:16']],
+  primary:"\u201cThere's never quite enough.\u201d The pause before naming a price. Not looking, because looking is stressful. Money in, money right back out.\n\nThese are money stops: old beliefs that quietly cap how much money feels safe to have. They can be found, and they can be let go.\n\nOn Thursday, December 3, Lisa Kalmin is teaching a free live masterclass on exactly this. Bring a journal.",
+  headline:'Find your money stops, free', desc:'Live on Zoom · Thu, Dec 3', cta:'Sign up', link:MC+'m2-stops'},
+ {code:'M3', name:'Save the date', tags:['Static','Nov 27 to Dec 3'], price:'Free class',
+  shots:[['img/class-date-feed.jpg','Feed 4:5'],['img/class-date-story.jpg','Stories and Reels 9:16']],
+  primary:"Save the date: Thursday, December 3, 5:30 to 7:00 pm PT.\n\nOpening the Flow of Money: Letting Go of Your Stops is a free live masterclass with transformational coach Lisa Kalmin, author of The Problem Is How You See the Problem. Come as you are, ask your questions live, and set a new money set point before the year ends.\n\nSeats are free. The Zoom link arrives by email.",
+  headline:'Save your free seat for Dec 3', desc:'5:30 pm PT · live on Zoom', cta:'Sign up', link:MC+'m3-date',
+  note:'Turn the class ads off at 3:00 pm PT on Dec 3, so new sign-ups still get their Zoom link in time.'}
+];
 
 var QUIZ = [
  {code:'L1', name:'Which one is yours?', tags:['Static','Nov 25 to Dec 11'], price:'Free scorecard',
@@ -225,9 +247,10 @@ function render(ad, host){
 }
 
 QUIZ.forEach(function(ad){ render(ad, document.getElementById('quizAds')); });
+CLASS.forEach(function(ad){ render(ad, document.getElementById('classAds')); });
 RET.forEach(function(ad){ render(ad, document.getElementById('retargetAds')); });
 var nav = document.getElementById('nav');
-QUIZ.concat(RET).forEach(function(ad){ var l = el('a', null, ad.code + ' ' + ad.name); l.href = '#' + ad.code.toLowerCase(); nav.appendChild(l); });
+QUIZ.concat(CLASS, RET).forEach(function(ad){ var l = el('a', null, ad.code + ' ' + ad.name); l.href = '#' + ad.code.toLowerCase(); nav.appendChild(l); });
 </script>
 
 </body>

@@ -5,6 +5,8 @@
 1. **Quiz leads** (cold): ads send people to the Underearning Financial Scorecard at `/quiz/`. The email gate captures them into Kit (form 10176902), and `email-quiz-nurture.md` sells the course.
 2. **Retargeting** (warm): people who took the quiz, visited the course page, engaged with Lisa, or are on her lists see the course. **Nov 28 to Dec 3 at full price** (ads R2 and R3, no code). **From Fri Dec 4, the $597 offer with MIRACLE200** (ads R1, R3 with its last card swapped, and R4 from Dec 11).
 
+**Plus, inside Campaign 1: the free class ad set (ads M1 to M3, section 5c).** From Fri Nov 27 to Thu Dec 3 at 3:00 pm PT, ads invite cold audiences to Lisa's free masterclass on Thursday, December 3. Registering puts them in Kit (form 10115136, tag `masterclass-dec3`), where Series 4 sells the course.
+
 **Dates:** Wed Nov 25 to Mon Dec 14, 5:30 pm PT.
 **Suggested budget:** about **$1,600 total**.
 
@@ -12,6 +14,9 @@
 |---|---|---|---|---|
 | Quiz leads | $60 a day | $60 a day | off | about $1,020 |
 | Offer retargeting (from Nov 28) | $20 a day | $40 a day | $60 a day | about $550 |
+| Free class ad set (Nov 27 to Dec 3, 3 pm) | $35 a day | off | off | about $240 |
+
+With the class ad set, the total is about **$1,850**. To keep it at $1,600, run the quiz ad sets at $35 a day from Nov 27 to Dec 3 instead.
 
 Realistic expectation: $4 to $8 a lead in this space, so roughly 130 to 250 quiz leads. Cold leads seldom buy a $597 course within 3 weeks, so plan for 1 to 2 seats from ads, and a much bigger waitlist for the next cohort. Retargeting the lists Lisa already has (masterclass, main list, engagers) is where the near-term seats come from.
 
@@ -23,6 +28,7 @@ The site has Google Tag Manager (GTM-PCBSRF9P) but no Meta pixel yet. The quiz a
 
 1. **Meta pixel through GTM** on every page, plus the **Conversions API** (GTM server-side, or Meta's CAPI Gateway) so iOS and ad-blocked visitors still count.
 2. **`Lead` event:** when Kit accepts a quiz signup, the quiz page pushes `{ event: 'quiz_lead', money_mindset_pattern, money_mindset_score }` to the dataLayer (done). In GTM, add a Custom Event trigger for `quiz_lead` and a Meta `Lead` tag on it, passing the pattern as `content_name` from a Data Layer Variable.
+2b. **Class `Lead` event:** when Kit accepts a masterclass registration, the masterclass page pushes `{ event: 'class_lead', class_date: '2026-12-03' }` to the dataLayer (done). Add a Custom Event trigger for `class_lead` and a second Meta `Lead` tag on it with `content_name: 'masterclass-dec3'`, so the class ad set can optimize for sign-ups. In Ads Manager, make a custom conversion on `Lead` where content_name contains `masterclass` if you want the quiz and class counts separate.
 3. **`ViewContent`** on `/course/`, and **`InitiateCheckout`** on clicks of the checkout buttons.
 4. **`Purchase`:** add the pixel ID in Kit's product settings if available, otherwise create the conversion from the Kit purchase redirect page.
 5. **Consent:** the site denies ad cookies for everyone until they click Accept. For US traffic this hides most conversions, which makes Meta's optimization guess blindly and raises the cost per lead. Grant by default for US visitors and keep the opt-in for the EU, UK and Canada.
@@ -46,6 +52,8 @@ The site has Google Tag Manager (GTM-PCBSRF9P) but no Meta pixel yet. The quiz a
 | A. Interests | Interests such as: law of attraction, abundance, personal development, life coaching, Mel Robbins, Gabrielle Bernstein, Hay House, Oprah, The Secret, entrepreneurship, women in business, small business owners | $25 |
 | B. Lookalike | 1 to 3% lookalike of Lisa's Kit list, masterclass registrants and course buyers (upload the email lists) | $20 |
 | C. Advantage+ audience | Broad, with Lisa's lists as audience suggestions | $15 |
+
+| D. Free class (Nov 27 to Dec 3, 3 pm PT) | Advantage+ audience, with the interests from A as suggestions. Ads M1 to M3, sending people to `/masterclass/`. Optimize for the `Lead` event from the class form (section 1, step 2b) | $35 |
 
 **Exclude** from all ad sets: **L1 Booked** and the pixel `Purchase` event, people who already took the quiz (pixel `Lead`, 180 days), and **L2 Warm, not booked** (they get retargeting instead). Lists are defined in section 3.
 
@@ -186,6 +194,55 @@ Designed in Lisa's site brand and rendered at Meta's sizes in `outreach/ads/png/
 | R4 Countdown | `countdown-3-feed.png` (Dec 11 and 12), `countdown-tomorrow-feed.png` (Dec 13), `countdown-today-feed.png` (Dec 14) | the same names with `-story` |
 
 L2 and R1 are Lisa's own videos (scripts V1 and V2), so they have no designed image. All the ads, with copy buttons for every field, are also on one page: https://claude.ai/artifact/LkHf3U7d8oDquEFoaMQyPq In Ads Manager, upload both sizes to each ad and use **Customize placements** so Stories and Reels get the 9:16 image.
+
+## 5c. Free class ads (Dec 3): copy and images
+
+**Goal:** new email addresses. Every ad sends people to the free class page, `https://www.lisakalmin.com/masterclass/?utm_source=meta&utm_medium=paid&utm_campaign=mwm-dec3&utm_content=<ad>`, where they register with first name and email. The class itself, and Series 4 after it, sell the course, so the ads never mention a price.
+**Run:** Fri Nov 27 to Thu Dec 3 at 3:00 pm PT, then turn the ad set off (people need time to get the Zoom link). **CTA button:** Sign up. **Exclude** `masterclass-dec3` (upload the tag as a list on Dec 1) and the class `Lead` event.
+
+| Ad | Feed, 4:5 (1080x1350) | Stories and Reels, 9:16 (1080x1920) | utm_content |
+|---|---|---|---|
+| M1 Lisa's portrait, "Money is still flowing" | `class-invite-feed.png` | `class-invite-story.png` | `m1-invite` |
+| M2 "Four quiet money stops" | `class-stops-feed.png` | `class-stops-story.png` | `m2-stops` |
+| M3 Save the date, Dec 3 | `class-date-feed.png` | `class-date-story.png` | `m3-date` |
+
+### Ad M1 · "Money is still flowing" (portrait)
+
+**Primary text:**
+The economy isn't what limits most people's income. Their relationship with money is, and the quiet "stops" inside it.
+
+Join Lisa Kalmin for a free 90-minute live masterclass, Opening the Flow of Money, on Thursday, December 3, at 5:30 pm PT on Zoom. Find your stops, see where they started, and leave with a new money set point and 4 actions for the same day.
+
+39 years of coaching. 50,000+ people trained. Free to attend.
+
+**Headline:** Free live class with Lisa, Dec 3
+**Description:** 90 minutes on Zoom · free
+
+### Ad M2 · "Four quiet money stops"
+
+**Primary text:**
+"There's never quite enough." The pause before naming a price. Not looking, because looking is stressful. Money in, money right back out.
+
+These are money stops: old beliefs that quietly cap how much money feels safe to have. They can be found, and they can be let go.
+
+On Thursday, December 3, Lisa Kalmin is teaching a free live masterclass on exactly this. Bring a journal.
+
+**Headline:** Find your money stops, free
+**Description:** Live on Zoom · Thu, Dec 3
+
+### Ad M3 · Save the date
+
+**Primary text:**
+Save the date: Thursday, December 3, 5:30 to 7:00 pm PT.
+
+Opening the Flow of Money: Letting Go of Your Stops is a free live masterclass with transformational coach Lisa Kalmin, author of The Problem Is How You See the Problem. Come as you are, ask your questions live, and set a new money set point before the year ends.
+
+Seats are free. The Zoom link arrives by email.
+
+**Headline:** Save your free seat for Dec 3
+**Description:** 5:30 pm PT · live on Zoom
+
+*Policy check:* none of the three tells the viewer they're broke or under-earning, and none mentions income results. They talk about people in general and about the class.
 
 ## 6. Retargeting ads: copy
 

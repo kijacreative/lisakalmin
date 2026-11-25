@@ -5,9 +5,9 @@ window.EVENT = {
   // registration is the Kit form embedded on the landing page (form 10115136); set its redirect in Kit
   title: 'Opening the Flow of Money: Letting Go of Your Stops',
   // start and end in Pacific time with the UTC offset: -08:00 from early November, -07:00 from mid March
-  start: '2026-11-19T17:30:00-08:00',    // Thursday, November 19, 5:30 pm PT
-  end: '2026-11-19T19:00:00-08:00',    // 7:00 pm PT
-  zoomUrl: 'https://us02web.zoom.us/j/88428491668',  // goes into the calendar invites
+  start: '2026-12-03T17:30:00-08:00',    // Thursday, December 3, 5:30 pm PT
+  end: '2026-12-03T19:00:00-08:00',    // 7:00 pm PT
+  zoomUrl: '[ZOOM LINK]',  // the Dec 3 Zoom link; goes into the calendar invites. While it's a [PLACEHOLDER], invites say the link is in their inbox
   // the paid offer shown on the thank-you page: live attendees get the lower price, shared in class
   offer: { fullPrice: 797, attendeePrice: 597 },
   // one small Kit form per answer on the thank-you page, each set to add its own tag

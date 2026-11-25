@@ -1,0 +1,44 @@
+Subject A: You're invited: a free evening with me
+
+Subject B: Where does your money stop?
+
+Preview text: Thursday, December 3, 5:30 pm PT. 90 minutes, live, free.
+
+Send: Friday, November 27, 10:00 am PT
+
+Audience: full Kit list, excluding masterclass-dec3 (already registered), mwm-buyer and new quiz leads
+
+------------------------------------------------------------
+
+Hi {{ subscriber.first_name | default: "there" }},
+
+I'm opening my virtual classroom for one evening, and I'd love for you to come.
+
+On Thursday, December 3, at 5:30 pm PT, I'm teaching a free live masterclass on Zoom: Opening the Flow of Money: Letting Go of Your Stops.
+
+Here's the idea. Most of us have a place in our money story that quietly says "this far and no further." It might sound like "there's never quite enough," or a pause before you name your price, or money that comes in and goes right back out. That place is a stop, and once you can see it, you can let it go.
+
+In 90 minutes together, you will:
+
+- Find your hidden money stops, and where they started
+- See money as energy you can attract, not just numbers you chase
+- Set a new income set point that doesn't depend on the news
+- Leave with 4 actions you can take the same day
+
+FREE LIVE MASTERCLASS
+Opening the Flow of Money: Letting Go of Your Stops
+Thursday, December 3
+5:30 to 7:00 pm PT, live on Zoom
+Free, 90 minutes with Lisa
+
+Save my free seat:
+https://www.lisakalmin.com/masterclass/?utm_source=kit&utm_medium=email&utm_campaign=mwm-dec3&utm_content=inv-1
+
+To your abundant flow!
+Lisa
+
+Lisa Kalmin
+Transformational Mindset Wizard
+Author of "The Problem Is How You See the Problem"
+
+P.S. Been to one of my classes before? Come again. Every class uncovers a new layer, and the stop you meet this time may not be the one you met last time.

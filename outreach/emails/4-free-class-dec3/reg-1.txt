@@ -1,0 +1,38 @@
+Subject A: Tomorrow: what to bring
+
+Subject B: See you tomorrow at 5:30 pm PT
+
+Preview text: A journal, a pen, and one question.
+
+Send: Wednesday, December 2, 9:00 am PT
+
+Audience: tag masterclass-dec3, not mwm-buyer
+
+------------------------------------------------------------
+
+Hi {{ subscriber.first_name | default: "there" }},
+
+We meet tomorrow, Thursday at 5:30 pm PT, and I'm already looking forward to it.
+
+To get the most from our 90 minutes:
+
+1. Bring a journal and a pen. The exercises work best on paper.
+2. Find a quiet spot where you can talk out loud if I call on you.
+3. Bring one money question you've never quite been able to answer.
+
+Your Zoom link:
+[ZOOM LINK]
+
+One more thing. Here is what Megan, a Head of Design, wrote after she went from this class into Money Wealth and Miracles:
+
+"She drops personal coaching knowledge as well as practical knowledge that I felt like I missed in high school and college."
+Megan, Head of Design
+
+I'll tell you more about the course at the end of class, along with a thank-you price for the people who are there.
+
+To your abundant flow!
+Lisa
+
+Lisa Kalmin
+Transformational Mindset Wizard
+Author of "The Problem Is How You See the Problem"

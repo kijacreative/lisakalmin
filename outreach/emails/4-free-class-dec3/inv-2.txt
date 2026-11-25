@@ -1,0 +1,44 @@
+Subject A: "There's never quite enough"
+
+Subject B: The pause before you name your price
+
+Preview text: Four money stops. Which one sounds like you?
+
+Send: Monday, November 30, 9:00 am PT
+
+Audience: full Kit list, excluding masterclass-dec3 (already registered), mwm-buyer and new quiz leads
+
+------------------------------------------------------------
+
+Hi {{ subscriber.first_name | default: "there" }},
+
+Which of these sounds most like you?
+
+1. There's never quite enough, no matter how much comes in.
+2. You undercharge, or give it away.
+3. Money feels stressful, so you avoid looking.
+4. Money comes in, then goes right back out.
+
+None of these means something is wrong with you. Each one is a stop: a belief you picked up long ago that sets a ceiling on how much money feels safe to have.
+
+Here is what I have seen in 39 years of coaching more than 50,000 people: you can work harder, earn more, learn every strategy, and money still drifts back to the same level until the stop underneath it is seen.
+
+This Thursday, I'll help you find yours, live, in a free 90-minute masterclass. Bring a journal. You'll want to write down what comes up.
+
+FREE LIVE MASTERCLASS
+Opening the Flow of Money: Letting Go of Your Stops
+Thursday, December 3
+5:30 to 7:00 pm PT, live on Zoom
+Free, 90 minutes with Lisa
+
+Save my free seat:
+https://www.lisakalmin.com/masterclass/?utm_source=kit&utm_medium=email&utm_campaign=mwm-dec3&utm_content=inv-2
+
+To your abundant flow!
+Lisa
+
+Lisa Kalmin
+Transformational Mindset Wizard
+Author of "The Problem Is How You See the Problem"
+
+P.S. Reply with the number that sounds most like you. I read every reply, and it helps me shape the class.

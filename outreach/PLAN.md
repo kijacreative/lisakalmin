@@ -13,6 +13,7 @@ Files in this folder:
 | File | What it is |
 |---|---|
 | `PLAN.md` | This plan: strategy, segments, the code, calendar, setup, tracking |
+| `email-free-class.md` | **Free masterclass, Thu Dec 3, 5:30 pm PT:** 4 invites to the main list, then 5 emails to registrants that sell the course (Series 4) |
 | `email-main-list.md` | Main list: 5 full-price emails, plus 3 MIRACLE200 emails for people who clicked and didn't buy |
 | `email-masterclass.md` | Masterclass registrants and attendees: 3 full-price emails, then 4 with MIRACLE200 |
 | `email-quiz-nurture.md` | Quiz takers (from ads, cold email, DMs): 4 emails, with the price block swapped on Dec 4 |
@@ -47,7 +48,7 @@ With only one seat of cushion, the Q&A and 15-minute calls in section 6 are **pl
 
 ## 2. The code and links
 
-**One code: MIRACLE200.** Create it in Kit (Products > Money Wealth and Miracles > Discount codes) as $200 off, pay in full, **starting Friday, December 4 at 12:00 am PT and expiring Monday, December 14 at 5:30 pm PT**. Turn FLOW200 off in Kit. Do not create QUIZ200 or FRIEND200.
+**One code: MIRACLE200.** Create it in Kit (Products > Money Wealth and Miracles > Discount codes) as $200 off, pay in full, **starting Thursday, December 3 at 5:30 pm PT (when the free class begins, so Lisa can share it at the end) and expiring Monday, December 14 at 5:30 pm PT**. Turn FLOW200 off in Kit. Do not create QUIZ200 or FRIEND200.
 
 | Link | When | Who |
 |---|---|---|
