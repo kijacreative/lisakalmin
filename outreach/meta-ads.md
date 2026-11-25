@@ -181,7 +181,11 @@ Designed in Lisa's site brand and rendered at Meta's sizes in `outreach/ads/png/
 | L4 Portrait | `quote-feed.png` | `quote-story.png` |
 | L5 "Not a budgeting quiz" | `notbudget-feed.png` | `notbudget-story.png` |
 
-L2 is Lisa's own video (script V1), so it has no designed image. In Ads Manager, upload both sizes to each ad and use **Customize placements** so Stories and Reels get the 9:16 image.
+| R2 Testimonial | `testimonial-feed.png` | `testimonial-story.png` |
+| R3 What's included, carousel (1080x1080) | `included-1.png` to `included-5.png`; on Dec 4 swap card 5 for `included-5-code.png` | (use `testimonial-story.png` until Dec 3) |
+| R4 Countdown | `countdown-3-feed.png` (Dec 11 and 12), `countdown-tomorrow-feed.png` (Dec 13), `countdown-today-feed.png` (Dec 14) | the same names with `-story` |
+
+L2 and R1 are Lisa's own videos (scripts V1 and V2), so they have no designed image. All the ads, with copy buttons for every field, are also on one page: https://claude.ai/artifact/LkHf3U7d8oDquEFoaMQyPq In Ads Manager, upload both sizes to each ad and use **Customize placements** so Stories and Reels get the 9:16 image.
 
 ## 6. Retargeting ads: copy
 

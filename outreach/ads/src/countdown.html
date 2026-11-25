@@ -1,0 +1,32 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="ads.css"><title>R4 countdown</title>
+<style>
+body{background:var(--rose);color:#fff}
+.ad{padding:0}
+.photo{position:relative;flex:0 0 44%;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:50% 18%}
+.photo::after{content:"";position:absolute;inset:auto 0 0 0;height:45%;background:linear-gradient(to bottom,transparent,var(--rose))}
+.text{flex:1;display:flex;flex-direction:column;gap:22px;padding:0 84px 76px;position:relative}
+.eyebrow{color:var(--blush)}
+.when{font-family:var(--display);font-weight:800;font-size:200px;line-height:1;margin:-10px 0 6px;letter-spacing:-.06em;white-space:nowrap}
+.d{font-size:40px;line-height:1.3;color:var(--blush);max-width:880px}
+.d b{color:#fff}
+.row{display:flex;justify-content:space-between;align-items:center;gap:20px}
+.chip{display:inline-block;padding:10px 22px;border:3px dashed #fff;border-radius:12px;font-size:32px;font-weight:700;letter-spacing:.1em}
+.pill{background:var(--oat);color:var(--rose)}
+.story .ad{padding:0}.story .photo{flex-basis:46%}.story .text{padding-bottom:400px}
+</style></head><body><div class="ad">
+<div class="photo"><img src="../../../img/portrait-light.jpg" alt=""></div>
+<div class="text">
+<p class="eyebrow">Money Wealth and Miracles · live with Lisa</p>
+<p class="when" id="when">3 days</p>
+<p class="d" id="d"></p>
+<div class="spacer"></div>
+<div class="row"><span class="chip">MIRACLE200</span><span class="pill">Join for $597 →</span></div>
+</div></div><script>
+document.body.className=innerHeight/innerWidth>1.5?'story':'feed';
+var k=location.hash.slice(1)||'3';
+var W={'3':['3 days','until we begin, <b>Monday at 5:30 pm PT</b>. $200 off until the doors close.'],
+ 'tomorrow':['Tomorrow','we begin, <b>Monday at 5:30 pm PT</b>. $200 off until the doors close.'],
+ 'today':['Today','we begin at <b>5:30 pm PT</b>. Your $200 off ends when we start.']}[k];
+document.getElementById('when').textContent=W[0]; document.getElementById('d').innerHTML=W[1];
+</script></body></html>
